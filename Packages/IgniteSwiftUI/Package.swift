@@ -8,6 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "IgniteSwiftUI",
+            type: .dynamic,
             targets: ["IgniteSwiftUI"]
         ),
     ],

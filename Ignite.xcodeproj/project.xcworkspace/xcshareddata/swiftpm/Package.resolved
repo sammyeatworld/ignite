@@ -1,24 +1,6 @@
 {
-  "originHash" : "68cf1914844fb622aa225e4ad1221b4a9c6c86eaeeb1d218d60222a987c698fd",
+  "originHash" : "759318c62baae085f96bdd9e92ad0fa0e7ff025c00e1be6902cdc9df51d92ed9",
   "pins" : [
-    {
-      "identity" : "darwin-kit",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:sammyeatworld/darwin-kit.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "d2d9295432937519539397f39cfa50bc1233020d"
-      }
-    },
-    {
-      "identity" : "debug-kit",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:sammyeatworld/debug-kit.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "cae399bb93f6260e427f625d23a722c7b63a666d"
-      }
-    },
     {
       "identity" : "defaults",
       "kind" : "remoteSourceControl",

@@ -4,21 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "IgniteGraph",
+    name: "IgniteDarwin",
     products: [
         .library(
-            name: "IgniteGraph",
+            name: "IgniteDarwin",
             type: .dynamic,
-            targets: ["IgniteGraph"]
+            targets: ["IgniteDarwin"]
         ),
     ],
     targets: [
         .target(
-            name: "IgniteGraph"
+            name: "IgniteDarwin"
         ),
-        .testTarget(
-            name: "IgniteGraphTests",
-            dependencies: ["IgniteGraph"]
-        ),
+
     ]
 )
