@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "IgniteFoundation",
+    platforms: [.macOS(.v26)],
     products: [
         .library(
             name: "IgniteFoundation",

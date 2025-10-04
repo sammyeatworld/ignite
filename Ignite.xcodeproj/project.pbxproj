@@ -15,6 +15,12 @@
 		A51EDFD82E907BEC00F4BA87 /* IgniteSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFC62E90125200F4BA87 /* IgniteSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A51EDFD92E907BEE00F4BA87 /* IgniteGraph in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFCC2E90137700F4BA87 /* IgniteGraph */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A51EDFDA2E907BF000F4BA87 /* IgniteFoundation in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFC32E9011F300F4BA87 /* IgniteFoundation */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A51EDFDF2E907DE500F4BA87 /* IgniteDarwin in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFDE2E907DE500F4BA87 /* IgniteDarwin */; };
+		A51EDFE02E907DE500F4BA87 /* IgniteDarwin in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFDE2E907DE500F4BA87 /* IgniteDarwin */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A51EDFE22E907DE900F4BA87 /* IgniteData in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFE12E907DE900F4BA87 /* IgniteData */; };
+		A51EDFE32E907DE900F4BA87 /* IgniteData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFE12E907DE900F4BA87 /* IgniteData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A51EDFE52E907DEF00F4BA87 /* IgniteDebug in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFE42E907DEF00F4BA87 /* IgniteDebug */; };
+		A51EDFE62E907DEF00F4BA87 /* IgniteDebug in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFE42E907DEF00F4BA87 /* IgniteDebug */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A58CF0FF2E8F30EF00106697 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = A58CF0FE2E8F30EF00106697 /* FactoryKit */; };
 		A58CF1012E8F30EF00106697 /* FactoryTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A58CF1002E8F30EF00106697 /* FactoryTesting */; };
 /* End PBXBuildFile section */
@@ -44,7 +50,10 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A51EDFD92E907BEE00F4BA87 /* IgniteGraph in Embed Frameworks */,
+				A51EDFE02E907DE500F4BA87 /* IgniteDarwin in Embed Frameworks */,
+				A51EDFE32E907DE900F4BA87 /* IgniteData in Embed Frameworks */,
 				A51EDFD82E907BEC00F4BA87 /* IgniteSwiftUI in Embed Frameworks */,
+				A51EDFE62E907DEF00F4BA87 /* IgniteDebug in Embed Frameworks */,
 				A51EDFDA2E907BF000F4BA87 /* IgniteFoundation in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -193,7 +202,10 @@
 				A51EDFBD2E900D4200F4BA87 /* Defaults in Frameworks */,
 				A51EDFCD2E90137700F4BA87 /* IgniteGraph in Frameworks */,
 				A51EDFC72E90125200F4BA87 /* IgniteSwiftUI in Frameworks */,
+				A51EDFE22E907DE900F4BA87 /* IgniteData in Frameworks */,
+				A51EDFDF2E907DE500F4BA87 /* IgniteDarwin in Frameworks */,
 				A58CF0FF2E8F30EF00106697 /* FactoryKit in Frameworks */,
+				A51EDFE52E907DEF00F4BA87 /* IgniteDebug in Frameworks */,
 				A51EDFC42E9011F300F4BA87 /* IgniteFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +295,9 @@
 				A51EDFC32E9011F300F4BA87 /* IgniteFoundation */,
 				A51EDFC62E90125200F4BA87 /* IgniteSwiftUI */,
 				A51EDFCC2E90137700F4BA87 /* IgniteGraph */,
+				A51EDFDE2E907DE500F4BA87 /* IgniteDarwin */,
+				A51EDFE12E907DE900F4BA87 /* IgniteData */,
+				A51EDFE42E907DEF00F4BA87 /* IgniteDebug */,
 			);
 			productName = Ignite;
 			productReference = A58CE83F2E8F1C6E00106697 /* Ignite Development.app */;
@@ -1452,6 +1467,18 @@
 		A51EDFCC2E90137700F4BA87 /* IgniteGraph */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = IgniteGraph;
+		};
+		A51EDFDE2E907DE500F4BA87 /* IgniteDarwin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IgniteDarwin;
+		};
+		A51EDFE12E907DE900F4BA87 /* IgniteData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IgniteData;
+		};
+		A51EDFE42E907DEF00F4BA87 /* IgniteDebug */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IgniteDebug;
 		};
 		A58CF0FE2E8F30EF00106697 /* FactoryKit */ = {
 			isa = XCSwiftPackageProductDependency;
