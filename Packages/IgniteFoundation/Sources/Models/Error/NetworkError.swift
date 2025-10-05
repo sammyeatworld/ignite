@@ -36,7 +36,7 @@ extension NetworkError: LocalizedError {
                 comment: "Displayed when the server rejects the request due to client-side issues (e.g., invalid parameters)."
             )
         case .httpError(let statusCode):
-            return String(
+            return unsafe String(
                 format: NSLocalizedString(
                     "The operation failed due to an HTTP error: %d.",
                     comment: "Displayed when the server responds with a specific HTTP status code indicating failure (e.g., 404 or 500)."

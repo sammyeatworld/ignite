@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "IgniteDarwin",
+    platforms: [.macOS(.v26)],
     products: [
         .library(
             name: "IgniteDarwin",
@@ -12,10 +13,19 @@ let package = Package(
             targets: ["IgniteDarwin"]
         ),
     ],
+    dependencies: [
+        .package(path: "../IgniteFoundation"),
+    ],
     targets: [
         .target(
-            name: "IgniteDarwin"
+            name: "IgniteDarwin",
+            dependencies: [
+                .product(name: "IgniteFoundation", package: "IgniteFoundation"),
+            ],
+            swiftSettings: [
+                .strictMemorySafety(),
+                .swiftLanguageMode(.v6)
+            ]
         ),
-
     ]
 )

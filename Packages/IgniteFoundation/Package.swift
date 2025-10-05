@@ -15,7 +15,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "IgniteFoundation"
+            name: "IgniteFoundation",
+            swiftSettings: [
+                .strictMemorySafety(),
+                .swiftLanguageMode(.v6)
+            ]
         ),
         .testTarget(
             name: "IgniteFoundationTests",

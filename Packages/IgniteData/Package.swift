@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "IgniteData",
+    platforms: [.macOS(.v26)],
     products: [
         .library(
             name: "IgniteData",
@@ -12,9 +13,19 @@ let package = Package(
             targets: ["IgniteData"]
         ),
     ],
+    dependencies: [
+        .package(path: "../IgniteFoundation"),
+    ],
     targets: [
         .target(
-            name: "IgniteData"
+            name: "IgniteData",
+            dependencies: [
+                .product(name: "IgniteFoundation", package: "IgniteFoundation"),
+            ],
+            swiftSettings: [
+                .strictMemorySafety(),
+                .swiftLanguageMode(.v6)
+            ]
         ),
         .testTarget(
             name: "IgniteDataTests",

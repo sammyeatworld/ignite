@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "IgniteDisassembly",
+    platforms: [.macOS(.v26)],
     products: [
         .library(
             name: "IgniteDisassembly",
@@ -12,9 +13,19 @@ let package = Package(
             targets: ["IgniteDisassembly"]
         ),
     ],
+    dependencies: [
+        .package(path: "../IgniteFoundation"),
+    ],
     targets: [
         .target(
-            name: "IgniteDisassembly"
+            name: "IgniteDisassembly",
+            dependencies: [
+                .product(name: "IgniteFoundation", package: "IgniteFoundation"),
+            ],
+            swiftSettings: [
+                .strictMemorySafety(),
+                .swiftLanguageMode(.v6)
+            ]
         ),
         .testTarget(
             name: "IgniteDisassemblyTests",

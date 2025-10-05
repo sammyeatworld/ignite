@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "IgniteSwiftUI",
+    platforms: [.macOS(.v26)],
     products: [
         .library(
             name: "IgniteSwiftUI",
@@ -12,9 +13,19 @@ let package = Package(
             targets: ["IgniteSwiftUI"]
         ),
     ],
+    dependencies: [
+        .package(path: "../IgniteFoundation"),
+    ],
     targets: [
         .target(
-            name: "IgniteSwiftUI"
+            name: "IgniteSwiftUI",
+            dependencies: [
+                .product(name: "IgniteFoundation", package: "IgniteFoundation"),
+            ],
+            swiftSettings: [
+                .strictMemorySafety(),
+                .swiftLanguageMode(.v6)
+            ]
         ),
         .testTarget(
             name: "IgniteSwiftUITests",

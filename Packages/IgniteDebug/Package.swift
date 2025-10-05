@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "IgniteDebug",
+    platforms: [.macOS(.v26)],
     products: [
         .library(
             name: "IgniteDebug",
@@ -12,10 +13,21 @@ let package = Package(
             targets: ["IgniteDebug"]
         ),
     ],
+    dependencies: [
+        .package(path: "../IgniteFoundation"),
+        .package(path: "../IgniteDarwin")
+    ],
     targets: [
         .target(
-            name: "IgniteDebug"
+            name: "IgniteDebug",
+            dependencies: [
+                .product(name: "IgniteFoundation", package: "IgniteFoundation"),
+                .product(name: "IgniteDarwin", package: "IgniteDarwin")
+            ],
+            swiftSettings: [
+                .strictMemorySafety(),
+                .swiftLanguageMode(.v6)
+            ]
         ),
-
     ]
 )
