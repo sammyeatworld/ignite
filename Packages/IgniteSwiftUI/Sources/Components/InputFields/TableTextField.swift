@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 public struct TableTextField: View {
 
     // MARK: - Properties
@@ -22,8 +20,7 @@ public struct TableTextField: View {
 
     // MARK: - Lifecycle
 
-    public init(isEditing: Bool = false, isFocused: FocusState<Bool>, text: Binding<String>) {
-        self.isEditing = isEditing
+    public init(isFocused: FocusState<Bool>, text: Binding<String>) {
         self._isFocused = isFocused
         self._text = text
     }
@@ -32,7 +29,7 @@ public struct TableTextField: View {
 
     public var body: some View {
         TextField("", text: $text)
-            .textFieldStyle(PlainTextFieldStyle())
+            .textFieldStyle(.plain)
             .focused($isFocused)
             .onTapGesture {
                 isEditing = true
