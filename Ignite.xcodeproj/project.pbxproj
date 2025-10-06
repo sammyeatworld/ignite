@@ -190,11 +190,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		A58CF0372E8F1D2000106697 /* Translations */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Translations;
-			sourceTree = "<group>";
-		};
 		A58CF09D2E8F208500106697 /* Packages */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -254,7 +249,6 @@
 				A58CE8412E8F1C6E00106697 /* Ignite */,
 				A58CE84F2E8F1C7000106697 /* IgniteTests */,
 				A58CE8592E8F1C7000106697 /* IgniteUITests */,
-				A58CF0372E8F1D2000106697 /* Translations */,
 				A58CF0552E8F1FF100106697 /* Frameworks */,
 				A58CE8402E8F1C6E00106697 /* Products */,
 			);
@@ -299,7 +293,6 @@
 				A58CF0342E8F1CFE00106697 /* Documentation */,
 				A58CF0352E8F1D0800106697 /* Meta */,
 				A58CF0362E8F1D1500106697 /* Resources */,
-				A58CF0372E8F1D2000106697 /* Translations */,
 				A58CF09D2E8F208500106697 /* Packages */,
 			);
 			name = Ignite;
