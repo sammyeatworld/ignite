@@ -1,8 +1,7 @@
 //
-//  Aliases.swift
-//  Ignite
+// Copyright (c) 2025, Samuel Majtan
 //
-//  Created by Samuel Majtan on 06/10/2025.
+// SPDX-License-Identifier: GPL-3.0
 //
 
 import Foundation
