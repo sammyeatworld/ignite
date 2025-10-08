@@ -9,26 +9,30 @@
 /* Begin PBXBuildFile section */
 		A51EDFBD2E900D4200F4BA87 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFBC2E900D4200F4BA87 /* Defaults */; };
 		A51EDFC02E900DD300F4BA87 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFBF2E900DD300F4BA87 /* Collections */; };
-		A51EDFC42E9011F300F4BA87 /* IgniteFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFC32E9011F300F4BA87 /* IgniteFoundation */; };
-		A51EDFC72E90125200F4BA87 /* IgniteSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFC62E90125200F4BA87 /* IgniteSwiftUI */; };
-		A51EDFCD2E90137700F4BA87 /* IgniteGraph in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFCC2E90137700F4BA87 /* IgniteGraph */; };
-		A51EDFD82E907BEC00F4BA87 /* IgniteSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFC62E90125200F4BA87 /* IgniteSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A51EDFD92E907BEE00F4BA87 /* IgniteGraph in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFCC2E90137700F4BA87 /* IgniteGraph */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A51EDFDA2E907BF000F4BA87 /* IgniteFoundation in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFC32E9011F300F4BA87 /* IgniteFoundation */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A51EDFDF2E907DE500F4BA87 /* IgniteDarwin in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFDE2E907DE500F4BA87 /* IgniteDarwin */; };
-		A51EDFE02E907DE500F4BA87 /* IgniteDarwin in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFDE2E907DE500F4BA87 /* IgniteDarwin */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A51EDFE22E907DE900F4BA87 /* IgniteData in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFE12E907DE900F4BA87 /* IgniteData */; };
-		A51EDFE32E907DE900F4BA87 /* IgniteData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFE12E907DE900F4BA87 /* IgniteData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A51EDFE52E907DEF00F4BA87 /* IgniteDebug in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFE42E907DEF00F4BA87 /* IgniteDebug */; };
-		A51EDFE62E907DEF00F4BA87 /* IgniteDebug in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFE42E907DEF00F4BA87 /* IgniteDebug */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A54BD5F12E929EA3001FE354 /* IgniteDisassembly in Frameworks */ = {isa = PBXBuildFile; productRef = A54BD5F02E929EA3001FE354 /* IgniteDisassembly */; };
-		A54BD5F22E929EA3001FE354 /* IgniteDisassembly in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A54BD5F02E929EA3001FE354 /* IgniteDisassembly */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A54BD5F92E92A061001FE354 /* IgniteAnalysis in Frameworks */ = {isa = PBXBuildFile; productRef = A54BD5F82E92A061001FE354 /* IgniteAnalysis */; };
-		A54BD5FA2E92A061001FE354 /* IgniteAnalysis in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A54BD5F82E92A061001FE354 /* IgniteAnalysis */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A54BD5FC2E92A069001FE354 /* IgniteMachO in Frameworks */ = {isa = PBXBuildFile; productRef = A54BD5FB2E92A069001FE354 /* IgniteMachO */; };
-		A54BD5FD2E92A069001FE354 /* IgniteMachO in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A54BD5FB2E92A069001FE354 /* IgniteMachO */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A58CF0FF2E8F30EF00106697 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = A58CF0FE2E8F30EF00106697 /* FactoryKit */; };
 		A58CF1012E8F30EF00106697 /* FactoryTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A58CF1002E8F30EF00106697 /* FactoryTesting */; };
+		A5BB55392E9698C400DF8FC4 /* AnalysisKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55382E9698C400DF8FC4 /* AnalysisKit */; };
+		A5BB553A2E9698C400DF8FC4 /* AnalysisKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55382E9698C400DF8FC4 /* AnalysisKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB553C2E9698C700DF8FC4 /* DarwinKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB553B2E9698C700DF8FC4 /* DarwinKit */; };
+		A5BB553D2E9698C700DF8FC4 /* DarwinKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB553B2E9698C700DF8FC4 /* DarwinKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB553F2E9698CA00DF8FC4 /* DataKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB553E2E9698CA00DF8FC4 /* DataKit */; };
+		A5BB55402E9698CA00DF8FC4 /* DataKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB553E2E9698CA00DF8FC4 /* DataKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB55422E9698CD00DF8FC4 /* DebugKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55412E9698CD00DF8FC4 /* DebugKit */; };
+		A5BB55432E9698CD00DF8FC4 /* DebugKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55412E9698CD00DF8FC4 /* DebugKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB55452E9698CF00DF8FC4 /* DisassemblyKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55442E9698CF00DF8FC4 /* DisassemblyKit */; };
+		A5BB55462E9698CF00DF8FC4 /* DisassemblyKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55442E9698CF00DF8FC4 /* DisassemblyKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB55482E9698D300DF8FC4 /* FoundationKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55472E9698D300DF8FC4 /* FoundationKit */; };
+		A5BB55492E9698D300DF8FC4 /* FoundationKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55472E9698D300DF8FC4 /* FoundationKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB554B2E9698D800DF8FC4 /* GraphKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554A2E9698D800DF8FC4 /* GraphKit */; };
+		A5BB554C2E9698D800DF8FC4 /* GraphKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554A2E9698D800DF8FC4 /* GraphKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB554E2E9698DD00DF8FC4 /* MachOKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554D2E9698DD00DF8FC4 /* MachOKit */; };
+		A5BB554F2E9698DD00DF8FC4 /* MachOKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554D2E9698DD00DF8FC4 /* MachOKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB55512E9698E000DF8FC4 /* PluginKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55502E9698E000DF8FC4 /* PluginKit */; };
+		A5BB55522E9698E000DF8FC4 /* PluginKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55502E9698E000DF8FC4 /* PluginKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB55542E9698E400DF8FC4 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55532E9698E400DF8FC4 /* SwiftUIKit */; };
+		A5BB55552E9698E400DF8FC4 /* SwiftUIKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55532E9698E400DF8FC4 /* SwiftUIKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5BB55572E9698E900DF8FC4 /* SyntaxKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55562E9698E900DF8FC4 /* SyntaxKit */; };
+		A5BB55582E9698E900DF8FC4 /* SyntaxKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55562E9698E900DF8FC4 /* SyntaxKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,15 +59,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A51EDFD92E907BEE00F4BA87 /* IgniteGraph in Embed Frameworks */,
-				A51EDFE02E907DE500F4BA87 /* IgniteDarwin in Embed Frameworks */,
-				A54BD5FA2E92A061001FE354 /* IgniteAnalysis in Embed Frameworks */,
-				A51EDFE32E907DE900F4BA87 /* IgniteData in Embed Frameworks */,
-				A54BD5F22E929EA3001FE354 /* IgniteDisassembly in Embed Frameworks */,
-				A51EDFD82E907BEC00F4BA87 /* IgniteSwiftUI in Embed Frameworks */,
-				A51EDFE62E907DEF00F4BA87 /* IgniteDebug in Embed Frameworks */,
-				A54BD5FD2E92A069001FE354 /* IgniteMachO in Embed Frameworks */,
-				A51EDFDA2E907BF000F4BA87 /* IgniteFoundation in Embed Frameworks */,
+				A5BB554F2E9698DD00DF8FC4 /* MachOKit in Embed Frameworks */,
+				A5BB55402E9698CA00DF8FC4 /* DataKit in Embed Frameworks */,
+				A5BB55462E9698CF00DF8FC4 /* DisassemblyKit in Embed Frameworks */,
+				A5BB55552E9698E400DF8FC4 /* SwiftUIKit in Embed Frameworks */,
+				A5BB55522E9698E000DF8FC4 /* PluginKit in Embed Frameworks */,
+				A5BB553D2E9698C700DF8FC4 /* DarwinKit in Embed Frameworks */,
+				A5BB553A2E9698C400DF8FC4 /* AnalysisKit in Embed Frameworks */,
+				A5BB554C2E9698D800DF8FC4 /* GraphKit in Embed Frameworks */,
+				A5BB55582E9698E900DF8FC4 /* SyntaxKit in Embed Frameworks */,
+				A5BB55492E9698D300DF8FC4 /* FoundationKit in Embed Frameworks */,
+				A5BB55432E9698CD00DF8FC4 /* DebugKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,15 +86,17 @@
 		A51EDFC22E9011CE00F4BA87 /* Exceptions for "Packages" folder in "Ignite" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				IgniteAnalysis,
-				IgniteDarwin,
-				IgniteData,
-				IgniteDebug,
-				IgniteDisassembly,
-				IgniteFoundation,
-				IgniteGraph,
-				IgniteMachO,
-				IgniteSwiftUI,
+				AnalysisKit,
+				DarwinKit,
+				DataKit,
+				DebugKit,
+				DisassemblyKit,
+				FoundationKit,
+				GraphKit,
+				MachOKit,
+				PluginKit,
+				SwiftUIKit,
+				SyntaxKit,
 			);
 			target = A58CE83E2E8F1C6E00106697 /* Ignite */;
 		};
@@ -205,18 +213,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A54BD5F92E92A061001FE354 /* IgniteAnalysis in Frameworks */,
+				A5BB55572E9698E900DF8FC4 /* SyntaxKit in Frameworks */,
+				A5BB55512E9698E000DF8FC4 /* PluginKit in Frameworks */,
+				A5BB554B2E9698D800DF8FC4 /* GraphKit in Frameworks */,
+				A5BB554E2E9698DD00DF8FC4 /* MachOKit in Frameworks */,
+				A5BB55422E9698CD00DF8FC4 /* DebugKit in Frameworks */,
+				A5BB553C2E9698C700DF8FC4 /* DarwinKit in Frameworks */,
 				A51EDFC02E900DD300F4BA87 /* Collections in Frameworks */,
 				A51EDFBD2E900D4200F4BA87 /* Defaults in Frameworks */,
-				A51EDFCD2E90137700F4BA87 /* IgniteGraph in Frameworks */,
-				A51EDFC72E90125200F4BA87 /* IgniteSwiftUI in Frameworks */,
-				A51EDFE22E907DE900F4BA87 /* IgniteData in Frameworks */,
-				A54BD5F12E929EA3001FE354 /* IgniteDisassembly in Frameworks */,
-				A54BD5FC2E92A069001FE354 /* IgniteMachO in Frameworks */,
-				A51EDFDF2E907DE500F4BA87 /* IgniteDarwin in Frameworks */,
+				A5BB553F2E9698CA00DF8FC4 /* DataKit in Frameworks */,
 				A58CF0FF2E8F30EF00106697 /* FactoryKit in Frameworks */,
-				A51EDFE52E907DEF00F4BA87 /* IgniteDebug in Frameworks */,
-				A51EDFC42E9011F300F4BA87 /* IgniteFoundation in Frameworks */,
+				A5BB55542E9698E400DF8FC4 /* SwiftUIKit in Frameworks */,
+				A5BB55452E9698CF00DF8FC4 /* DisassemblyKit in Frameworks */,
+				A5BB55482E9698D300DF8FC4 /* FoundationKit in Frameworks */,
+				A5BB55392E9698C400DF8FC4 /* AnalysisKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,15 +310,17 @@
 				A58CF0FE2E8F30EF00106697 /* FactoryKit */,
 				A51EDFBC2E900D4200F4BA87 /* Defaults */,
 				A51EDFBF2E900DD300F4BA87 /* Collections */,
-				A51EDFC32E9011F300F4BA87 /* IgniteFoundation */,
-				A51EDFC62E90125200F4BA87 /* IgniteSwiftUI */,
-				A51EDFCC2E90137700F4BA87 /* IgniteGraph */,
-				A51EDFDE2E907DE500F4BA87 /* IgniteDarwin */,
-				A51EDFE12E907DE900F4BA87 /* IgniteData */,
-				A51EDFE42E907DEF00F4BA87 /* IgniteDebug */,
-				A54BD5F02E929EA3001FE354 /* IgniteDisassembly */,
-				A54BD5F82E92A061001FE354 /* IgniteAnalysis */,
-				A54BD5FB2E92A069001FE354 /* IgniteMachO */,
+				A5BB55382E9698C400DF8FC4 /* AnalysisKit */,
+				A5BB553B2E9698C700DF8FC4 /* DarwinKit */,
+				A5BB553E2E9698CA00DF8FC4 /* DataKit */,
+				A5BB55412E9698CD00DF8FC4 /* DebugKit */,
+				A5BB55442E9698CF00DF8FC4 /* DisassemblyKit */,
+				A5BB55472E9698D300DF8FC4 /* FoundationKit */,
+				A5BB554A2E9698D800DF8FC4 /* GraphKit */,
+				A5BB554D2E9698DD00DF8FC4 /* MachOKit */,
+				A5BB55502E9698E000DF8FC4 /* PluginKit */,
+				A5BB55532E9698E400DF8FC4 /* SwiftUIKit */,
+				A5BB55562E9698E900DF8FC4 /* SyntaxKit */,
 			);
 			productName = Ignite;
 			productReference = A58CE83F2E8F1C6E00106697 /* Ignite Development.app */;
@@ -1485,42 +1497,6 @@
 			package = A51EDFBE2E900DD300F4BA87 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = Collections;
 		};
-		A51EDFC32E9011F300F4BA87 /* IgniteFoundation */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteFoundation;
-		};
-		A51EDFC62E90125200F4BA87 /* IgniteSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteSwiftUI;
-		};
-		A51EDFCC2E90137700F4BA87 /* IgniteGraph */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteGraph;
-		};
-		A51EDFDE2E907DE500F4BA87 /* IgniteDarwin */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteDarwin;
-		};
-		A51EDFE12E907DE900F4BA87 /* IgniteData */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteData;
-		};
-		A51EDFE42E907DEF00F4BA87 /* IgniteDebug */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteDebug;
-		};
-		A54BD5F02E929EA3001FE354 /* IgniteDisassembly */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteDisassembly;
-		};
-		A54BD5F82E92A061001FE354 /* IgniteAnalysis */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteAnalysis;
-		};
-		A54BD5FB2E92A069001FE354 /* IgniteMachO */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IgniteMachO;
-		};
 		A58CF0FE2E8F30EF00106697 /* FactoryKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A58CF0FD2E8F30EF00106697 /* XCRemoteSwiftPackageReference "Factory" */;
@@ -1530,6 +1506,50 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A58CF0FD2E8F30EF00106697 /* XCRemoteSwiftPackageReference "Factory" */;
 			productName = FactoryTesting;
+		};
+		A5BB55382E9698C400DF8FC4 /* AnalysisKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AnalysisKit;
+		};
+		A5BB553B2E9698C700DF8FC4 /* DarwinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DarwinKit;
+		};
+		A5BB553E2E9698CA00DF8FC4 /* DataKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataKit;
+		};
+		A5BB55412E9698CD00DF8FC4 /* DebugKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DebugKit;
+		};
+		A5BB55442E9698CF00DF8FC4 /* DisassemblyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DisassemblyKit;
+		};
+		A5BB55472E9698D300DF8FC4 /* FoundationKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FoundationKit;
+		};
+		A5BB554A2E9698D800DF8FC4 /* GraphKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GraphKit;
+		};
+		A5BB554D2E9698DD00DF8FC4 /* MachOKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MachOKit;
+		};
+		A5BB55502E9698E000DF8FC4 /* PluginKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PluginKit;
+		};
+		A5BB55532E9698E400DF8FC4 /* SwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIKit;
+		};
+		A5BB55562E9698E900DF8FC4 /* SyntaxKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SyntaxKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
