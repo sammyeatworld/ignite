@@ -21,16 +21,16 @@ func copy<P, Value>(_ p: P, modifying keyPath: WritableKeyPath<P, Value>, to new
 }
 
 @inlinable
-func round<T: BinaryFloatingPoint>(_ value: T, toNearest: T) -> T {
+func round<T>(_ value: T, toNearest: T) -> T where T: BinaryFloatingPoint {
     round(value / toNearest) * toNearest
 }
 
 @inlinable
-func round<T: BinaryInteger>(_ value: T, toNearest: T) -> T {
+func round<T>(_ value: T, toNearest: T) -> T where T: BinaryInteger {
     T(round(Double(value), toNearest: Double(toNearest)))
 }
 
 @inlinable
-func clamp<T: Comparable>(_ x: T, min y: T, max z: T) -> T {
+func clamp<T>(_ x: T, min y: T, max z: T) -> T where T: Comparable {
     min(max(x, y), z)
 }
