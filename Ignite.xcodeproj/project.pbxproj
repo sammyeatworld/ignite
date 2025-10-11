@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A51EDFBD2E900D4200F4BA87 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFBC2E900D4200F4BA87 /* Defaults */; };
 		A51EDFC02E900DD300F4BA87 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = A51EDFBF2E900DD300F4BA87 /* Collections */; };
+		A54386F12E9ABD62009B669F /* MachOKit in Frameworks */ = {isa = PBXBuildFile; productRef = A54386F02E9ABD62009B669F /* MachOKit */; };
 		A58CF0FF2E8F30EF00106697 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = A58CF0FE2E8F30EF00106697 /* FactoryKit */; };
 		A58CF1012E8F30EF00106697 /* FactoryTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A58CF1002E8F30EF00106697 /* FactoryTesting */; };
 		A5BB55392E9698C400DF8FC4 /* AnalysisKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55382E9698C400DF8FC4 /* AnalysisKit */; };
@@ -25,8 +26,6 @@
 		A5BB55492E9698D300DF8FC4 /* FoundationKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55472E9698D300DF8FC4 /* FoundationKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A5BB554B2E9698D800DF8FC4 /* GraphKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554A2E9698D800DF8FC4 /* GraphKit */; };
 		A5BB554C2E9698D800DF8FC4 /* GraphKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554A2E9698D800DF8FC4 /* GraphKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A5BB554E2E9698DD00DF8FC4 /* MachOKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554D2E9698DD00DF8FC4 /* MachOKit */; };
-		A5BB554F2E9698DD00DF8FC4 /* MachOKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554D2E9698DD00DF8FC4 /* MachOKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A5BB55512E9698E000DF8FC4 /* PluginKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55502E9698E000DF8FC4 /* PluginKit */; };
 		A5BB55522E9698E000DF8FC4 /* PluginKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55502E9698E000DF8FC4 /* PluginKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A5BB55542E9698E400DF8FC4 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55532E9698E400DF8FC4 /* SwiftUIKit */; };
@@ -59,7 +58,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A5BB554F2E9698DD00DF8FC4 /* MachOKit in Embed Frameworks */,
 				A5BB55402E9698CA00DF8FC4 /* DataKit in Embed Frameworks */,
 				A5BB55462E9698CF00DF8FC4 /* DisassemblyKit in Embed Frameworks */,
 				A5BB55552E9698E400DF8FC4 /* SwiftUIKit in Embed Frameworks */,
@@ -93,7 +91,6 @@
 				DisassemblyKit,
 				FoundationKit,
 				GraphKit,
-				MachOKit,
 				PluginKit,
 				SwiftUIKit,
 				SyntaxKit,
@@ -215,8 +212,8 @@
 			files = (
 				A5BB55572E9698E900DF8FC4 /* SyntaxKit in Frameworks */,
 				A5BB55512E9698E000DF8FC4 /* PluginKit in Frameworks */,
+				A54386F12E9ABD62009B669F /* MachOKit in Frameworks */,
 				A5BB554B2E9698D800DF8FC4 /* GraphKit in Frameworks */,
-				A5BB554E2E9698DD00DF8FC4 /* MachOKit in Frameworks */,
 				A5BB55422E9698CD00DF8FC4 /* DebugKit in Frameworks */,
 				A5BB553C2E9698C700DF8FC4 /* DarwinKit in Frameworks */,
 				A51EDFC02E900DD300F4BA87 /* Collections in Frameworks */,
@@ -317,10 +314,10 @@
 				A5BB55442E9698CF00DF8FC4 /* DisassemblyKit */,
 				A5BB55472E9698D300DF8FC4 /* FoundationKit */,
 				A5BB554A2E9698D800DF8FC4 /* GraphKit */,
-				A5BB554D2E9698DD00DF8FC4 /* MachOKit */,
 				A5BB55502E9698E000DF8FC4 /* PluginKit */,
 				A5BB55532E9698E400DF8FC4 /* SwiftUIKit */,
 				A5BB55562E9698E900DF8FC4 /* SyntaxKit */,
+				A54386F02E9ABD62009B669F /* MachOKit */,
 			);
 			productName = Ignite;
 			productReference = A58CE83F2E8F1C6E00106697 /* Ignite Development.app */;
@@ -409,6 +406,7 @@
 				A58CF0FD2E8F30EF00106697 /* XCRemoteSwiftPackageReference "Factory" */,
 				A51EDFBB2E900D4200F4BA87 /* XCRemoteSwiftPackageReference "Defaults" */,
 				A51EDFBE2E900DD300F4BA87 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				A54386EF2E9ABD62009B669F /* XCRemoteSwiftPackageReference "MachOKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A58CE8402E8F1C6E00106697 /* Products */;
@@ -1476,6 +1474,14 @@
 				minimumVersion = 1.3.0;
 			};
 		};
+		A54386EF2E9ABD62009B669F /* XCRemoteSwiftPackageReference "MachOKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:sammyeatworld/MachOKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		A58CF0FD2E8F30EF00106697 /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:hmlongco/Factory.git";
@@ -1496,6 +1502,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A51EDFBE2E900DD300F4BA87 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = Collections;
+		};
+		A54386F02E9ABD62009B669F /* MachOKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A54386EF2E9ABD62009B669F /* XCRemoteSwiftPackageReference "MachOKit" */;
+			productName = MachOKit;
 		};
 		A58CF0FE2E8F30EF00106697 /* FactoryKit */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1534,10 +1545,6 @@
 		A5BB554A2E9698D800DF8FC4 /* GraphKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GraphKit;
-		};
-		A5BB554D2E9698DD00DF8FC4 /* MachOKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MachOKit;
 		};
 		A5BB55502E9698E000DF8FC4 /* PluginKit */ = {
 			isa = XCSwiftPackageProductDependency;
