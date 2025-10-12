@@ -8,6 +8,8 @@ import SwiftUI
 
 @main
 struct IgniteApp: App {
+    
+    @NSApplicationDelegateAdaptor(IgniteAppDelegate.self) var appDelegate
 
     var body: some Scene {
         WindowGroup {
