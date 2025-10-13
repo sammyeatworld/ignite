@@ -6,9 +6,9 @@
 
 import Foundation
 
-public struct ProcessBSDShortInfo: LayoutWrapper {
+public struct ProcessRegionInfo: LayoutWrapper {
     
-    public typealias Layout = proc_bsdshortinfo
+    public typealias Layout = proc_regioninfo
     
     public var layout: Layout
     
