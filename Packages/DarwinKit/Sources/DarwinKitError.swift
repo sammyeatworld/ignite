@@ -6,6 +6,6 @@
 
 import Foundation
 
-enum DarwinKitError: Error {
+public enum DarwinKitError: Error {
     
 }

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public enum ThreadState: UInt32, Sendable {
+public enum ProcessThreadState: UInt32, Sendable {
     
     /// TH_STATE_RUNNING
     case running = 1
