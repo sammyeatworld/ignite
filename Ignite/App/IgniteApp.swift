@@ -15,6 +15,17 @@ struct IgniteApp: App {
         WindowGroup {
             ContentView()
         }
+        .commands {
+            IgniteCommands()
+        }
+        
+        Window("About Ignite", id: "about") {
+            AboutView(viewModel: AboutViewModel())
+                .windowMinimizeBehavior(.disabled)
+                .windowResizeBehavior(.disabled)
+        }
+        .windowResizability(.contentSize)
+        .restorationBehavior(.disabled)
     }
-
+    
 }
