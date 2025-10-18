@@ -7,5 +7,8 @@
 import Foundation
 
 public enum DebugKitError: Error {
-    
+
+    case permissionDenied
+    case unknown
+
 }

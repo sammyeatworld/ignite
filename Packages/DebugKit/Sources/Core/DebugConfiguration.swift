@@ -8,4 +8,10 @@ import Foundation
 
 public struct DebugConfiguration {
     
+    // MARK: - Initializer
+    
+    public init() {
+        
+    }
+    
 }
