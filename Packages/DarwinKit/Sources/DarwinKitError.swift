@@ -8,6 +8,8 @@ import Foundation
 
 public enum DarwinKitError: Int32, Error {
     
+    // MARK: - Kernel Return
+    
     /// KERN_INVALID_ADDRESS
     case invalidAddress = 1
     /// KERN_PROTECTION_FAILURE
@@ -126,120 +128,120 @@ public enum DarwinKitError: Int32, Error {
 }
 
 extension DarwinKitError: CustomStringConvertible {
-
+    
     public var description: String {
         switch self {
-        case .invalidAddress: 
+        case .invalidAddress:
             return "Specified address is not currently valid."
-        case .protectionFailure: 
+        case .protectionFailure:
             return "Specified memory is valid but access is not permitted."
-        case .noSpace: 
+        case .noSpace:
             return "Address range is already in use or unavailable."
         case .invalidArgument:
             return "Invalid or inappropriate argument."
-        case .failure: 
+        case .failure:
             return "Generic failure occurred."
-        case .resourceShortage: 
+        case .resourceShortage:
             return "Insufficient system resources."
-        case .notReceiver: 
+        case .notReceiver:
             return "Task does not hold receive rights for the port."
-        case .noAccess: 
+        case .noAccess:
             return "Access restriction violation."
-        case .memoryFailure: 
+        case .memoryFailure:
             return "Memory object has been destroyed."
-        case .memoryError: 
+        case .memoryError:
             return "Memory object could not return data."
-        case .alreadyInSet: 
+        case .alreadyInSet:
             return "Receive right is already in the port set."
-        case .notInSet: 
+        case .notInSet:
             return "Receive right is not a member of a port set."
         case .nameExists:
             return "Name already denotes a right in the task."
-        case .aborted: 
+        case .aborted:
             return "Operation aborted."
-        case .invalidName: 
+        case .invalidName:
             return "Name doesn't denote a valid right."
-        case .invalidTask: 
+        case .invalidTask:
             return "Target task isn't active."
-        case .invalidRight: 
+        case .invalidRight:
             return "Invalid or inappropriate right."
-        case .invalidValue: 
+        case .invalidValue:
             return "Value out of valid range."
-        case .urefsOverflow: 
+        case .urefsOverflow:
             return "User reference count overflow."
-        case .invalidCapability: 
+        case .invalidCapability:
             return "Improper (port) capability."
-        case .rightExists: 
+        case .rightExists:
             return "Task already has send/receive rights for this port."
-        case .invalidHost: 
+        case .invalidHost:
             return "Target host isn't valid."
-        case .memoryPresent: 
+        case .memoryPresent:
             return "Memory already present in object."
-        case .memoryDataMoved: 
+        case .memoryDataMoved:
             return "Page data moved during copy operation."
-        case .memoryRestartCopy: 
+        case .memoryRestartCopy:
             return "Retry copy operation using a quicker method."
-        case .invalidProcessorSet: 
+        case .invalidProcessorSet:
             return "Not a valid processor set control port."
-        case .policyLimit: 
+        case .policyLimit:
             return "Scheduling attributes exceed thread limits."
-        case .invalidPolicy: 
+        case .invalidPolicy:
             return "Specified scheduling policy not enabled."
-        case .invalidObject: 
+        case .invalidObject:
             return "External memory manager failed to initialize."
-        case .alreadyWaiting: 
+        case .alreadyWaiting:
             return "Thread already waiting on the event."
-        case .defaultSet: 
+        case .defaultSet:
             return "Attempted to destroy default processor set."
-        case .exceptionProtected: 
+        case .exceptionProtected:
             return "Exception port is protected."
-        case .invalidLedger: 
+        case .invalidLedger:
             return "A ledger was required but not supplied."
-        case .invalidMemoryControl: 
+        case .invalidMemoryControl:
             return "Port is not a valid memory cache control port."
-        case .invalidSecurity: 
+        case .invalidSecurity:
             return "Argument is not a host security port."
-        case .notDepressed: 
+        case .notDepressed:
             return "Thread is not currently depressed."
-        case .terminated: 
+        case .terminated:
             return "Object terminated and unavailable."
-        case .lockSetDestroyed: 
+        case .lockSetDestroyed:
             return "Lock set destroyed and unavailable."
-        case .lockUnstable: 
+        case .lockUnstable:
             return "Thread holding lock terminated."
-        case .lockOwned: 
+        case .lockOwned:
             return "Lock already owned by another thread."
-        case .lockOwnedSelf: 
+        case .lockOwnedSelf:
             return "Lock already owned by calling thread."
-        case .semaphoreDestroyed: 
+        case .semaphoreDestroyed:
             return "Semaphore destroyed and unavailable."
-        case .rpcServerTerminated: 
+        case .rpcServerTerminated:
             return "Target RPC server terminated before reply."
         case .rpcTerminateOrphan:
             return "Terminated orphaned activation."
-        case .rpcContinueOrphan: 
+        case .rpcContinueOrphan:
             return "Continued orphaned activation."
-        case .notSupported: 
+        case .notSupported:
             return "Operation not supported."
-        case .nodeDown: 
+        case .nodeDown:
             return "Remote node down or inaccessible."
-        case .notWaiting: 
+        case .notWaiting:
             return "Thread was not actually waiting."
         case .operationTimedOut:
             return "Operation timed out."
-        case .codesignError: 
+        case .codesignError:
             return "Page rejected due to signature check."
-        case .policyStatic: 
+        case .policyStatic:
             return "Requested property cannot be changed now."
-        case .insufficientBufferSize: 
+        case .insufficientBufferSize:
             return "Provided buffer is too small."
-        case .denied: 
+        case .denied:
             return "Denied by security policy."
         case .missingKC:
             return "Missing kernel collection (KC)."
         case .invalidKC:
             return "Invalid kernel collection (KC)."
-        case .notFound: 
+        case .notFound:
             return "Search or query did not return a result."
         default:
             return "Unknown error has occured."

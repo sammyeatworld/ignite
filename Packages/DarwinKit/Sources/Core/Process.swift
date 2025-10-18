@@ -4,30 +4,22 @@
 // SPDX-License-Identifier: GPL-3.0
 //
 
-import Darwin
+import Foundation
 
-public func listProcesses(for type: ProcessListType) {
-    // Ask kernel how much space do we need in bytes
-    let pidsBufferSize = proc_listpids(type.rawValue, 0, nil, 0)
-    guard pidsBufferSize > 0 else { return }
-    
-    // Allocate enough pid_t elements
-    let count = numericCast(pidsBufferSize) / MemoryLayout<pid_t>.size
-    let buffer = UnsafeMutablePointer<pid_t>.allocate(capacity: count)
-    defer { unsafe buffer.deallocate() }
-    
-    // Fill buffer
-    let actualBytes = unsafe proc_listpids(type.rawValue, 0, buffer, pidsBufferSize)
-    guard actualBytes > 0 else { return }
-    
-    let actualCount = numericCast(actualBytes) / MemoryLayout<pid_t>.size
-    let pids = unsafe Array(unsafe UnsafeBufferPointer(start: buffer, count: actualCount))
-    
-    for pid in pids where pid != 0 {
-        var bsdBuffer = proc_bsdinfo()
-        let bsdBufferSize = MemoryLayout.size(ofValue: bsdBuffer)
-        let result = unsafe proc_pidinfo(pid, PROC_PIDTBSDINFO, 0, &bsdBuffer, numericCast(bsdBufferSize))
-        
-        print(bsdBuffer.pbi_pid)
+/// Obtains the Mach task port for a process.
+///
+/// Wraps task_for_pid to return a TaskHandle (Mach port name) for the given PID.
+/// Requires appropriate privileges (e.g., root or permitted entitlement); sandbox
+/// or policy may deny access.
+/// 
+/// - Parameter pid: Target process ID.
+/// - Returns: The task port name for the process.
+/// - Throws: `DarwinKitError` if the kernel call fails.
+public func taskHandle(for pid: PID) throws(DarwinKitError) -> TaskHandle {
+    var handle = TaskHandle()
+    let result = unsafe task_for_pid(mach_task_self_, pid, &handle)
+    guard result == KERN_SUCCESS else {
+        throw DarwinKitError(rawValue: result) ?? .unknown
     }
+    return handle
 }
