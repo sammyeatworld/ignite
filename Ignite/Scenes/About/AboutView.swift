@@ -24,7 +24,7 @@ struct AboutView: View {
     var body: some View {
         VStack(alignment: .trailing) {
             HStack(alignment: .center, spacing: 32.0) {
-                Image(.Hexley.clear)
+                Image(.Hexley.white)
                 VStack(alignment: .leading) {
                     Text("Ignite")
                         .font(.largeTitle)

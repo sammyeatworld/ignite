@@ -13,11 +13,13 @@ struct IgniteApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IgniteView()
+                .windowResizeBehavior(.disabled)
         }
         .commands {
             IgniteCommands()
         }
+        .windowResizability(.contentSize)
         
         Window("About Ignite", id: "about") {
             AboutView(viewModel: AboutViewModel())
