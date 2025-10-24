@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: GPL-3.0
 //
 
+import Foundation
 import Defaults
 
 enum UpdateBranch: String, CaseIterable, Storable {
@@ -11,12 +12,12 @@ enum UpdateBranch: String, CaseIterable, Storable {
     case main
     case develop
     
-    var title: String {
+    var title: LocalizedStringResource {
         switch self {
         case .main:
-            "Main"
+            .main
         case .develop:
-            "Develop"
+            .develop
         }
     }
     

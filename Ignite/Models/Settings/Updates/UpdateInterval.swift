@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: GPL-3.0
 //
 
+import Foundation
 import Defaults
 
 enum UpdateInterval: String, CaseIterable, Storable {
@@ -12,14 +13,14 @@ enum UpdateInterval: String, CaseIterable, Storable {
     case daily
     case weekly
 
-    var title: String {
+    var title: LocalizedStringResource {
         switch self {
         case .hourly:
-            "Hourly"
+            .hourly
         case .daily:
-            "Daily"
+            .daily
         case .weekly:
-            "Weekly"
+            .weekly
         }
     }
 
