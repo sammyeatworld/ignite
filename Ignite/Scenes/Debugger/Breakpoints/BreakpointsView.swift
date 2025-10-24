@@ -6,31 +6,29 @@
 
 import SwiftUI
 
-struct MachOView: View {
+struct BreakpointsView: View {
     
     // MARK: - Properties
     
     @State
-    private var viewModel: MachOViewModelProtocol
+    private var viewModel: BreakpointsViewModelProtocol
     
     // MARK: - Initializer
     
-    init(viewModel: some MachOViewModelProtocol) {
+    init(viewModel: some BreakpointsViewModelProtocol) {
         self.viewModel = viewModel
     }
-    
+
     // MARK: - View
 
     var body: some View {
-        VStack{
-            Text("MachO")
-        }
+        Text(.breakpoints)
     }
-    
+
 }
 
 // MARK: - Preview
 
 #Preview {
-    MachOView(viewModel: MachOViewModel())
+    BreakpointsView(viewModel: BreakpointsViewModel())
 }

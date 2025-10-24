@@ -6,29 +6,31 @@
 
 import SwiftUI
 
-struct LogView: View {
-
+struct MachOView: View {
+    
     // MARK: - Properties
-
+    
     @State
-    private var viewModel: LogViewModelProtocol
+    private var viewModel: MachOViewModelProtocol
     
     // MARK: - Initializer
-
-    init(viewModel: some LogViewModelProtocol) {
+    
+    init(viewModel: some MachOViewModelProtocol) {
         self.viewModel = viewModel
     }
-
+    
     // MARK: - View
 
     var body: some View {
-        Text("Log")
+        VStack{
+            Text(.machO)
+        }
     }
-
+    
 }
 
 // MARK: - Preview
 
 #Preview {
-    LogView(viewModel: LogViewModel())
+    MachOView(viewModel: MachOViewModel())
 }

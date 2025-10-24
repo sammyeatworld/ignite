@@ -6,23 +6,23 @@
 
 import SwiftUI
 
-struct MemoryMapView: View {
-    
+struct LogView: View {
+
     // MARK: - Properties
-    
+
     @State
-    private var viewModel: MemoryMapViewModelProtocol
+    private var viewModel: LogViewModelProtocol
     
     // MARK: - Initializer
-    
-    init(viewModel: some MemoryMapViewModelProtocol) {
+
+    init(viewModel: some LogViewModelProtocol) {
         self.viewModel = viewModel
     }
 
     // MARK: - View
 
     var body: some View {
-        Text("Memory Map")
+        Text(.log)
     }
 
 }
@@ -30,5 +30,5 @@ struct MemoryMapView: View {
 // MARK: - Preview
 
 #Preview {
-    MemoryMapView(viewModel: MemoryMapViewModel())
+    LogView(viewModel: LogViewModel())
 }

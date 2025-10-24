@@ -22,7 +22,7 @@ struct NotesView: View {
     // MARK: - View
 
     var body: some View {
-        Text("Notes")
+        Text(.notes)
     }
 
 }

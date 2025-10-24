@@ -6,23 +6,23 @@
 
 import SwiftUI
 
-struct GraphView: View {
-
+struct MemoryMapView: View {
+    
     // MARK: - Properties
-
+    
     @State
-    private var viewModel: GraphViewModelProtocol
-
+    private var viewModel: MemoryMapViewModelProtocol
+    
     // MARK: - Initializer
-
-    init(viewModel: some GraphViewModelProtocol) {
+    
+    init(viewModel: some MemoryMapViewModelProtocol) {
         self.viewModel = viewModel
     }
 
     // MARK: - View
 
     var body: some View {
-        Text("Graph")
+        Text(.memoryMap)
     }
 
 }
@@ -30,5 +30,5 @@ struct GraphView: View {
 // MARK: - Preview
 
 #Preview {
-    GraphView(viewModel: GraphViewModel())
+    MemoryMapView(viewModel: MemoryMapViewModel())
 }

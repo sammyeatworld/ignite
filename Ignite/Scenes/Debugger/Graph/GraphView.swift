@@ -6,23 +6,23 @@
 
 import SwiftUI
 
-struct CallStackView: View {
-    
+struct GraphView: View {
+
     // MARK: - Properties
-    
+
     @State
-    private var viewModel: CallStackViewModelProtocol
-    
+    private var viewModel: GraphViewModelProtocol
+
     // MARK: - Initializer
-    
-    init(viewModel: some CallStackViewModelProtocol) {
+
+    init(viewModel: some GraphViewModelProtocol) {
         self.viewModel = viewModel
     }
 
     // MARK: - View
 
     var body: some View {
-        Text("Call Stack")
+        Text(.graph)
     }
 
 }
@@ -30,5 +30,5 @@ struct CallStackView: View {
 // MARK: - Preview
 
 #Preview {
-    CallStackView(viewModel: CallStackViewModel())
+    GraphView(viewModel: GraphViewModel())
 }

@@ -24,7 +24,7 @@ struct DebuggerView: View {
     var body: some View {
         VStack {
             TabView {
-                ForEach(DebuggerFeatures.allCases) { feature in
+                ForEach(DebuggerTabs.allCases) { feature in
                     Tab(feature.title, systemImage: feature.image) {
                         feature.body
                     }

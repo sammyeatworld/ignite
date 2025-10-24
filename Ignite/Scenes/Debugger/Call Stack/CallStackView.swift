@@ -6,23 +6,23 @@
 
 import SwiftUI
 
-struct BreakpointsView: View {
+struct CallStackView: View {
     
     // MARK: - Properties
     
     @State
-    private var viewModel: BreakpointsViewModelProtocol
+    private var viewModel: CallStackViewModelProtocol
     
     // MARK: - Initializer
     
-    init(viewModel: some BreakpointsViewModelProtocol) {
+    init(viewModel: some CallStackViewModelProtocol) {
         self.viewModel = viewModel
     }
 
     // MARK: - View
 
     var body: some View {
-        Text("Breakpoints")
+        Text(.callStack)
     }
 
 }
@@ -30,5 +30,5 @@ struct BreakpointsView: View {
 // MARK: - Preview
 
 #Preview {
-    BreakpointsView(viewModel: BreakpointsViewModel())
+    CallStackView(viewModel: CallStackViewModel())
 }
