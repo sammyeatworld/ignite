@@ -16,7 +16,7 @@ struct SettingsLocationsView: View {
         Form {
             
         }
-        .navigationTitle("Locations")
+        .navigationTitle(.locations)
     }
 
 }

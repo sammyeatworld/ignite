@@ -16,7 +16,7 @@ struct SettingsShortcutsView: View {
         Form {
             
         }
-        .navigationTitle("Shortcuts")
+        .navigationTitle(.shortcuts)
     }
 
 }

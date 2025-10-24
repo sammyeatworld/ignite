@@ -16,7 +16,7 @@ struct SettingsExperimentalView: View {
         Form {
             
         }
-        .navigationTitle("Experimental")
+        .navigationTitle(.experimental)
     }
 
 }

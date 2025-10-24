@@ -16,7 +16,7 @@ struct SettingsPluginsView: View {
         Form {
             
         }
-        .navigationTitle("Plugins")
+        .navigationTitle(.plugins)
     }
 
 }

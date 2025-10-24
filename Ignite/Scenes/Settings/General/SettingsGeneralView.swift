@@ -18,7 +18,7 @@ struct SettingsGeneralView: View {
                 }
             }
         }
-        .navigationTitle("General")
+        .navigationTitle(.general)
         .tabViewStyle(.grouped)
         .padding()
     }

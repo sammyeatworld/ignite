@@ -16,7 +16,7 @@ struct SettingsAppearanceView: View {
         Form {
             
         }
-        .navigationTitle("Appearance")
+        .navigationTitle(.appearance)
     }
 
 }

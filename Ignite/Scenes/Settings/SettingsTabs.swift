@@ -18,45 +18,45 @@ enum SettingsTabs: CaseIterable {
     case experimental
     case developer
     
-    var title: String {
+    var title: LocalizedStringResource {
         switch self {
         case .general:
-            "General"
+            return .general
         case .appearance:
-            "Appearance"
+            return .appearance
         case .shortcuts:
-            "Shortcuts"
+            return .shortcuts
         case .plugins:
-            "Plugins"
+            return .plugins
         case .locations:
-            "Locations"
+            return .locations
         case .updates:
-            "Updates"
+            return .updates
         case .experimental:
-            "Experimental"
+            return .experimental
         case .developer:
-            "Developer"
+            return .developer
         }
     }
     
     var image: String {
         switch self {
         case .general:
-            return "gearshape"
+            return SF.general.rawValue
         case .appearance:
-            return "paintbrush"
+            return SF.appearance.rawValue
         case .shortcuts:
-            return "keyboard"
+            return SF.shortcuts.rawValue
         case .plugins:
-            return "square.stack.3d.up"
+            return SF.plugins.rawValue
         case .locations:
-            return "folder"
+            return SF.locations.rawValue
         case .updates:
-            return "arrow.clockwise"
+            return SF.updates.rawValue
         case .experimental:
-            return "flask"
+            return SF.experimental.rawValue
         case .developer:
-            return "hammer"
+            return SF.developer.rawValue
         }
     }
     
@@ -86,8 +86,8 @@ enum SettingsTabs: CaseIterable {
 
 extension SettingsTabs: Identifiable {
     
-    var id: String {
-        title
+    var id: Self {
+        self
     }
     
 }
