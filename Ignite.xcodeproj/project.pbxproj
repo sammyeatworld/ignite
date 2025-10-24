@@ -134,9 +134,6 @@
 		A58CF0FC2E8F248500106697 /* Exceptions for "Ignite" folder in "Ignite" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Extensions/.gitkeep,
-				Models/.gitkeep,
-				Protocols/.gitkeep,
 				Scenes/Debugger/Features/Breakpoints/Components/.gitkeep,
 				"Scenes/Debugger/Features/Call Stack/Components/.gitkeep",
 				Scenes/Debugger/Features/Disassembly/Components/.gitkeep,

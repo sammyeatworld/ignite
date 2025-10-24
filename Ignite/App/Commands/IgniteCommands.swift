@@ -17,6 +17,14 @@ struct IgniteCommands: Commands {
             } label: {
                Label("About Ignite", systemImage: "info.circle")
             }
+            
+        }
+        CommandGroup(replacing: .appSettings) {
+            Button {
+                openWindow(id: "settings")
+            } label: {
+               Label("Settings", systemImage: "gear")
+            }
         }
     }
 

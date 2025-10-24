@@ -5,6 +5,7 @@
 //
 
 import SwiftUI
+import Defaults
 
 struct IgniteView: View {
     
@@ -14,8 +15,8 @@ struct IgniteView: View {
     private var isShowingProcesses = false
     @State
     private var isProcessOpened = false
-    @State
-    private var checkForUpdates = true
+    @Default(.Updates.automaticallyCheckForUpdates)
+    var automaticallyCheckForUpdates: Bool
     
     // MARK: - Constants
 
@@ -38,28 +39,31 @@ struct IgniteView: View {
     var body: some View {
         VStack(spacing: 24.0) {
             Image(.Hexley.clear)
-            VStack(alignment: .center, spacing: 16.0) {
+            VStack(alignment: .center, spacing: 8.0) {
                 Button {
                     isShowingProcesses.toggle()
                 } label: {
                     Text("Open Process")
+                        .padding(.vertical, 2)
                         .frame(width: C.buttonWidth)
                 }
+                .buttonStyle(.borderedProminent)
                 Button {
                 } label: {
-                    Text("Load App")
+                    Text("Open Executable")
+                        .padding(.vertical, 2)
                         .frame(width: C.buttonWidth)
                 }
                 Button {
                 } label: {
                     Text("Settings")
+                        .padding(.vertical, 2)
                         .frame(width: C.buttonWidth)
                 }
             }
-            .controlSize(.large)
             Toggle(
-                "Check for Updates",
-                isOn: $checkForUpdates
+                .automaticallyCheckForUpdates,
+                isOn: $automaticallyCheckForUpdates
             )
         }
         .padding()

@@ -18,11 +18,22 @@ struct IgniteApp: App {
         }
         .commands {
             IgniteCommands()
+            JumpCommands()
+            SearchCommands()
+            DebugCommands()
         }
         .windowResizability(.contentSize)
         
         Window("About Ignite", id: "about") {
             AboutView(viewModel: AboutViewModel())
+                .windowMinimizeBehavior(.disabled)
+                .windowResizeBehavior(.disabled)
+        }
+        .windowResizability(.contentSize)
+        .restorationBehavior(.disabled)
+        
+        Window("Settings", id: "settings") {
+           SettingsView()
                 .windowMinimizeBehavior(.disabled)
                 .windowResizeBehavior(.disabled)
         }
