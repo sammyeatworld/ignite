@@ -15,7 +15,7 @@ struct IgniteCommands: Commands {
             Button {
                 openWindow(id: "about")
             } label: {
-               Label("About Ignite", systemImage: "info.circle")
+                Label(.aboutIgnite, systemImage: SF.about.rawValue)
             }
             
         }
@@ -23,7 +23,7 @@ struct IgniteCommands: Commands {
             Button {
                 openWindow(id: "settings")
             } label: {
-               Label("Settings", systemImage: "gear")
+                Label(.settings, systemImage: SF.settings.rawValue)
             }
         }
     }

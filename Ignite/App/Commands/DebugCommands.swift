@@ -11,44 +11,44 @@ struct DebugCommands: Commands {
     @Environment(\.openWindow) private var openWindow
 
     var body: some Commands {
-        CommandMenu("Debug") {
-            Button("Pause", systemImage: "pause.fill") {
+        CommandMenu(.debug) {
+            Button(.pauseExecution, systemImage: SF.pauseExecution.rawValue) {
             }
-            Button("Run to Cursor", systemImage: "arrow.down.to.line") {
+            Button(.runToCursor, systemImage: SF.runToCursor.rawValue) {
             }
-            Button("Run until Return", systemImage: "") {
+            Button(.runUntilReturn, systemImage: SF.runUntilReturn.rawValue) {
             }
-            Button("Step Over", systemImage: "") {
+            Button(.stepInto, systemImage: SF.stepInto.rawValue) {
             }
-            Button("Step Into", systemImage: "") {
+            Button(.stepOver, systemImage: SF.stepOver.rawValue) {
             }
-            Button("Step Out", systemImage: "") {
+            Button(.stepOut, systemImage: SF.stepOut.rawValue) {
             }
-            Button("Step Over Instruction", systemImage: "") {
+            Button(.stepIntoInstruction, systemImage: SF.stepIntoInstruction.rawValue) {
             }
-            Button("Step Over Thread", systemImage: "") {
+            Button(.stepOverInstruction, systemImage: SF.stepOverInstruction.rawValue) {
             }
-            Button("Step Into Instruction", systemImage: "") {
+            Button(.stepIntoThread, systemImage: SF.stepIntoThread.rawValue) {
             }
-            Button("Step Into Thread", systemImage: "") {
-            }
-            Divider()
-            Button("Deactivate Breakpoints", systemImage: "") {
-            }
-            Menu("Breakpoints") {
+            Button(.stepOverThread, systemImage: SF.stepOverThread.rawValue) {
             }
             Divider()
-            Button("Attach to Process by PID or Name...", systemImage: "") {
+            Button(.deactivateBreakpoints) {
             }
-            Menu("Attach to Process", systemImage: "") {
+            Menu(.breakpoints) {
+            }
+            Divider()
+            Button(.attachToProcessByPidOrName, systemImage: SF.attachToProcessByPidOrName.rawValue) {
+            }
+            Menu(.attachToProcess) {
                 
             }
-            Button("Detach from", systemImage: "") {
+            Button(.detachFrom) {
             }
-            Button("Debug Executable...", systemImage: "") {
+            Button(.debugExecutable) {
             }
             Divider()
-            Button("Debugger Options...", systemImage: "") {
+            Button(.debugOptions) {
             }
         }
     }

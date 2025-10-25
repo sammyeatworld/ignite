@@ -56,7 +56,7 @@ struct IgniteView: View {
                 }
                 Button {
                 } label: {
-                    Text("Settings")
+                    Text(.settings)
                         .padding(.vertical, 2)
                         .frame(width: C.buttonWidth)
                 }

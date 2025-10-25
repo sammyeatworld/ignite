@@ -11,11 +11,11 @@ struct AboutView: View {
     // MARK: - Properties
     
     @State
-    private var viewModel: AboutViewModelProtocol
+    private var viewModel: AboutViewModel
     
     // MARK: - Initializer
     
-    init(viewModel: some AboutViewModelProtocol) {
+    init(viewModel: AboutViewModel) {
         self.viewModel = viewModel
     }
     
@@ -26,22 +26,25 @@ struct AboutView: View {
             HStack(alignment: .center, spacing: 32.0) {
                 Image(.Hexley.white)
                 VStack(alignment: .leading) {
-                    Text("Ignite")
+                    Text(.ignite)
                         .font(.largeTitle)
                         .padding(.bottom, 4.0)
                     Text("Version " + "1.0")
                         .font(.callout)
                         .foregroundStyle(.secondary)
                         .padding(.bottom, 32.0)
-                    Text("Copyright © 2025 Samuel Majtan. All rights reserved.")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .lineSpacing(4.0)
+                    Text("""
+                        Copyright © 2025 Samuel Majtan. All rights reserved. 
+                        Licensed under the GNU GPLv3 license.
+                        """)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .lineSpacing(4.0)
                 }
             }
             .padding(.bottom, 16.0)
             HStack {
-                Button("Acknowledgements") { }
+                Button(.acknowledgements) { }
             }
         }
         .padding()

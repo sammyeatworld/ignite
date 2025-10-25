@@ -11,34 +11,34 @@ struct JumpCommands: Commands {
     @Environment(\.openWindow) private var openWindow
 
     var body: some Commands {
-        CommandMenu("Jump") {
-            Button("Jump to Previous Position", systemImage: "arrowshape.left.fill") {
+        CommandMenu(.jump) {
+            Button(.jumpToPreviousPosition, systemImage: SF.jumpToPreviousPosition.rawValue) {
             }
-            Button("Jump to Next Position", systemImage: "arrowshape.right.fill") {
+            Button(.jumpToNextPosition, systemImage: SF.jumpToNextPosition.rawValue) {
             }
-            Button("Empty Navigation Stack", systemImage: "trash.fill") {
-            }
-            Divider()
-            Button("Jump to Address...") {
-            }
-            Button("Jump by Name...") {
-            }
-            Button("Jump to Function...") {
-            }
-            Button("Jump to Segment...") {
-            }
-            Button("Jump to Segment Register...") {
-            }
-            Button("Jump to Problem...") {
-            }
-            Button("Jump to Entry Point...") {
-            }
-            Button("Jump to File Offset...") {
+            Button(.emptyNavigationStack, systemImage: SF.emptyNavigationStack.rawValue) {
             }
             Divider()
-            Button("List Cross References to...", systemImage: "arrow.down.to.line") {
+            Button(.jumpToAddress) {
             }
-            Button("List Cross References from...", systemImage: "arrow.up.to.line") {
+            Button(.jumpByName) {
+            }
+            Button(.jumpToFunction) {
+            }
+            Button(.jumpToSegment) {
+            }
+            Button(.jumpToSegmentRegister) {
+            }
+            Button(.jumpToProblem) {
+            }
+            Button(.jumpToEntryPoint) {
+            }
+            Button(.jumpToFileOffset) {
+            }
+            Divider()
+            Button(.listCrossReferencesTo, systemImage: SF.listCrossReferencesTo.rawValue) {
+            }
+            Button(.listCrossReferencesFrom, systemImage: SF.listCrossReferencesFrom.rawValue) {
             }
         }
     }

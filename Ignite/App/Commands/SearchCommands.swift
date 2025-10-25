@@ -11,26 +11,26 @@ struct SearchCommands: Commands {
     @Environment(\.openWindow) private var openWindow
 
     var body: some Commands {
-        CommandMenu("Search") {
-            Button("Next Code") {
+        CommandMenu(.search) {
+            Button(.nextCode, systemImage: SF.nextCode.rawValue) {
             }
-            Button("Next Data") {
-            }
-            Divider()
-            Button("Immediate Value...") {
-            }
-            Button("Next Immediate Value") {
-            }
-            Button("Text...") {
-            }
-            Button("Next Text") {
-            }
-            Button("Sequence of Bytes...") {
-            }
-            Button("Next Sequence of Bytes") {
+            Button(.nextData, systemImage: SF.nextData.rawValue) {
             }
             Divider()
-            Button("Search Direction") {
+            Button(.immediateValue) {
+            }
+            Button(.nextImmediateValue) {
+            }
+            Button(.text) {
+            }
+            Button(.nextText) {
+            }
+            Button(.sequenceOfBytes) {
+            }
+            Button(.nextSequenceOfBytes) {
+            }
+            Divider()
+            Button(.searchDirection) {
             }
         }
     }
