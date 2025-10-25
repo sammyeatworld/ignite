@@ -5,14 +5,17 @@
 //
 
 import SwiftUI
+import Defaults
 
 struct SettingsView: View {
-    
+
+    // MARK: - Properties
+
     // MARK: - View
 
     var body: some View {
         TabView {
-            ForEach(SettingsTabs.allCases) { tab in
+            ForEach(SettingsTab.allCases) { tab in
                 Tab(tab.title, systemImage: tab.image) {
                     tab.view
                 }

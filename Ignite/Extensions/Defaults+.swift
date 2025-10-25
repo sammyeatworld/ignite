@@ -17,7 +17,11 @@ extension Defaults.Keys {
 
 extension Defaults.Keys {
     
+    static let selectedSettingsTab = Key<SettingsTab>("selectedSettingsTab", default: .general)
+    
     enum General {
+        
+        static let selectedGeneralTab = Key<SettingsGeneralTab>("selectedGeneralTab", default: .disassembly)
         
         enum Disassembly {
             

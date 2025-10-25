@@ -43,14 +43,14 @@ struct IgniteView: View {
                 Button {
                     isShowingProcesses.toggle()
                 } label: {
-                    Text("Open Process")
+                    Text(.openProcess)
                         .padding(.vertical, 2)
                         .frame(width: C.buttonWidth)
                 }
                 .buttonStyle(.borderedProminent)
                 Button {
                 } label: {
-                    Text("Open Executable")
+                    Text(.openExecutable)
                         .padding(.vertical, 2)
                         .frame(width: C.buttonWidth)
                 }

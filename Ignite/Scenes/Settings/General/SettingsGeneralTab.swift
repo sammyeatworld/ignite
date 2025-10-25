@@ -6,8 +6,9 @@
 
 import Foundation
 import SwiftUI
+import Defaults
 
-enum SettingsGeneralTabs: CaseIterable {
+enum SettingsGeneralTab: String, CaseIterable, Storable {
     
     case disassembly
     case analysis
@@ -53,7 +54,7 @@ enum SettingsGeneralTabs: CaseIterable {
     
 }
 
-extension SettingsGeneralTabs: Identifiable {
+extension SettingsGeneralTab: Identifiable {
     
     var id: String {
         title

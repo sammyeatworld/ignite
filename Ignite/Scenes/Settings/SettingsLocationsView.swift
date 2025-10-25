@@ -14,7 +14,9 @@ struct SettingsLocationsView: View {
 
     var body: some View {
         Form {
-            
+            Section {
+                
+            }
         }
         .navigationTitle(.locations)
     }

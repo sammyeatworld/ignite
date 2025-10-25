@@ -6,8 +6,9 @@
 
 import Foundation
 import SwiftUI
+import Defaults
 
-enum SettingsTabs: CaseIterable {
+enum SettingsTab: String, CaseIterable, Storable {
 
     case general
     case appearance
@@ -84,7 +85,7 @@ enum SettingsTabs: CaseIterable {
     
 }
 
-extension SettingsTabs: Identifiable {
+extension SettingsTab: Identifiable {
     
     var id: Self {
         self

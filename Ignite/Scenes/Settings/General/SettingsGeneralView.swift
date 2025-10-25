@@ -5,12 +5,15 @@
 //
 
 import SwiftUI
+import Defaults
 
 struct SettingsGeneralView: View {
 
+    // MARK: - View
+
     var body: some View {
         TabView {
-            ForEach(SettingsGeneralTabs.allCases) { tab in
+            ForEach(SettingsGeneralTab.allCases) { tab in
                 Tab {
                     tab.view
                 } label: {
@@ -24,6 +27,8 @@ struct SettingsGeneralView: View {
     }
     
 }
+
+// MARK: - Preview
 
 #Preview {
     SettingsGeneralView()
