@@ -7,8 +7,8 @@
 import Foundation
 import Defaults
 
-enum UpdateBranch: String, CaseIterable, Storable {
-    
+enum UpdateBranch: String, CaseIterable, Displayable, Storable {
+
     case main
     case develop
     
@@ -24,9 +24,9 @@ enum UpdateBranch: String, CaseIterable, Storable {
 }
 
 extension UpdateBranch: Identifiable {
-    
+
     var id: Self {
         self
     }
-    
+
 }

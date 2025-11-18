@@ -9,7 +9,7 @@ import SwiftUI
 struct DebugCommands: Commands {
     
     @Environment(\.openWindow) private var openWindow
-
+    
     var body: some Commands {
         CommandMenu(.debug) {
             Button(.pauseExecution, systemImage: SF.pauseExecution.rawValue) {

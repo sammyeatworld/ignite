@@ -1,13 +1,13 @@
 {
-  "originHash" : "66d42ad3ce1e0ceac53c1132d96cd66be3642d91bdf446077d75c45d842fca76",
+  "originHash" : "956529fcb93367299930fd87e723374a662069c816a8d8bf3703ff3ea3b81a61",
   "pins" : [
     {
       "identity" : "defaults",
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:sindresorhus/Defaults.git",
       "state" : {
-        "revision" : "9a1675508a69eea31ec12f7902c004a6449e6dd1",
-        "version" : "9.0.5"
+        "revision" : "8192b0986611e105355a9433e99bf5c79469fbbd",
+        "version" : "9.0.6"
       }
     },
     {
@@ -25,7 +25,7 @@
       "location" : "git@github.com:sammyeatworld/MachOKit.git",
       "state" : {
         "branch" : "main",
-        "revision" : "2352129e7a3c05c0a3543478226090800fca9d7c"
+        "revision" : "fb225e3abb6241036199e5cb23e1db11109c864e"
       }
     },
     {

@@ -7,7 +7,7 @@
 import Foundation
 import Defaults
 
-enum UpdateInterval: String, CaseIterable, Storable {
+enum UpdateInterval: String, CaseIterable, Displayable, Storable {
 
     case hourly
     case daily
