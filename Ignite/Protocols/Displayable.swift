@@ -8,14 +8,14 @@ import Foundation
 
 protocol Displayable {
     
-    var title: LocalizedStringResource { get }
+    var title: String { get }
     
 }
 
 extension Displayable where Self: CustomStringConvertible {
 
     var description: String {
-        title.key
+        title
     }
 
 }

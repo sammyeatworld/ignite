@@ -12,12 +12,12 @@ enum UpdateBranch: String, CaseIterable, Displayable, Storable {
     case main
     case develop
     
-    var title: LocalizedStringResource {
+    var title: String {
         switch self {
         case .main:
-            .main
+            LocalizedStringResource.main.key
         case .develop:
-            .develop
+            LocalizedStringResource.develop.key
         }
     }
     

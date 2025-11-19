@@ -5,16 +5,25 @@
 //
 
 import SwiftUI
+import Defaults
 
 struct SettingsPluginsView: View {
 
     // MARK: - Properties
+    
+    @Default(.Plugins.automaticallyLoadOnStartup)
+    private var automaticallyLoadOnStartup
+    @Default(.Plugins.loadPluginsOnDemand)
+    private var loadPluginsOnDemand
 
     // MARK: - View
-
+    
     var body: some View {
         Form {
-            
+            Section {
+                Toggle(.automaticallyLoadOnStartup, isOn: $automaticallyLoadOnStartup)
+                Toggle(.loadPluginsOnDemand, isOn: $loadPluginsOnDemand)
+            }
         }
         .navigationTitle(.plugins)
     }

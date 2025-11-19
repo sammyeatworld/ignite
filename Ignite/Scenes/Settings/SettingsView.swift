@@ -21,8 +21,9 @@ struct SettingsView: View {
                 }
             }
         }
-        .tabViewStyle(.sidebarAdaptable)
         .formStyle(.grouped)
+        .navigationSplitViewStyle(.prominentDetail)
+        .tabViewStyle(.sidebarAdaptable)
     }
     
 }

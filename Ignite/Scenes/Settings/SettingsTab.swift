@@ -8,7 +8,7 @@ import Foundation
 import SwiftUI
 import Defaults
 
-enum SettingsTab: String, CaseIterable, Storable {
+enum SettingsTab: String, CaseIterable, Displayable, Storable {
 
     case general
     case appearance
@@ -19,24 +19,24 @@ enum SettingsTab: String, CaseIterable, Storable {
     case experimental
     case developer
     
-    var title: LocalizedStringResource {
+    var title: String {
         switch self {
         case .general:
-            return .general
+            return LocalizedStringResource.general.key
         case .appearance:
-            return .appearance
+            return LocalizedStringResource.appearance.key
         case .shortcuts:
-            return .shortcuts
+            return LocalizedStringResource.shortcuts.key
         case .plugins:
-            return .plugins
+            return LocalizedStringResource.plugins.key
         case .locations:
-            return .locations
+            return LocalizedStringResource.locations.key
         case .updates:
-            return .updates
+            return LocalizedStringResource.updates.key
         case .experimental:
-            return .experimental
+            return LocalizedStringResource.experimental.key
         case .developer:
-            return .developer
+            return LocalizedStringResource.developer.key
         }
     }
     

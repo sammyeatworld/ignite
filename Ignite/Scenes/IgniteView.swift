@@ -13,11 +13,9 @@ struct IgniteView: View {
     
     @State
     private var isShowingProcesses = false
-    @State
-    private var isProcessOpened = false
     @Default(.Updates.automaticallyCheckForUpdates)
     var automaticallyCheckForUpdates: Bool
-    
+
     // MARK: - Constants
 
     private enum C {
@@ -27,11 +25,11 @@ struct IgniteView: View {
         static let sheetHeight = 344.0
 
     }
-    
+
     // MARK: - Initializer
-    
+
     init() {
-        
+
     }
 
     // MARK: - View

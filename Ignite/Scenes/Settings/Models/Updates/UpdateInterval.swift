@@ -13,14 +13,14 @@ enum UpdateInterval: String, CaseIterable, Displayable, Storable {
     case daily
     case weekly
 
-    var title: LocalizedStringResource {
+    var title: String {
         switch self {
         case .hourly:
-            .hourly
+            LocalizedStringResource.hourly.key
         case .daily:
-            .daily
+            LocalizedStringResource.daily.key
         case .weekly:
-            .weekly
+            LocalizedStringResource.weekly.key
         }
     }
 

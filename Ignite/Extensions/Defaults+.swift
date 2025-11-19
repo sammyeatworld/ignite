@@ -50,19 +50,26 @@ extension Defaults.Keys {
     }
     
     enum Appearance {
-        
+
     }
     
     enum Shortcuts {
-        
+
     }
     
     enum Plugins {
+
+        static let automaticallyLoadOnStartup = Key<Bool>("automaticallyLoadOnStartup", default: true)
+        static let loadPluginsOnDemand = Key<Bool>("loadPluginsOnDemand", default: true)
         
     }
     
     enum Locations {
-        
+
+        static let dumps = Key<Location>("dumpsLocation", default: .init("Dumps", path: .applicationSupportDirectory))
+        static let plugins = Key<Location>("pluginsLocation", default: .init("Plugins", path: .applicationSupportDirectory))
+        static let logs = Key<Location>("logsLocation", default: .init("Logs", path: .applicationSupportDirectory))
+
     }
     
     enum Updates {
@@ -71,7 +78,7 @@ extension Defaults.Keys {
         static let automaticallyDownloadUpdates = Key<Bool>("automaticallyDownloadUpdates", default: false)
         static let updateInterval = Key<UpdateInterval>("updateInterval", default: .daily)
         static let updateBranch = Key<UpdateBranch>("updateBranch", default: .main)
-
+        
     }
     
     enum Experimental {

@@ -142,7 +142,6 @@
 				Scenes/Debugger/MachO/Components/.gitkeep,
 				"Scenes/Debugger/Memory Map/Components/.gitkeep",
 				Scenes/Debugger/Notes/Components/.gitkeep,
-				Services/.gitkeep,
 			);
 			target = A58CE83E2E8F1C6E00106697 /* Ignite */;
 		};

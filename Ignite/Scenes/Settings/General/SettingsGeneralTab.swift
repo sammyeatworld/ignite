@@ -8,43 +8,43 @@ import Foundation
 import SwiftUI
 import Defaults
 
-enum SettingsGeneralTab: String, CaseIterable, Storable {
+enum SettingsGeneralTab: String, CaseIterable, Displayable, Storable {
     
-    case disassembly
     case analysis
-    case crossReferences
+    case darwin
     case debug
+    case disassembly
     case graph
     case miscellaneous
     
     var title: String {
         switch self {
-        case .disassembly:
-            "Disassembly"
         case .analysis:
-            "Analysis"
-        case .crossReferences:
-            "Cross References"
+            LocalizedStringResource.analysis.key
+        case .darwin:
+            LocalizedStringResource.darwin.key
         case .debug:
-            "Debug"
+            LocalizedStringResource.debug.key
+        case .disassembly:
+            LocalizedStringResource.disassembly.key
         case .graph:
-            "Graph"
+            LocalizedStringResource.graph.key
         case .miscellaneous:
-            "Miscellaneous"
+            LocalizedStringResource.miscellaneous.key
         }
     }
     
     @ViewBuilder
     var view: some View {
         switch self {
-        case .disassembly:
-            SettingsDisassemblyView()
         case .analysis:
             SettingsAnalysisView()
-        case .crossReferences:
-            SettingsCrossReferencesView()
+        case .darwin:
+            SettingsDarwinView()
         case .debug:
             SettingsDebugView()
+        case .disassembly:
+            SettingsDisassemblyView()
         case .graph:
             SettingsGraphView()
         case .miscellaneous:
@@ -56,8 +56,8 @@ enum SettingsGeneralTab: String, CaseIterable, Storable {
 
 extension SettingsGeneralTab: Identifiable {
     
-    var id: String {
-        title
+    var id: Self {
+        self
     }
     
 }
