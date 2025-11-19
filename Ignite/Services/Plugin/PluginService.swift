@@ -6,7 +6,7 @@
 
 import Foundation
 import FactoryKit
-import DebugKit
+import PluginKit
 
 // MARK: - Protocol
 
