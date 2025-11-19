@@ -135,3 +135,31 @@ public struct WarningAlertModifier: ViewModifier {
     }
 
 }
+
+public extension View {
+
+    func errorAlert(_ error: Binding<AppError?>, cancelAction: VoidClosure? = nil) -> some View {
+        modifier(ErrorAlertModifier(errorAlert: error, cancelAction: cancelAction))
+    }
+
+    func messageAlert(_ message: Binding<String?>, action: VoidClosure? = nil) -> some View {
+        modifier(MessageAlertModifier(messageAlert: message, messageAction: action))
+    }
+    
+    func warningAlert(
+        _ warning: Binding<String?>,
+        destructiveActionText: String,
+        desctructiveAction: VoidClosure? = nil,
+        cancelActionText: String,
+        cancelAction: VoidClosure? = nil
+    ) -> some View {
+        modifier(WarningAlertModifier(
+            warningAlert: warning,
+            destructiveActionText: destructiveActionText,
+            desctructiveAction: desctructiveAction,
+            cancelActionText: cancelActionText,
+            cancelAction: cancelAction)
+        )
+    }
+
+}
