@@ -61,5 +61,11 @@ enum SF: String {
     case updates = "arrow.clockwise"
     case experimental = "flask"
     case developer = "hammer"
+    
+    // MARK: - Miscellaneous
+    
+    case info = "info.circle.fill"
+    case folder = "folder.circle"
+    case finder = "finder"
 
 }

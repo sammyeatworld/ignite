@@ -24,9 +24,8 @@ struct RevealInFinderButton: View {
         Button {
             NSWorkspace.shared.activateFileViewerSelecting([location])
         } label: {
-            Image(systemName: "arrowshape.right.fill")
+            Image(systemName: SF.finder.rawValue)
                 .foregroundStyle(.blue)
-                .font(.caption)
         }
         .buttonStyle(.plain)
     }
