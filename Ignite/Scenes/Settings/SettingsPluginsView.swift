@@ -11,23 +11,22 @@ struct SettingsPluginsView: View {
 
     // MARK: - Properties
     
-    @Default(.Plugins.automaticallyLoadOnStartup)
-    private var automaticallyLoadOnStartup
-    @Default(.Plugins.loadPluginsOnDemand)
-    private var loadPluginsOnDemand
+    @Default(.Plugins.pluginLoadMethod)
+    private var pluginLoadMethod
 
     // MARK: - View
     
     var body: some View {
         Form {
-            Section {
-                Toggle(.automaticallyLoadOnStartup, isOn: $automaticallyLoadOnStartup)
-                Toggle(.loadPluginsOnDemand, isOn: $loadPluginsOnDemand)
+            Picker("Load Plugins", selection: $pluginLoadMethod) {
+                ForEach(PluginLoadMethod.allCases) { method in
+                    Text(method.title).tag(method)
+                }
             }
         }
         .navigationTitle(.plugins)
     }
-
+    
 }
 
 // MARK: - Preview

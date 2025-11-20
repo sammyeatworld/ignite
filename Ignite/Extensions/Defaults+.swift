@@ -59,9 +59,8 @@ extension Defaults.Keys {
     
     enum Plugins {
 
-        static let automaticallyLoadOnStartup = Key<Bool>("automaticallyLoadOnStartup", default: true)
-        static let loadPluginsOnDemand = Key<Bool>("loadPluginsOnDemand", default: true)
-        
+        static let pluginLoadMethod = Key<PluginLoadMethod>("pluginLoadMethod", default: .onStartup)
+
     }
     
     enum Locations {
