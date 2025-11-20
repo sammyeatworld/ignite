@@ -12,11 +12,11 @@ struct SettingsInfoButton: View {
 
     @Binding
     var showingInfo: Bool
-    private let title: String
+    private let title: String?
 
     // MARK: - Initializer
 
-    init(_ title: String, showingInfo: Binding<Bool>) {
+    init(_ title: String? = nil, showingInfo: Binding<Bool>) {
         self.title = title
         self._showingInfo = showingInfo
     }
@@ -24,14 +24,17 @@ struct SettingsInfoButton: View {
     // MARK: - View
 
     var body: some View {
-        HStack {
-            Text(title)
+        HStack(alignment: .center) {
+            if let title {
+                Text(title)
+            }
             Button {
                 showingInfo.toggle()
             } label: {
-                Image(systemName: "info.circle")
+                Image(systemName: SF.info.rawValue)
             }
         }
+        .buttonStyle(.plain)
         .foregroundStyle(.secondary)
     }
 

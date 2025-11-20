@@ -6,7 +6,6 @@
 
 import SwiftUI
 import Defaults
-import UniformTypeIdentifiers
 
 struct SettingsLocationsView: View {
 
@@ -24,15 +23,27 @@ struct SettingsLocationsView: View {
     var body: some View {
         Form {
             Section {
-                LocationSettingRow($dumps)
+                SettingsInfoRow(dumps.title, infoTitle: dumps.type.title) {
+                    SettingsPathView(dumps.path)
+                } sheet: {
+                    SettingsLocationPicker($dumps)
+                }
             }
            
             Section {
-               LocationSettingRow($plugins)
+                SettingsInfoRow(plugins.title, infoTitle: plugins.type.title) {
+                    SettingsPathView(plugins.path)
+                } sheet: {
+                    SettingsLocationPicker($plugins)
+                }
             }
             
             Section {
-               LocationSettingRow($logs)
+                SettingsInfoRow(logs.title, infoTitle: logs.type.title) {
+                    SettingsPathView(logs.path)
+                } sheet: {
+                    SettingsLocationPicker($logs)
+                }
             }
         }
         .navigationTitle(.locations)

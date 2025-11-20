@@ -1,0 +1,78 @@
+//
+// Copyright (c) 2025, Samuel Majtan
+//
+// SPDX-License-Identifier: GPL-3.0
+//
+
+import SwiftUI
+
+struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
+   
+    // MARK: - Properties
+    
+    @State
+    private var showingInfo = false
+    private let title: String
+    private let infoTitle: String?
+    private let image: String?
+    private let footer: FooterContent
+    private let sheet: SheetContent
+  
+    // MARK: - Initializer
+    
+    init(
+        _ title: String,
+        infoTitle: String? = nil,
+        image: String? = nil,
+        @ViewBuilder footer: () -> FooterContent,
+        @ViewBuilder sheet: () -> SheetContent
+    ) {
+        self.title = title
+        self.infoTitle = infoTitle
+        self.image = image
+        self.footer = footer()
+        self.sheet = sheet()
+    }
+
+    // MARK: - View
+    
+    var body: some View {
+        HStack(alignment: .top) {
+            if let image {
+                Image(systemName: image)
+            }
+            VStack(alignment: .leading, spacing: 4) {
+                Text(title)
+                
+                HStack(alignment: .firstTextBaseline) {
+                    footer
+                }
+            }
+            
+            Spacer()
+            
+            SettingsInfoButton(infoTitle, showingInfo: $showingInfo)
+        }
+        .sheet(isPresented: $showingInfo) {
+            SettingsInfoSheet(isPresented: $showingInfo) {
+                sheet
+            }
+        }
+    }
+}
+
+
+// MARK: - Preview
+
+#Preview {
+    SettingsInfoRow("Title", infoTitle: "Info Title", image: "arrow.up.bin") {
+        Text("Footer View")
+            .foregroundStyle(.secondary)
+
+        RevealInFinderButton(.homeDirectory)
+    } sheet: {
+        VStack {
+            Text("Sheet content")
+        }
+    }
+}
