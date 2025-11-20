@@ -11,12 +11,12 @@ struct Location: Hashable, Displayable, @MainActor Storable {
 
     let title: String
     var type: LocationType
-    var path: URL
+    var url: URL
 
-    init(_ title: String, type: LocationType = .default, path: URL) {
+    init(_ title: String, type: LocationType = .default, url: URL) {
         self.title = title
         self.type = type
-        self.path = path
+        self.url = url
     }
 
 }

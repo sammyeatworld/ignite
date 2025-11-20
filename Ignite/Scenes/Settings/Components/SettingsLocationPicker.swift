@@ -36,7 +36,7 @@ struct SettingsLocationPicker: View {
             
             switch location.type {
             case .default:
-                SettingsPathView(location.path)
+                SettingsPathView(location.url)
             case .relative:
                 TextField("", text: $locationPrompt)
             case .custom:
@@ -47,13 +47,13 @@ struct SettingsLocationPicker: View {
             }
         }
         .onAppear {
-            locationPrompt = location.path.lastPathComponent
+            locationPrompt = location.url.lastPathComponent
         }
         .fileImporter(isPresented: $showingFileImporter, allowedContentTypes: [.folder]) { result in
             switch result {
             case .success(let file):
-                location.path = file.absoluteURL
-                locationPrompt = location.path.path()
+                location.url = file.absoluteURL
+                locationPrompt = location.url.path()
             case .failure(let failure):
                 print(failure.localizedDescription)
             }
@@ -65,5 +65,5 @@ struct SettingsLocationPicker: View {
 // MARK: - Preview
 
 #Preview {
-    SettingsLocationPicker(.constant(.init("Location", path: .homeDirectory)))
+    SettingsLocationPicker(.constant(.init("Location", url: .homeDirectory)))
 }

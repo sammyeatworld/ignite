@@ -24,7 +24,7 @@ struct SettingsLocationsView: View {
         Form {
             Section {
                 SettingsInfoRow(dumps.title, infoTitle: dumps.type.title) {
-                    SettingsPathView(dumps.path)
+                    SettingsPathView(dumps.url)
                 } sheet: {
                     SettingsLocationPicker($dumps)
                 }
@@ -32,7 +32,7 @@ struct SettingsLocationsView: View {
            
             Section {
                 SettingsInfoRow(plugins.title, infoTitle: plugins.type.title) {
-                    SettingsPathView(plugins.path)
+                    SettingsPathView(plugins.url)
                 } sheet: {
                     SettingsLocationPicker($plugins)
                 }
@@ -40,7 +40,7 @@ struct SettingsLocationsView: View {
             
             Section {
                 SettingsInfoRow(logs.title, infoTitle: logs.type.title) {
-                    SettingsPathView(logs.path)
+                    SettingsPathView(logs.url)
                 } sheet: {
                     SettingsLocationPicker($logs)
                 }

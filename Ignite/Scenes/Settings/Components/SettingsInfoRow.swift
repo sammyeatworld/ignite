@@ -44,9 +44,7 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
                 
-                HStack(alignment: .firstTextBaseline) {
-                    footer
-                }
+                footer
             }
             
             Spacer()

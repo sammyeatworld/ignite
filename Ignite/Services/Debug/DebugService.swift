@@ -30,7 +30,7 @@ protocol DebugServiceProtocol: AnyObject {
     func fetchBreakpoints() async
     func attachToProcess(_ name: String?, pid: Int32?) async
     func detachFromProcess() async
-    func debugExecutable(at path: URL) async
+    func debugExecutable(at url: URL) async
 
 }
 
