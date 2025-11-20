@@ -13,8 +13,8 @@ struct IgniteView: View {
     
     @State
     private var isShowingProcesses = false
-    @Default(.Updates.automaticallyCheckForUpdates)
-    var automaticallyCheckForUpdates: Bool
+    @Default(.Settings.Updates.automaticallyCheckForUpdates)
+    private var automaticallyCheckForUpdates: Bool
 
     // MARK: - Constants
 

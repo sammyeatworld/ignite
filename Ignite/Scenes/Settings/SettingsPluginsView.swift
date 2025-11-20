@@ -11,7 +11,7 @@ struct SettingsPluginsView: View {
 
     // MARK: - Properties
     
-    @Default(.Plugins.pluginLoadMethod)
+    @Default(.Settings.Plugins.pluginLoadMethod)
     private var pluginLoadMethod
 
     // MARK: - View

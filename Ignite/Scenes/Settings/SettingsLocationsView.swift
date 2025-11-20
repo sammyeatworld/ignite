@@ -11,11 +11,11 @@ struct SettingsLocationsView: View {
 
     // MARK: - Properties
     
-    @Default(.Locations.dumps)
+    @Default(.Settings.Locations.dumps)
     private var dumps
-    @Default(.Locations.plugins)
+    @Default(.Settings.Locations.plugins)
     private var plugins
-    @Default(.Locations.logs)
+    @Default(.Settings.Locations.logs)
     private var logs
 
     // MARK: - View
@@ -23,26 +23,26 @@ struct SettingsLocationsView: View {
     var body: some View {
         Form {
             Section {
-                SettingsInfoRow(dumps.title, infoTitle: dumps.type.title) {
+                SettingsInfoRow("Dumps", infoTitle: dumps.type.title) {
                     SettingsPathView(dumps.url)
                 } sheet: {
-                    SettingsLocationPicker($dumps)
+                    SettingsLocationPicker("Dumps", location: $dumps)
                 }
             }
            
             Section {
-                SettingsInfoRow(plugins.title, infoTitle: plugins.type.title) {
+                SettingsInfoRow("Plugins", infoTitle: plugins.type.title) {
                     SettingsPathView(plugins.url)
                 } sheet: {
-                    SettingsLocationPicker($plugins)
+                    SettingsLocationPicker("Plugins", location: $plugins)
                 }
             }
             
             Section {
-                SettingsInfoRow(logs.title, infoTitle: logs.type.title) {
+                SettingsInfoRow("Logs", infoTitle: logs.type.title) {
                     SettingsPathView(logs.url)
                 } sheet: {
-                    SettingsLocationPicker($logs)
+                    SettingsLocationPicker("Logs", location: $logs)
                 }
             }
         }

@@ -17,75 +17,79 @@ extension Defaults.Keys {
 
 extension Defaults.Keys {
     
-    static let selectedSettingsTab = Key<SettingsTab>("selectedSettingsTab", default: .general)
-    
-    enum General {
+    enum Settings {
         
-        static let selectedGeneralTab = Key<SettingsGeneralTab>("selectedGeneralTab", default: .disassembly)
+        static let selectedSettingsTab = Key<SettingsTab>("selectedSettingsTab", default: .general)
         
-        enum Disassembly {
+        enum General {
+            
+            static let selectedGeneralTab = Key<SettingsGeneralTab>("selectedGeneralTab", default: .disassembly)
+            
+            enum Disassembly {
+                
+            }
+            
+            enum Analysis {
+                
+            }
+            
+            enum CrossReferences {
+                
+            }
+            
+            enum Debug {
+                
+            }
+            
+            enum Graph {
+            
+            }
+            
+            enum Miscellaneous {
+                
+            }
             
         }
         
-        enum Analysis {
+        enum Appearance {
+
+        }
+        
+        enum Shortcuts {
+
+        }
+        
+        enum Plugins {
+
+            static let pluginLoadMethod = Key<PluginLoadMethod>("pluginLoadMethod", default: .onStartup)
+
+        }
+        
+        enum Locations {
+
+            static let dumps = Key<Location>("dumpsLocation", default: .init(url: .applicationSupportDirectory))
+            static let plugins = Key<Location>("pluginsLocation", default: .init(url: .applicationSupportDirectory))
+            static let logs = Key<Location>("logsLocation", default: .init(url: .applicationSupportDirectory))
+
+        }
+        
+        enum Updates {
+            
+            static let automaticallyCheckForUpdates = Key<Bool>("automaticallyCheckForUpdates", default: true)
+            static let automaticallyDownloadUpdates = Key<Bool>("automaticallyDownloadUpdates", default: false)
+            static let updateInterval = Key<UpdateInterval>("updateInterval", default: .daily)
+            static let updateBranch = Key<UpdateBranch>("updateBranch", default: .main)
             
         }
         
-        enum CrossReferences {
+        enum Experimental {
             
         }
         
-        enum Debug {
-            
+        enum Developer {
+          
         }
-        
-        enum Graph {
-        
-        }
-        
-        enum Miscellaneous {
-            
-        }
-        
+ 
     }
-    
-    enum Appearance {
 
-    }
-    
-    enum Shortcuts {
-
-    }
-    
-    enum Plugins {
-
-        static let pluginLoadMethod = Key<PluginLoadMethod>("pluginLoadMethod", default: .onStartup)
-
-    }
-    
-    enum Locations {
-
-        static let dumps = Key<Location>("dumpsLocation", default: .init("Dumps", url: .applicationSupportDirectory))
-        static let plugins = Key<Location>("pluginsLocation", default: .init("Plugins", url: .applicationSupportDirectory))
-        static let logs = Key<Location>("logsLocation", default: .init("Logs", url: .applicationSupportDirectory))
-
-    }
-    
-    enum Updates {
-        
-        static let automaticallyCheckForUpdates = Key<Bool>("automaticallyCheckForUpdates", default: true)
-        static let automaticallyDownloadUpdates = Key<Bool>("automaticallyDownloadUpdates", default: false)
-        static let updateInterval = Key<UpdateInterval>("updateInterval", default: .daily)
-        static let updateBranch = Key<UpdateBranch>("updateBranch", default: .main)
-        
-    }
-    
-    enum Experimental {
-        
-    }
-    
-    enum Developer {
-        
-    }
-    
 }

@@ -7,14 +7,12 @@
 import Foundation
 import Defaults
 
-struct Location: Hashable, Displayable, @MainActor Storable {
+struct Location: Hashable, @MainActor Storable {
 
-    let title: String
     var type: LocationType
     var url: URL
 
-    init(_ title: String, type: LocationType = .default, url: URL) {
-        self.title = title
+    init(_ type: LocationType = .default, url: URL) {
         self.type = type
         self.url = url
     }

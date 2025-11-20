@@ -17,10 +17,12 @@ struct SettingsLocationPicker: View {
     private var locationPrompt = ""
     @Binding
     var location: Location
+    private let title: LocalizedStringResource
 
     // MARK: - Initializer
 
-    init(_ location: Binding<Location>) {
+    init(_ title: LocalizedStringResource, location: Binding<Location>) {
+        self.title = title
         self._location = location
     }
 
@@ -28,7 +30,7 @@ struct SettingsLocationPicker: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Picker(location.title, selection: $location.type) {
+            Picker(title, selection: $location.type) {
                 ForEach(LocationType.allCases) { type in
                     Text(type.title).tag(type)
                 }
@@ -65,5 +67,5 @@ struct SettingsLocationPicker: View {
 // MARK: - Preview
 
 #Preview {
-    SettingsLocationPicker(.constant(.init("Location", url: .homeDirectory)))
+    SettingsLocationPicker("Title", location: .constant(.init(url: .homeDirectory)))
 }

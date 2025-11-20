@@ -11,14 +11,14 @@ struct SettingsUpdatesView: View {
 
     // MARK: - Properties
 
-    @Default(.Updates.automaticallyCheckForUpdates)
-    var automaticallyCheckForUpdates: Bool
-    @Default(.Updates.automaticallyDownloadUpdates)
-    var automaticallyDownloadUpdates: Bool
-    @Default(.Updates.updateBranch)
-    var updateBranch: UpdateBranch
-    @Default(.Updates.updateInterval)
-    var updateInterval: UpdateInterval
+    @Default(.Settings.Updates.automaticallyCheckForUpdates)
+    private var automaticallyCheckForUpdates: Bool
+    @Default(.Settings.Updates.automaticallyDownloadUpdates)
+    private var automaticallyDownloadUpdates: Bool
+    @Default(.Settings.Updates.updateBranch)
+    private var updateBranch: UpdateBranch
+    @Default(.Settings.Updates.updateInterval)
+    private var updateInterval: UpdateInterval
 
     // MARK: - View
 

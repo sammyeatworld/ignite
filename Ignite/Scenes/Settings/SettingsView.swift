@@ -11,6 +11,9 @@ struct SettingsView: View {
 
     // MARK: - Properties
 
+    @Default(.Settings.selectedSettingsTab)
+    private var selectedSettingsTab: SettingsTab
+
     // MARK: - View
 
     var body: some View {
@@ -25,7 +28,7 @@ struct SettingsView: View {
         .navigationSplitViewStyle(.prominentDetail)
         .tabViewStyle(.sidebarAdaptable)
     }
-    
+
 }
 
 // MARK: - Preview
