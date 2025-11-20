@@ -38,25 +38,17 @@ struct IgniteView: View {
         VStack(spacing: 24.0) {
             Image(.Hexley.clear)
             VStack(alignment: .center, spacing: 8.0) {
-                Button {
+                PrimaryButton(.openProcess) {
                     isShowingProcesses.toggle()
-                } label: {
-                    Text(.openProcess)
-                        .padding(.vertical, 2)
-                        .frame(width: C.buttonWidth)
                 }
                 .buttonStyle(.borderedProminent)
-                Button {
-                } label: {
-                    Text(.openExecutable)
-                        .padding(.vertical, 2)
-                        .frame(width: C.buttonWidth)
+
+                PrimaryButton(.openExecutable) {
+                    
                 }
-                Button {
-                } label: {
-                    Text(.settings)
-                        .padding(.vertical, 2)
-                        .frame(width: C.buttonWidth)
+
+                PrimaryButton(.settings) {
+                    
                 }
             }
             Toggle(
