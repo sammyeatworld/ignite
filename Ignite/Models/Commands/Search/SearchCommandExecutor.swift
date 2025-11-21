@@ -5,9 +5,14 @@
 //
 
 import Foundation
+import SwiftUI
+import FactoryKit
 
 @MainActor
 final class SearchCommandExecutor: @MainActor CommandExecutorItem {
+
+    @Environment(\.openWindow)
+    private var openWindow
 
     func perform(_ command: SearchCommand) async {
         switch command {

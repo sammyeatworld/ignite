@@ -5,15 +5,14 @@
 //
 
 import SwiftUI
-import FactoryKit
 
 struct JumpCommands: Commands {
 
     // MARK: - Properties
 
-    @Environment(\.openWindow)
-    private var openWindow
     private let executor: JumpCommandExecutor
+
+    // MARK: - Initializer
 
     init(executor: JumpCommandExecutor = JumpCommandExecutor()) {
         self.executor = executor
@@ -32,6 +31,8 @@ struct JumpCommands: Commands {
             commandView(for: .crossReferences)
         }
     }
+
+    // MARK: - Methods
 
     @ViewBuilder
     private func commandView(for group: JumpCommandGroup) -> some View {

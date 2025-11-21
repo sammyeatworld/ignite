@@ -5,15 +5,14 @@
 //
 
 import SwiftUI
-import FactoryKit
 
 struct DebugCommands: Commands {
 
     // MARK: - Properties
 
-    @Environment(\.openWindow)
-    private var openWindow
     private let executor: DebugCommandExecutor
+
+    // MARK: - Initializer
 
     init(executor: DebugCommandExecutor = DebugCommandExecutor()) {
         self.executor = executor
@@ -35,6 +34,8 @@ struct DebugCommands: Commands {
             commandView(for: .attach)
         }
     }
+
+    // MARK: - Methods
 
     @ViewBuilder
     private func commandView(for group: DebugCommandGroup) -> some View {

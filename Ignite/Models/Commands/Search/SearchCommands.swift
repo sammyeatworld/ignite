@@ -5,15 +5,14 @@
 //
 
 import SwiftUI
-import FactoryKit
 
 struct SearchCommands: Commands {
 
     // MARK: - Properties
 
-    @Environment(\.openWindow)
-    private var openWindow
     private let executor: SearchCommandExecutor
+
+    // MARK: - Initializer
 
     init(executor: SearchCommandExecutor = SearchCommandExecutor()) {
         self.executor = executor
@@ -32,6 +31,8 @@ struct SearchCommands: Commands {
             commandView(for: .options)
         }
     }
+
+    // MARK: - Methods
 
     @ViewBuilder
     private func commandView(for group: SearchCommandGroup) -> some View {

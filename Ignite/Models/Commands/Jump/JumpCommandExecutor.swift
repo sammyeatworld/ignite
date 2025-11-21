@@ -5,10 +5,14 @@
 //
 
 import Foundation
+import SwiftUI
 import FactoryKit
 
 @MainActor
 final class JumpCommandExecutor: @MainActor CommandExecutorItem {
+   
+    @Environment(\.openWindow)
+    private var openWindow
 
     func perform(_ command: JumpCommand) async {
         switch command {

@@ -5,11 +5,14 @@
 //
 
 import Foundation
+import SwiftUI
 import FactoryKit
 
 @MainActor
 final class DebugCommandExecutor: @MainActor CommandExecutorItem {
 
+    @Environment(\.openWindow)
+    private var openWindow
     @Injected(\.debugService)
     private var debugService
     
