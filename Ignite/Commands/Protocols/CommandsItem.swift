@@ -12,7 +12,7 @@ protocol CommandsItem: Commands {
     // MARK: - Associated Types
 
     associatedtype CommandExecutorType: CommandExecutorItem
-    associatedtype commandViewType: View
+    associatedtype CommandViewType: View
    
     // MARK: - Properties
 
@@ -20,6 +20,6 @@ protocol CommandsItem: Commands {
 
     // MARK: - Methods
 
-    func commandView(for group: DebugCommandGroup) -> commandViewType
+    func commandView(for group: DebugCommandGroup) -> CommandViewType
 
 }

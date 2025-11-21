@@ -6,38 +6,37 @@
 
 import SwiftUI
 
-struct JumpCommands: Commands {
+struct SearchCommands: Commands {
 
     // MARK: - Properties
 
-    private let executor: JumpCommandExecutor
+    private let executor: SearchCommandExecutor
 
     // MARK: - Initializer
 
-    init(executor: JumpCommandExecutor = JumpCommandExecutor()) {
+    init(executor: SearchCommandExecutor = SearchCommandExecutor()) {
         self.executor = executor
     }
 
     // MARK: - Commands
 
     var body: some Commands {
-        CommandMenu(.jump) {
-            commandView(for: .navigation)
+        CommandMenu(.search) {
+            commandView(for: .searchType)
             Divider()
 
-            commandView(for: .targets)
+            commandView(for: .contentSearch)
             Divider()
 
-            commandView(for: .crossReferences)
+            commandView(for: .options)
         }
     }
 
     // MARK: - Methods
 
     @ViewBuilder
-    private func commandView(for group: JumpCommandGroup) -> some View {
-        ForEach(JumpCommand.allCases.filter { $0.group == group }) { command in
-            
+    private func commandView(for group: SearchCommandGroup) -> some View {
+        ForEach(SearchCommand.allCases.filter { $0.group == group }) { command in
             Button {
                 Task { await executor.perform(command) }
             } label: {
@@ -50,5 +49,5 @@ struct JumpCommands: Commands {
             .keyboardShortcut(command.shortcut)
         }
     }
-    
+
 }

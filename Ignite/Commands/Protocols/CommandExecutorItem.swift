@@ -16,14 +16,5 @@ protocol CommandExecutorItem: AnyObject {
     // MARK: - Methods
 
     func perform(_ command: CommandItemType) async
-    func fetch(_ command: CommandItemType) async -> [String]
 
-}
-
-extension CommandExecutorItem {
-
-    func fetch(_ command: CommandItemType) async -> [String] {
-       []
-    }
-  
 }

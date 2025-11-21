@@ -21,7 +21,7 @@ enum SF: String {
     case listCrossReferencesTo = "point.topleft.down.curvedto.point.filled.bottomright.up"
     case listCrossReferencesFrom = "point.filled.topleft.down.curvedto.point.bottomright.up"
 
-    // MARK: - Serach Commands
+    // MARK: - Search Commands
     
     case nextCode = "text.alignleft"
     case nextData = "tablecells"

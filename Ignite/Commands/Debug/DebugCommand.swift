@@ -171,16 +171,7 @@ enum DebugCommand: @MainActor CommandItem {
             return .options
         }
     }
-    
-    var isMenu: Bool {
-        switch self {
-        case .breakpoints, .attachToProcess:
-            true
-        default:
-            false
-        }
-    }
-    
+
 }
 
 extension DebugCommand {

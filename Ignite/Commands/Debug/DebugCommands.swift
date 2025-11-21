@@ -40,22 +40,17 @@ struct DebugCommands: Commands {
     @ViewBuilder
     private func commandView(for group: DebugCommandGroup) -> some View {
         ForEach(DebugCommand.allCases.filter { $0.group == group }) { command in
-            if command.isMenu {
-                Menu(command.title) {
+            Button {
+                Task { await executor.perform(command) }
+            } label: {
+                if let image = command.image {
+                    Label(command.title, systemImage: image)
+                } else {
+                    Text(command.title)
                 }
-            } else {
-                Button {
-                    Task { await executor.perform(command) }
-                } label: {
-                    if let image = command.image {
-                        Label(command.title, systemImage: image)
-                    } else {
-                        Text(command.title)
-                    }
-                }
-                .keyboardShortcut(command.shortcut)
             }
+            .keyboardShortcut(command.shortcut)
         }
     }
-
+    
 }

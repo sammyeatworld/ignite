@@ -10,12 +10,12 @@ import Defaults
 struct SettingsPluginsView: View {
 
     // MARK: - Properties
-    
+
     @Default(.Settings.Plugins.pluginLoadMethod)
     private var pluginLoadMethod
 
     // MARK: - View
-    
+
     var body: some View {
         Form {
             Picker("Load Plugins", selection: $pluginLoadMethod) {
@@ -26,7 +26,7 @@ struct SettingsPluginsView: View {
         }
         .navigationTitle(.plugins)
     }
-    
+
 }
 
 // MARK: - Preview
