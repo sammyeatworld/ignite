@@ -19,12 +19,20 @@ protocol AboutViewModelProtocol: AnyObject, Observable {
     
     // MARK: - Services
     
-    // MARK: - States
-    
     // MARK: - Properties
     
     // MARK: - Initializer
-    
-    // MARK: - Methods
+
+}
+
+// MARK: - Public Methods
+
+extension AboutViewModel {
+
+}
+
+// MARK: - Private Methods
+
+private extension AboutViewModel {
     
 }
