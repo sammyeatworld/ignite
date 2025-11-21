@@ -43,5 +43,5 @@ struct SettingsInfoButton: View {
 // MARK: - Preview
 
 #Preview {
-    SettingsInfoButton("Default", showingInfo: .constant(false))
+    SettingsInfoButton("Title", showingInfo: .constant(false))
 }

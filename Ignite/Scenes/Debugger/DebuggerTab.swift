@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-enum DebuggerTabs: CaseIterable {
+enum DebuggerTab: CaseIterable {
     
     case machO
     case disassembly
@@ -19,7 +19,7 @@ enum DebuggerTabs: CaseIterable {
     
 }
 
-extension DebuggerTabs {
+extension DebuggerTab {
     
     var title: LocalizedStringResource {
         switch self {
@@ -87,7 +87,7 @@ extension DebuggerTabs {
     
 }
 
-extension DebuggerTabs: Identifiable {
+extension DebuggerTab: Identifiable {
     
     var id: Self {
         self

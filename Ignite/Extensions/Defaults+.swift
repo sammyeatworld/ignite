@@ -61,7 +61,7 @@ extension Defaults.Keys {
         
         enum Plugins {
 
-            static let pluginLoadMethod = Key<PluginLoadMethod>("pluginLoadMethod", default: .onStartup)
+            static let pluginLoadMethod = Key<PluginLoadMethod>("pluginLoadMethod", default: .startup)
 
         }
         

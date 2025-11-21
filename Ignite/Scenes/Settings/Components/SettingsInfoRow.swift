@@ -64,7 +64,7 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
 
 #Preview {
     SettingsInfoRow("Title", infoTitle: "Info Title", image: "arrow.up.bin") {
-        Text("Footer View")
+        Text("Footer Content")
             .foregroundStyle(.secondary)
 
         RevealInFinderButton(.homeDirectory)

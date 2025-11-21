@@ -18,7 +18,7 @@ struct SettingsPluginsView: View {
 
     var body: some View {
         Form {
-            Picker("Load Plugins", selection: $pluginLoadMethod) {
+            Picker("Load Plugins on", selection: $pluginLoadMethod) {
                 ForEach(PluginLoadMethod.allCases) { method in
                     Text(method.title).tag(method)
                 }

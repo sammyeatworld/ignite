@@ -134,14 +134,30 @@
 		A58CF0FC2E8F248500106697 /* Exceptions for "Ignite" folder in "Ignite" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Scenes/Debugger/Breakpoints/Components/.gitkeep,
-				"Scenes/Debugger/Call Stack/Components/.gitkeep",
-				Scenes/Debugger/Disassembly/Components/.gitkeep,
-				Scenes/Debugger/Graph/Components/.gitkeep,
-				Scenes/Debugger/Log/Components/.gitkeep,
-				Scenes/Debugger/MachO/Components/.gitkeep,
-				"Scenes/Debugger/Memory Map/Components/.gitkeep",
-				Scenes/Debugger/Notes/Components/.gitkeep,
+				Scenes/About/Components/.gitkeep,
+				Scenes/About/Features/.gitkeep,
+				Scenes/Debugger/Components/.gitkeep,
+				Scenes/Debugger/Features/Breakpoints/Components/.gitkeep,
+				"Scenes/Debugger/Features/Call Stack/Components/.gitkeep",
+				Scenes/Debugger/Features/Disassembly/Components/.gitkeep,
+				Scenes/Debugger/Features/Graph/Components/.gitkeep,
+				Scenes/Debugger/Features/Log/Components/.gitkeep,
+				Scenes/Debugger/Features/MachO/Components/.gitkeep,
+				"Scenes/Debugger/Features/Memory Map/Components/.gitkeep",
+				Scenes/Debugger/Features/Notes/Components/.gitkeep,
+				Scenes/Settings/Features/Appearance/Components/.gitkeep,
+				Scenes/Settings/Features/Appearance/Models/.gitkeep,
+				Scenes/Settings/Features/Developer/Components/.gitkeep,
+				Scenes/Settings/Features/Developer/Models/.gitkeep,
+				Scenes/Settings/Features/Experimental/Components/.gitkeep,
+				Scenes/Settings/Features/Experimental/Models/.gitkeep,
+				Scenes/Settings/Features/General/Components/.gitkeep,
+				Scenes/Settings/Features/General/Models/.gitkeep,
+				Scenes/Settings/Features/Locations/Components/.gitkeep,
+				Scenes/Settings/Features/Plugins/Components/.gitkeep,
+				Scenes/Settings/Features/Shortcuts/Components/.gitkeep,
+				Scenes/Settings/Features/Shortcuts/Models/.gitkeep,
+				Scenes/Settings/Features/Updates/Components/.gitkeep,
 			);
 			target = A58CE83E2E8F1C6E00106697 /* Ignite */;
 		};

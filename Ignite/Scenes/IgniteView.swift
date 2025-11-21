@@ -28,9 +28,7 @@ struct IgniteView: View {
 
     // MARK: - Initializer
 
-    init() {
-
-    }
+    init() { }
 
     // MARK: - View
 

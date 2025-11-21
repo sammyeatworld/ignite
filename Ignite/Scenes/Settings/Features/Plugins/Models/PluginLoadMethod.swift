@@ -9,15 +9,15 @@ import Defaults
 
 enum PluginLoadMethod: String, CaseIterable, Displayable, Storable {
 
-    case onStartup
-    case onDemand
+    case startup
+    case demand
 
     var title: String {
         switch self {
-        case .onStartup:
-            "on Startup"
-        case .onDemand:
-            "on Demand"
+        case .startup:
+            "Startup"
+        case .demand:
+            "Demand"
         }
     }
 
