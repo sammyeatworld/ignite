@@ -110,7 +110,9 @@
 		A58CF0A52E8F21A000106697 /* Exceptions for "Documentation" folder in "Ignite" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Architecture.md,
 				Building.md,
+				Patterns.md,
 				Testing.md,
 				Troubleshooting.md,
 				Versioning.md,
