@@ -15,14 +15,12 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../FoundationKit"),
-        .package(path: "../SwiftUIKit"),
     ],
     targets: [
         .target(
             name: "GraphKit",
             dependencies: [
                 .product(name: "FoundationKit", package: "FoundationKit"),
-                .product(name: "SwiftUIKit", package: "SwiftUIKit")
             ],
             swiftSettings: [
                 .strictMemorySafety(),

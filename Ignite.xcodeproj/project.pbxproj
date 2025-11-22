@@ -28,8 +28,6 @@
 		A5BB554C2E9698D800DF8FC4 /* GraphKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB554A2E9698D800DF8FC4 /* GraphKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A5BB55512E9698E000DF8FC4 /* PluginKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55502E9698E000DF8FC4 /* PluginKit */; };
 		A5BB55522E9698E000DF8FC4 /* PluginKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55502E9698E000DF8FC4 /* PluginKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A5BB55542E9698E400DF8FC4 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55532E9698E400DF8FC4 /* SwiftUIKit */; };
-		A5BB55552E9698E400DF8FC4 /* SwiftUIKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55532E9698E400DF8FC4 /* SwiftUIKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A5BB55572E9698E900DF8FC4 /* SyntaxKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55562E9698E900DF8FC4 /* SyntaxKit */; };
 		A5BB55582E9698E900DF8FC4 /* SyntaxKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55562E9698E900DF8FC4 /* SyntaxKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -60,7 +58,6 @@
 			files = (
 				A5BB55402E9698CA00DF8FC4 /* DataKit in Embed Frameworks */,
 				A5BB55462E9698CF00DF8FC4 /* DisassemblyKit in Embed Frameworks */,
-				A5BB55552E9698E400DF8FC4 /* SwiftUIKit in Embed Frameworks */,
 				A5BB55522E9698E000DF8FC4 /* PluginKit in Embed Frameworks */,
 				A5BB553D2E9698C700DF8FC4 /* DarwinKit in Embed Frameworks */,
 				A5BB553A2E9698C400DF8FC4 /* AnalysisKit in Embed Frameworks */,
@@ -92,7 +89,6 @@
 				FoundationKit,
 				GraphKit,
 				PluginKit,
-				SwiftUIKit,
 				SyntaxKit,
 			);
 			target = A58CE83E2E8F1C6E00106697 /* Ignite */;
@@ -241,7 +237,6 @@
 				A51EDFBD2E900D4200F4BA87 /* Defaults in Frameworks */,
 				A5BB553F2E9698CA00DF8FC4 /* DataKit in Frameworks */,
 				A58CF0FF2E8F30EF00106697 /* FactoryKit in Frameworks */,
-				A5BB55542E9698E400DF8FC4 /* SwiftUIKit in Frameworks */,
 				A5BB55452E9698CF00DF8FC4 /* DisassemblyKit in Frameworks */,
 				A5BB55482E9698D300DF8FC4 /* FoundationKit in Frameworks */,
 				A5BB55392E9698C400DF8FC4 /* AnalysisKit in Frameworks */,
@@ -336,7 +331,6 @@
 				A5BB55472E9698D300DF8FC4 /* FoundationKit */,
 				A5BB554A2E9698D800DF8FC4 /* GraphKit */,
 				A5BB55502E9698E000DF8FC4 /* PluginKit */,
-				A5BB55532E9698E400DF8FC4 /* SwiftUIKit */,
 				A5BB55562E9698E900DF8FC4 /* SyntaxKit */,
 				A54386F02E9ABD62009B669F /* MachOKit */,
 			);
@@ -1570,10 +1564,6 @@
 		A5BB55502E9698E000DF8FC4 /* PluginKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PluginKit;
-		};
-		A5BB55532E9698E400DF8FC4 /* SwiftUIKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SwiftUIKit;
 		};
 		A5BB55562E9698E900DF8FC4 /* SyntaxKit */ = {
 			isa = XCSwiftPackageProductDependency;
