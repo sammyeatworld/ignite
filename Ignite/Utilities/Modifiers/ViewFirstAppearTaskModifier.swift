@@ -15,7 +15,7 @@ import SwiftUI
 /// - Parameters:
 ///   - action: An asynchronous closure to perform when the view first appears.
 /// - Returns: A modified view that executes the asynchronous action on first appearance.
-public struct ViewFirstAppearTaskModifier: ViewModifier {
+struct ViewFirstAppearTaskModifier: ViewModifier {
 
     // MARK: - Properties
 
@@ -25,13 +25,13 @@ public struct ViewFirstAppearTaskModifier: ViewModifier {
 
     // MARK: - Lifecycle
 
-    public init(perform action: @escaping AsyncVoidClosure) {
+    init(perform action: @escaping AsyncVoidClosure) {
         self.action = action
     }
 
     // MARK: - View
 
-    public func body(content: Content) -> some View {
+    func body(content: Content) -> some View {
         content.task {
             if !didAppear {
                 didAppear.toggle()

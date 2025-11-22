@@ -16,7 +16,7 @@ import SwiftUI
 ///   - errorAlert: A binding to an optional `AppError` that triggers the alert.
 ///   - cancelAction: An optional closure to perform when the cancel button is tapped.
 /// - Returns: A modified view that shows an alert when an error is set.
-public struct ErrorAlertModifier: ViewModifier {
+struct ErrorAlertModifier: ViewModifier {
 
     // MARK: - Properties
 
@@ -26,7 +26,7 @@ public struct ErrorAlertModifier: ViewModifier {
 
     // MARK: - View
 
-    public func body(content: Content) -> some View {
+    func body(content: Content) -> some View {
         content
             .alert(
                 "Error",
@@ -56,7 +56,7 @@ public struct ErrorAlertModifier: ViewModifier {
 ///   - messageAlert: A binding to an optional message string that triggers the alert.
 ///   - messageAction: An optional closure to perform when the "OK" button is tapped.
 /// - Returns: A modified view that shows an alert with the provided message.
-public struct MessageAlertModifier: ViewModifier {
+struct MessageAlertModifier: ViewModifier {
 
     // MARK: - Properties
 
@@ -66,7 +66,7 @@ public struct MessageAlertModifier: ViewModifier {
 
     // MARK: - View
 
-    public func body(content: Content) -> some View {
+    func body(content: Content) -> some View {
         content
             .alert(
                 "Info",
@@ -99,7 +99,7 @@ public struct MessageAlertModifier: ViewModifier {
 ///   - cancelActionText: The text for the cancel action button.
 ///   - cancelAction: A closure to perform when the cancel action is tapped.
 /// - Returns: A modified view that shows the warning alert with the provided actions.
-public struct WarningAlertModifier: ViewModifier {
+struct WarningAlertModifier: ViewModifier {
 
     // MARK: - Properties
 
@@ -112,7 +112,7 @@ public struct WarningAlertModifier: ViewModifier {
 
     // MARK: - View
 
-    public func body(content: Content) -> some View {
+    func body(content: Content) -> some View {
         content
             .alert(
                 "Warning",
@@ -136,7 +136,7 @@ public struct WarningAlertModifier: ViewModifier {
 
 }
 
-public extension View {
+extension View {
 
     func errorAlert(_ error: Binding<AppError?>, cancelAction: VoidClosure? = nil) -> some View {
         modifier(ErrorAlertModifier(errorAlert: error, cancelAction: cancelAction))

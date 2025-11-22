@@ -15,7 +15,7 @@ import SwiftUI
 /// - Parameters:
 ///   - action: An optional closure to perform when the view first appears.
 /// - Returns: A modified view that executes the action on first appearance.
-public struct ViewFirstAppearModifier: ViewModifier {
+struct ViewFirstAppearModifier: ViewModifier {
 
     // MARK: - Properties
 
@@ -25,13 +25,13 @@ public struct ViewFirstAppearModifier: ViewModifier {
 
     // MARK: - Lifecycle
 
-    public init(perform action: VoidClosure? = nil) {
+    init(perform action: VoidClosure? = nil) {
         self.action = action
     }
 
     // MARK: - View
 
-    public func body(content: Content) -> some View {
+    func body(content: Content) -> some View {
         content.onAppear {
             if !didAppear {
                 didAppear.toggle()

@@ -7,7 +7,7 @@
 import SwiftUI
 import AppKit
 
-public struct SearchField: NSViewRepresentable {
+struct SearchField: NSViewRepresentable {
 
     // MARK: - Properties
 
@@ -16,15 +16,15 @@ public struct SearchField: NSViewRepresentable {
 
     // MARK: - Coordinator
 
-    public class Coordinator: NSObject, NSSearchFieldDelegate {
+    class Coordinator: NSObject, NSSearchFieldDelegate {
 
         var parent: SearchField
 
-        public init(parent: SearchField) {
+        init(parent: SearchField) {
             self.parent = parent
         }
 
-        public func controlTextDidChange(_ obj: Notification) {
+        func controlTextDidChange(_ obj: Notification) {
             if let searchField = obj.object as? NSSearchField {
                 parent.searchQuery = searchField.stringValue
             }
@@ -33,17 +33,17 @@ public struct SearchField: NSViewRepresentable {
 
     // MARK: - Methods
 
-    public func makeCoordinator() -> Coordinator {
+    func makeCoordinator() -> Coordinator {
         Coordinator(parent: self)
     }
 
-    public func makeNSView(context: Context) -> NSSearchField {
+    func makeNSView(context: Context) -> NSSearchField {
         let searchField = NSSearchField()
         searchField.delegate = context.coordinator
         return searchField
     }
 
-    public func updateNSView(_ nsView: NSSearchField, context: Context) {
+    func updateNSView(_ nsView: NSSearchField, context: Context) {
         nsView.stringValue = searchQuery
     }
 

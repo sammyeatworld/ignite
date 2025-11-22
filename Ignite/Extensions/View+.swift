@@ -7,7 +7,7 @@
 import FoundationKit
 import SwiftUI
 
-public extension View {
+extension View {
     
     /// Performs an action when the view appears for the first time.
     ///
@@ -27,7 +27,7 @@ public extension View {
     
 }
 
-public extension View {
+extension View {
     
     /// Applies a redacted effect to the view when the given condition is `true`.
     ///
@@ -45,7 +45,7 @@ public extension View {
     
 }
 
-public extension View {
+extension View {
     
     /// Prints the given values to the console and returns an `EmptyView`.
     ///

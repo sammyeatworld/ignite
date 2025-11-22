@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-public struct TableTextField: View {
+struct TableTextField: View {
 
     // MARK: - Properties
 
@@ -19,14 +19,14 @@ public struct TableTextField: View {
 
     // MARK: - Lifecycle
 
-    public init(isFocused: FocusState<Bool>, text: Binding<String>) {
+    init(isFocused: FocusState<Bool>, text: Binding<String>) {
         self._isFocused = isFocused
         self._text = text
     }
 
     // MARK: - View
 
-    public var body: some View {
+    var body: some View {
         TextField("", text: $text)
             .textFieldStyle(.plain)
             .focused($isFocused)
