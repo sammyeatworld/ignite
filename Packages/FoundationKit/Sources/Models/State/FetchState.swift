@@ -81,7 +81,7 @@ public enum FetchState<Success>: Equatable, Sendable where Success: Equatable & 
 
 public extension Result where Success: Equatable & Sendable, Failure == AppError {
 
-    func asReadyState() -> FetchState<Success> {
+    func asFetchState() -> FetchState<Success> {
         switch self {
         case .success(let success):
             return .success(success)
