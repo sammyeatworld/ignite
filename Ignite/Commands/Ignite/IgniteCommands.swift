@@ -25,6 +25,7 @@ struct IgniteCommands: Commands {
             } label: {
                 Label(.settings, systemImage: SF.settings.rawValue)
             }
+            .keyboardShortcut(",", modifiers: .command)
         }
     }
 
