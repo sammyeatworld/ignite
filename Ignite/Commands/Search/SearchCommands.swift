@@ -38,7 +38,7 @@ struct SearchCommands: Commands {
     private func commandView(for group: SearchCommandGroup) -> some View {
         ForEach(SearchCommand.allCases.filter { $0.group == group }) { command in
             Button {
-                Task { await executor.perform(command) }
+                Task { await executor.execute(command) }
             } label: {
                 if let image = command.image {
                     Label(command.title, systemImage: image)

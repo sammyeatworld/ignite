@@ -41,7 +41,7 @@ struct DebugCommands: Commands {
     private func commandView(for group: DebugCommandGroup) -> some View {
         ForEach(DebugCommand.allCases.filter { $0.group == group }) { command in
             Button {
-                Task { await executor.perform(command) }
+                Task { await executor.execute(command) }
             } label: {
                 if let image = command.image {
                     Label(command.title, systemImage: image)

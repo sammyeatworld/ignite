@@ -15,6 +15,6 @@ protocol CommandExecutorItem: AnyObject {
 
     // MARK: - Methods
 
-    func perform(_ command: CommandItemType) async
+    func execute(_ command: CommandItemType) async
 
 }

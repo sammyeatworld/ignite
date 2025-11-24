@@ -14,7 +14,7 @@ final class JumpCommandExecutor: @MainActor CommandExecutorItem {
     @Environment(\.openWindow)
     private var openWindow
 
-    func perform(_ command: JumpCommand) async {
+    func execute(_ command: JumpCommand) async {
         switch command {
         case .jumpToPreviousPosition:
             print("To be implemented")

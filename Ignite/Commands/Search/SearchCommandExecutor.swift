@@ -14,7 +14,7 @@ final class SearchCommandExecutor: @MainActor CommandExecutorItem {
     @Environment(\.openWindow)
     private var openWindow
 
-    func perform(_ command: SearchCommand) async {
+    func execute(_ command: SearchCommand) async {
         switch command {
         case .nextCode:
             print("To be implemented")

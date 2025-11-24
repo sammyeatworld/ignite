@@ -38,7 +38,7 @@ struct JumpCommands: Commands {
     private func commandView(for group: JumpCommandGroup) -> some View {
         ForEach(JumpCommand.allCases.filter { $0.group == group }) { command in
             Button {
-                Task { await executor.perform(command) }
+                Task { await executor.execute(command) }
             } label: {
                 if let image = command.image {
                     Label(command.title, systemImage: image)

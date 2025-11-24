@@ -16,7 +16,7 @@ final class DebugCommandExecutor: @MainActor CommandExecutorItem {
     @Injected(\.debugService)
     private var debugService
     
-    func perform(_ command: DebugCommand) async {
+    func execute(_ command: DebugCommand) async {
         switch command {
         case .pauseExecution:
             await debugService.pauseExecution()
