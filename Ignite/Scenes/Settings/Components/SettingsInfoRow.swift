@@ -7,9 +7,9 @@
 import SwiftUI
 
 struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
-   
+
     // MARK: - Properties
-    
+
     @State
     private var showingInfo = false
     private let title: String
@@ -17,9 +17,9 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
     private let image: String?
     private let footer: FooterContent
     private let sheet: SheetContent
-  
+
     // MARK: - Initializer
-    
+
     init(
         _ title: String,
         infoTitle: String? = nil,
@@ -35,7 +35,7 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
     }
 
     // MARK: - View
-    
+
     var body: some View {
         HStack(alignment: .top) {
             if let image {
@@ -43,12 +43,12 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
             }
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
-                
+
                 footer
             }
-            
+
             Spacer()
-            
+
             SettingsInfoButton(infoTitle, showingInfo: $showingInfo)
         }
         .sheet(isPresented: $showingInfo) {
@@ -58,7 +58,6 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
         }
     }
 }
-
 
 // MARK: - Preview
 

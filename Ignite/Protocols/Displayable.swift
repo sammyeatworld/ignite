@@ -7,9 +7,9 @@
 import Foundation
 
 protocol Displayable {
-    
+
     var title: String { get }
-    
+
 }
 
 extension Displayable where Self: CustomStringConvertible {

@@ -14,7 +14,7 @@ struct SettingsShortcutsView: View {
 
     var body: some View {
         Form {
-            
+
         }
         .navigationTitle(.shortcuts)
     }

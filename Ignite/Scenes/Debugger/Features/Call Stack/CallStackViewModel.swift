@@ -10,15 +10,14 @@ import Foundation
 // MARK: - Protocol
 
 protocol CallStackViewModelProtocol: AnyObject, Observable {
-    
-}
 
+}
 
 // MARK: - Implementation
 
 @MainActor
 @Observable final class CallStackViewModel: CallStackViewModelProtocol {
-    
+
     // MARK: - Services
 
     // MARK: - States
@@ -28,5 +27,5 @@ protocol CallStackViewModelProtocol: AnyObject, Observable {
     // MARK: - Initializer
 
     // MARK: - Methods
-    
+
 }

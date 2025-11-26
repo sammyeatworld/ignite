@@ -11,16 +11,16 @@ let package = Package(
             name: "SymbolKit",
             type: .dynamic,
             targets: ["SymbolKit"]
-        ),
+        )
     ],
     dependencies: [
-        .package(path: "../FoundationKit"),
+        .package(path: "../FoundationKit")
     ],
     targets: [
         .target(
             name: "SymbolKit",
             dependencies: [
-                .product(name: "FoundationKit", package: "FoundationKit"),
+                .product(name: "FoundationKit", package: "FoundationKit")
             ],
             swiftSettings: [
                 .strictMemorySafety(),
@@ -30,6 +30,6 @@ let package = Package(
         .testTarget(
             name: "SymbolKitTests",
             dependencies: ["SymbolKit"]
-        ),
+        )
     ]
 )

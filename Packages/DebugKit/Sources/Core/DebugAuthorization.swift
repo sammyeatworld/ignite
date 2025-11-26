@@ -39,5 +39,5 @@ public struct DebugAuthorization {
         }
 
     }
-    
+
 }

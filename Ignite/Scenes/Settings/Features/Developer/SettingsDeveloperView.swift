@@ -14,7 +14,7 @@ struct SettingsDeveloperView: View {
 
     var body: some View {
         Form {
-            
+
         }
         .navigationTitle(.developer)
     }

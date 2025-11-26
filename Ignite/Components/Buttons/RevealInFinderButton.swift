@@ -17,9 +17,9 @@ struct RevealInFinderButton: View {
     init(_ locationURL: URL) {
         self.locationURL = locationURL
     }
-    
+
     // MARK: - View
-    
+
     var body: some View {
         Button {
             NSWorkspace.shared.activateFileViewerSelecting([locationURL])
@@ -29,7 +29,7 @@ struct RevealInFinderButton: View {
         }
         .buttonStyle(.plain)
     }
-    
+
 }
 
 // MARK: - Preview

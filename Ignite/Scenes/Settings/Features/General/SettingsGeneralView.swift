@@ -25,7 +25,7 @@ struct SettingsGeneralView: View {
         .tabViewStyle(.grouped)
         .padding()
     }
-    
+
 }
 
 // MARK: - Preview

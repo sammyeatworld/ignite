@@ -9,14 +9,14 @@ import SwiftUI
 import Defaults
 
 enum SettingsGeneralTab: String, CaseIterable, Displayable, Storable {
-    
+
     case analysis
     case darwin
     case debug
     case disassembly
     case graph
     case miscellaneous
-    
+
     var title: String {
         switch self {
         case .analysis:
@@ -33,7 +33,7 @@ enum SettingsGeneralTab: String, CaseIterable, Displayable, Storable {
             LocalizedStringResource.miscellaneous.key
         }
     }
-    
+
     @ViewBuilder
     var view: some View {
         switch self {
@@ -51,13 +51,13 @@ enum SettingsGeneralTab: String, CaseIterable, Displayable, Storable {
             SettingsMiscellaneousView()
         }
     }
-    
+
 }
 
 extension SettingsGeneralTab: Identifiable {
-    
+
     var id: Self {
         self
     }
-    
+
 }

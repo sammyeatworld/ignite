@@ -9,13 +9,13 @@ import Foundation
 public final class Device {
 
     // MARK: - Properties
-    
+
     public static var isSIPEnabled: Bool {
         querySIPStatus()
     }
 
     // MARK: - Initializer
-    
+
     private init() { }
 
 }
@@ -34,22 +34,22 @@ private extension Device {
         let process = Process()
         process.executableURL = URL(fileURLWithPath: "/usr/bin/csrutil")
         process.arguments = ["status"]
-        
+
         let pipe = Pipe()
         process.standardOutput = pipe
         process.standardError = pipe
-        
+
         do {
             try process.run()
             process.waitUntilExit()
-            
+
             if process.terminationStatus != 0 {
                 return true
             }
-            
+
             let data = pipe.fileHandleForReading.readDataToEndOfFile()
             let output = String(data: data, encoding: .utf8) ?? ""
-            
+
             return output.lowercased().contains("enabled")
         } catch {
             return true

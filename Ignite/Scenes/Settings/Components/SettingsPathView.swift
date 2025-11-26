@@ -7,11 +7,11 @@
 import SwiftUI
 
 struct SettingsPathView: View {
-    
+
     // MARK: - Properties
-    
+
     private let locationURL: URL
-   
+
     // MARK: - Initializer
 
     init(_ locationURL: URL) {

@@ -8,7 +8,7 @@ import SwiftUI
 
 @main
 struct IgniteApp: App {
-    
+
     @NSApplicationDelegateAdaptor(IgniteAppDelegate.self) var appDelegate
 
     var body: some Scene {
@@ -23,7 +23,7 @@ struct IgniteApp: App {
             DebugCommands()
         }
         .windowResizability(.contentSize)
-        
+
         Window("Processes", id: "processes") {
             ProcessesView()
                 .windowMinimizeBehavior(.disabled)
@@ -38,11 +38,11 @@ struct IgniteApp: App {
         }
         .windowResizability(.contentSize)
         .restorationBehavior(.disabled)
-        
+
         Window("Settings", id: "settings") {
            SettingsView()
         }
         .restorationBehavior(.disabled)
     }
-    
+
 }

@@ -7,15 +7,15 @@
 import Foundation
 
 public struct ProcessFileInfoFlag: OptionSet, Sendable {
-    
+
     public typealias RawValue = UInt32
-    
+
     public var rawValue: UInt32
-    
+
     public init(rawValue: UInt32) {
         self.rawValue = rawValue
     }
-    
+
     /// PROC_FP_SHARED
     public static let shared = ProcessFileInfoFlag(rawValue: 0x1)
     /// PROC_FP_CLEXEC
@@ -24,6 +24,5 @@ public struct ProcessFileInfoFlag: OptionSet, Sendable {
     public static let guarded = ProcessFileInfoFlag(rawValue: 0x4)
     /// PROC_FP_CLFORK
     public static let closeOnFork = ProcessFileInfoFlag(rawValue: 0x8)
-    
-    
+
 }

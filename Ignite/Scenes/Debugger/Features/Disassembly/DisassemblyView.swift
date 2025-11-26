@@ -7,14 +7,14 @@
 import SwiftUI
 
 struct DisassemblyView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var viewModel: DisassemblyViewModelProtocol
-    
+
     // MARK: - Initializer
-    
+
     init(viewModel: some DisassemblyViewModelProtocol) {
         self.viewModel = viewModel
     }

@@ -7,13 +7,13 @@
 import Foundation
 
 public struct DebugConfiguration {
-    
+
     // MARK: - Properties
-    
+
     // MARK: - Initializer
-    
+
     public init() {
-        
+
     }
-    
+
 }

@@ -105,7 +105,7 @@ enum DebugCommand: @MainActor CommandItem {
             return nil
         }
     }
-    
+
     var shortcut: KeyboardShortcut? {
         switch self {
         case .pauseExecution:
@@ -144,7 +144,7 @@ enum DebugCommand: @MainActor CommandItem {
             return nil
         }
     }
-    
+
     var group: DebugCommandGroup {
         switch self {
         case .pauseExecution,

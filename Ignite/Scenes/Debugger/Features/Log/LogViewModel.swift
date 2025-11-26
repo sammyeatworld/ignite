@@ -10,14 +10,14 @@ import Foundation
 // MARK: - Protocol
 
 protocol LogViewModelProtocol: AnyObject, Observable {
-    
+
 }
 
 // MARK: - Implementation
 
 @MainActor
 @Observable final class LogViewModel: LogViewModelProtocol {
-    
+
     // MARK: - Services
 
     // MARK: - States
@@ -29,4 +29,3 @@ protocol LogViewModelProtocol: AnyObject, Observable {
     // MARK: - Methods
 
 }
-

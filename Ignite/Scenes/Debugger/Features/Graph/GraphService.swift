@@ -11,7 +11,7 @@ import GraphKit
 // MARK: - Protocol
 
 protocol GraphServiceProtocol: AnyObject {
-  
+
     // MARK: - Properties
 
     // MARK: - Methods
@@ -21,7 +21,7 @@ protocol GraphServiceProtocol: AnyObject {
 // MARK: - Implementation
 
 final actor GraphService: GraphServiceProtocol {
-   
+
     // MARK: - Services
 
     // MARK: - Properties
@@ -45,11 +45,10 @@ private extension GraphService {
 // MARK: - Factory
 
 extension Container {
-    
+
     var graphService: Factory<GraphServiceProtocol> {
         self { @MainActor in GraphService() }
             .cached
     }
-    
-}
 
+}

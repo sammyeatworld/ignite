@@ -15,7 +15,7 @@ final class DebugCommandExecutor: @MainActor CommandExecutorItem {
     private var openWindow
     @Injected(\.debugService)
     private var debugService
-    
+
     func execute(_ command: DebugCommand) async {
         switch command {
         case .pauseExecution:

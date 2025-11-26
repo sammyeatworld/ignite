@@ -7,13 +7,13 @@
 import Foundation
 
 public struct GraphOptions: OptionSet, Sendable {
-    
+
     public typealias RawValue = UInt
-    
+
     public let rawValue: RawValue
-    
+
     public init(rawValue: RawValue) {
         self.rawValue = rawValue
     }
-    
+
 }

@@ -11,16 +11,16 @@ let package = Package(
             name: "DarwinKit",
             type: .dynamic,
             targets: ["DarwinKit"]
-        ),
+        )
     ],
     dependencies: [
-        .package(path: "../FoundationKit"),
+        .package(path: "../FoundationKit")
     ],
     targets: [
         .target(
             name: "DarwinKit",
             dependencies: [
-                .product(name: "FoundationKit", package: "FoundationKit"),
+                .product(name: "FoundationKit", package: "FoundationKit")
             ],
             swiftSettings: [
                 .strictMemorySafety(),
@@ -30,6 +30,6 @@ let package = Package(
         .testTarget(
             name: "DarwinKitTests",
             dependencies: ["DarwinKit"]
-        ),
+        )
     ]
 )

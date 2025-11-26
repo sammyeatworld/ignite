@@ -7,7 +7,7 @@
 import Foundation
 
 public enum ProcessListType: UInt32, Sendable {
-    
+
     /// PROC_ALL_PIDS
     case allPids = 1
     /// PROC_PGRP_ONLY
@@ -22,5 +22,5 @@ public enum ProcessListType: UInt32, Sendable {
     case ppidOnly = 6
     /// PROC_KDBG_ONLY
     case kdbgOnly = 7
-    
+
 }

@@ -11,7 +11,7 @@ import PluginKit
 // MARK: - Protocol
 
 protocol PluginServiceProtocol: AnyObject {
-  
+
     // MARK: - Properties
 
     // MARK: - Methods
@@ -21,7 +21,7 @@ protocol PluginServiceProtocol: AnyObject {
 // MARK: - Implementation
 
 final actor PluginService: PluginServiceProtocol {
-   
+
     // MARK: - Services
 
     // MARK: - Properties
@@ -45,10 +45,10 @@ private extension PluginService {
 // MARK: - Factory
 
 extension Container {
-    
+
     var pluginService: Factory<PluginServiceProtocol> {
         self { @MainActor in PluginService() }
             .singleton
     }
-    
+
 }

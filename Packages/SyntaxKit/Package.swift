@@ -11,16 +11,16 @@ let package = Package(
             name: "SyntaxKit",
             type: .dynamic,
             targets: ["SyntaxKit"]
-        ),
+        )
     ],
     dependencies: [
-        .package(path: "../FoundationKit"),
+        .package(path: "../FoundationKit")
     ],
     targets: [
         .target(
             name: "SyntaxKit",
             dependencies: [
-                .product(name: "FoundationKit", package: "FoundationKit"),
+                .product(name: "FoundationKit", package: "FoundationKit")
             ],
             swiftSettings: [
                 .strictMemorySafety(),
@@ -30,6 +30,6 @@ let package = Package(
         .testTarget(
             name: "SyntaxKitTests",
             dependencies: ["SyntaxKit"]
-        ),
+        )
     ]
 )

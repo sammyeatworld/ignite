@@ -49,5 +49,5 @@ struct JumpCommands: Commands {
             .keyboardShortcut(command.shortcut)
         }
     }
-    
+
 }

@@ -17,9 +17,9 @@ public extension DateFormatter {
         case yyyyMMddHHmmss = "yyyy-MM-dd HH:mm:ss"
         case ddMMyyyyHHmmss = "dd.MM.yyyy HH:mm:ss"
         case yyyyMMddTHHmmss = "yyyy-MM-dd'T'HH:mm:ss"
-        
+
     }
-    
+
     /// Returns a string representation of the given `Date` using the specified `DateFormat`.
     ///
     /// - Parameters:
@@ -30,7 +30,7 @@ public extension DateFormatter {
         dateFormatter.dateFormat = format.rawValue
         return dateFormatter.string(from: date)
     }
-    
+
     /// Parses a string into a `Date` object using the specified `DateFormat`.
     ///
     /// - Parameters:
@@ -41,5 +41,5 @@ public extension DateFormatter {
         dateFormatter.dateFormat = format.rawValue
         return dateFormatter.date(from: string)
     }
-    
+
 }

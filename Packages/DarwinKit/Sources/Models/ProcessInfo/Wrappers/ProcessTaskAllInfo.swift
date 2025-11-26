@@ -7,13 +7,13 @@
 import Foundation
 
 public struct ProcessTaskAllInfo: LayoutWrapper {
-    
+
     public typealias Layout = proc_taskallinfo
-    
+
     public var layout: Layout
-    
+
     public init(layout: Layout) {
         self.layout = layout
     }
-    
+
 }

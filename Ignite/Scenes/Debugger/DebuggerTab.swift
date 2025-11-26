@@ -7,7 +7,7 @@
 import SwiftUI
 
 enum DebuggerTab: CaseIterable {
-    
+
     case machO
     case disassembly
     case graph
@@ -16,11 +16,11 @@ enum DebuggerTab: CaseIterable {
     case breakpoints
     case memoryMap
     case callStack
-    
+
 }
 
 extension DebuggerTab {
-    
+
     var title: LocalizedStringResource {
         switch self {
         case .machO:
@@ -41,7 +41,7 @@ extension DebuggerTab {
             .breakpoints
         }
     }
-    
+
     var image: String {
         switch self {
         case .machO:
@@ -62,7 +62,7 @@ extension DebuggerTab {
             SF.callStack.rawValue
         }
     }
-    
+
     @ViewBuilder
     var body: some View {
         switch self {
@@ -84,13 +84,13 @@ extension DebuggerTab {
             CallStackView(viewModel: CallStackViewModel())
         }
     }
-    
+
 }
 
 extension DebuggerTab: Identifiable {
-    
+
     var id: Self {
         self
     }
-    
+
 }

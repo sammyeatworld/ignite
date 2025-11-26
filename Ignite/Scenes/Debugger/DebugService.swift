@@ -11,7 +11,7 @@ import DebugKit
 // MARK: - Protocol
 
 protocol DebugServiceProtocol: AnyObject {
-  
+
     // MARK: - Properties
 
     // MARK: - Methods
@@ -37,7 +37,7 @@ protocol DebugServiceProtocol: AnyObject {
 // MARK: - Implementation
 
 final actor DebugService: DebugServiceProtocol {
-   
+
     // MARK: - Services
 
     // MARK: - Properties
@@ -49,65 +49,65 @@ final actor DebugService: DebugServiceProtocol {
 // MARK: - Public Methods
 
 extension DebugService {
-    
+
     func pauseExecution() async {
-        
+
     }
 
     func runToCursor() async {
-        
+
     }
 
     func runUntilReturn() async {
-        
+
     }
 
     func stepInto() async {
-        
+
     }
 
     func stepOver() async {
-        
+
     }
 
     func stepOut() async {
-        
+
     }
 
     func stepIntoInstruction() async {
-        
+
     }
 
     func stepOverInstruction() async {
-        
+
     }
 
     func stepIntoThread() async {
-        
+
     }
 
     func stepOverThread() async {
-        
+
     }
 
     func deactivateBreakpoints() async {
-        
+
     }
 
     func fetchBreakpoints() async {
-        
+
     }
 
     func attachToProcess(_ name: String?, pid: Int32?) async {
-        
+
     }
 
     func detachFromProcess() async {
-        
+
     }
 
     func debugExecutable(at path: URL) async {
-        
+
     }
 
 }
@@ -115,16 +115,16 @@ extension DebugService {
 // MARK: - Private Methods
 
 private extension DebugService {
-    
+
 }
 
 // MARK: - Factory
 
 extension Container {
-    
+
     var debugService: Factory<DebugServiceProtocol> {
         self { @MainActor in DebugService() }
             .cached
     }
-    
+
 }

@@ -7,10 +7,10 @@
 import Foundation
 
 public enum ProcessRegionFlag: UInt32, Sendable {
-    
+
     /// PROC_REGION_SUBMAP
     case submap = 1
     /// PROC_REGION_SHARED
     case shared = 2
-    
+
 }

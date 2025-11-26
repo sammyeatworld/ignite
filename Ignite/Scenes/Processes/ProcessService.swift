@@ -11,19 +11,19 @@ import DebugKit
 // MARK: - Protocol
 
 protocol ProcessServiceProtocol: AnyObject {
-  
+
     // MARK: - Properties
 
     // MARK: - Methods
-    
+
     func fetchProcesses() async -> [Process]
-    
+
 }
 
 // MARK: - Implementation
 
 final class ProcessService: ProcessServiceProtocol {
-   
+
     // MARK: - Services
 
     // MARK: - Properties
@@ -45,16 +45,16 @@ extension ProcessService {
 // MARK: - Private Methods
 
 private extension ProcessService {
-    
+
 }
 
 // MARK: - Factory
 
 extension Container {
-    
+
     var processService: Factory<ProcessServiceProtocol> {
         self { ProcessService() }
             .cached
     }
-    
+
 }

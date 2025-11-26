@@ -10,7 +10,7 @@ import FactoryKit
 // MARK: - Protocol
 
 protocol AboutServiceProtocol: AnyObject {
-  
+
     // MARK: - Properties
 
     // MARK: - Methods
@@ -20,7 +20,7 @@ protocol AboutServiceProtocol: AnyObject {
 // MARK: - Implementation
 
 final actor AboutService: AboutServiceProtocol {
-   
+
     // MARK: - Services
 
     // MARK: - Properties
@@ -38,16 +38,16 @@ extension AboutService {
 // MARK: - Private Methods
 
 private extension AboutService {
-    
+
 }
 
 // MARK: - Factory
 
 extension Container {
-    
+
     var aboutService: Factory<AboutServiceProtocol> {
         self { @MainActor in AboutService() }
             .cached
     }
-    
+
 }

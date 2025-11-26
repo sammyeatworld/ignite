@@ -16,11 +16,11 @@ public enum NetworkError: Equatable {
     /// An HTTP error occurred with the given status code.
     /// - Parameter Int: The HTTP status code (e.g., 404, 500).
     case httpError(Int)
-    
+
 }
 
 extension NetworkError: LocalizedError {
-    
+
     /// A localized, user-friendly description of the network error.
     public var errorDescription: String? {
         switch self {
@@ -43,5 +43,5 @@ extension NetworkError: LocalizedError {
             )
         }
     }
-    
+
 }

@@ -10,22 +10,22 @@ import SwiftUI
 // MARK: - Protocol
 
 protocol DebuggerViewModelProtocol: AnyObject, Observable {
-    
+
 }
 
 // MARK: - Implementation
 
 @MainActor
 @Observable final class DebuggerViewModel: DebuggerViewModelProtocol {
-    
+
     // MARK: - Services
-    
+
     // MARK: - States
-    
+
     // MARK: - Properties
-    
+
     // MARK: - Initializer
-    
+
     // MARK: - Methods
-    
+
 }

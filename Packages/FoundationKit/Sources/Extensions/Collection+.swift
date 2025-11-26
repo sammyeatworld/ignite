@@ -7,7 +7,7 @@
 import Foundation
 
 public extension Collection {
-    
+
     var isNotEmpty: Bool {
         !isEmpty
     }
@@ -15,9 +15,9 @@ public extension Collection {
     var asArray: [Element] {
         Array(self)
     }
-    
+
     subscript(safe index: Index) -> Element? {
         indices.contains(index) ? self[index] : nil
     }
-    
+
 }

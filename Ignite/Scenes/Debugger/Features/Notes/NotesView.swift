@@ -7,14 +7,14 @@
 import SwiftUI
 
 struct NotesView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var viewModel: NotesViewModelProtocol
-    
+
     // MARK: - Initializer
-    
+
     init(viewModel: some NotesViewModelProtocol) {
         self.viewModel = viewModel
     }

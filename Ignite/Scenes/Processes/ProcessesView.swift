@@ -7,13 +7,13 @@
 import SwiftUI
 
 struct ProcessesView: View {
-    
+
     // MARK: - Properties
-    
+
     private let viewModel: ProcessesViewModelProtocol
 
     // MARK: - Initializer
-    
+
     init(viewModel: ProcessesViewModelProtocol = ProcessesViewModel()) {
         self.viewModel = viewModel
     }
@@ -24,7 +24,7 @@ struct ProcessesView: View {
         VStack {
         }
     }
-   
+
 }
 
 // MARK: - Preview

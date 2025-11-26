@@ -7,14 +7,14 @@
 import Foundation
 
 enum SF: String {
-    
+
     // MARK: - App
-    
+
     case about = "info.circle"
     case settings = "gear"
 
     // MARK: - Jump Commands
-    
+
     case jumpToPreviousPosition = "arrowshape.left.fill"
     case jumpToNextPosition = "arrowshape.right.fill"
     case emptyNavigationStack = "trash.fill"
@@ -22,7 +22,7 @@ enum SF: String {
     case listCrossReferencesFrom = "point.filled.topleft.down.curvedto.point.bottomright.up"
 
     // MARK: - Search Commands
-    
+
     case nextCode = "text.alignleft"
     case nextData = "tablecells"
 
@@ -61,9 +61,9 @@ enum SF: String {
     case updates = "arrow.clockwise"
     case experimental = "flask"
     case developer = "hammer"
-    
+
     // MARK: - Miscellaneous
-    
+
     case info = "info.circle.fill"
     case folder = "folder.circle"
     case finder = "finder"

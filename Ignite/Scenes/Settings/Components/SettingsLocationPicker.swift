@@ -8,7 +8,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct SettingsLocationPicker: View {
-   
+
     // MARK: - Properties
 
     @State
@@ -35,7 +35,7 @@ struct SettingsLocationPicker: View {
                     Text(type.title).tag(type)
                 }
             }
-            
+
             switch location.type {
             case .default:
                 SettingsPathView(location.url)

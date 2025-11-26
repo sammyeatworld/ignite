@@ -8,15 +8,15 @@ import Foundation
 import DarwinKit
 
 public final class DebugSession {
-    
+
     // MARK: - Properties
-    
+
     private let taskHandle: TaskHandle
-    
+
     // MARK: - Initializer
 
     init(taskHandle: TaskHandle) {
         self.taskHandle = taskHandle
     }
-    
+
 }

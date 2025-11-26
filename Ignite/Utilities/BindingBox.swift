@@ -24,7 +24,7 @@ import SwiftUI
 ///
 /// This allows a non-optional binding even though `name` is optional.
 @MainActor
-func ??<T>(lhs: Binding<T?>, rhs: T) -> Binding<T> {
+func ?? <T>(lhs: Binding<T?>, rhs: T) -> Binding<T> {
     Binding<T>(
         get: { lhs.wrappedValue ?? rhs },
         set: { lhs.wrappedValue = $0 }

@@ -7,7 +7,7 @@
 import Foundation
 
 public extension DispatchQueue {
-    
+
     /// Executes a block of code on the main queue after a specified delay.
     ///
     /// - Parameters:
@@ -23,5 +23,5 @@ public extension DispatchQueue {
     static func delay(_ seconds: Double, _ block: @Sendable @escaping () -> Void) {
         main.asyncAfter(deadline: .now() + seconds, execute: block)
     }
-    
+
 }

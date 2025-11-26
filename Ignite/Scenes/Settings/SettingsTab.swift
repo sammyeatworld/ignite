@@ -18,7 +18,7 @@ enum SettingsTab: String, CaseIterable, Displayable, Storable {
     case updates
     case experimental
     case developer
-    
+
     var title: String {
         switch self {
         case .general:
@@ -39,7 +39,7 @@ enum SettingsTab: String, CaseIterable, Displayable, Storable {
             return LocalizedStringResource.developer.key
         }
     }
-    
+
     var image: String {
         switch self {
         case .general:
@@ -60,7 +60,7 @@ enum SettingsTab: String, CaseIterable, Displayable, Storable {
             return SF.developer.rawValue
         }
     }
-    
+
     @ViewBuilder
     var view: some View {
         switch self {
@@ -82,13 +82,13 @@ enum SettingsTab: String, CaseIterable, Displayable, Storable {
             SettingsDeveloperView()
         }
     }
-    
+
 }
 
 extension SettingsTab: Identifiable {
-    
+
     var id: Self {
         self
     }
-    
+
 }

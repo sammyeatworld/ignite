@@ -7,15 +7,15 @@
 import Foundation
 
 public final class Analysis {
-    
+
     // MARK: - Properties
-    
+
     private var configuration: AnalysisConfiguration
-    
+
     // MARK: - Initializer
-    
+
     public init(configuration: AnalysisConfiguration) {
         self.configuration = configuration
     }
-    
+
 }

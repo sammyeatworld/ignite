@@ -7,11 +7,11 @@
 import Foundation
 
 public struct GraphConfiguration {
-    
+
     // MARK: - Initializer
-    
+
     public init() {
-        
+
     }
-    
+
 }

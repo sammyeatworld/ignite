@@ -10,14 +10,14 @@ import Foundation
 // MARK: - Protocol
 
 protocol DisassemblyViewModelProtocol: AnyObject, Observable {
-    
+
 }
 
 // MARK: - Implementation
 
 @MainActor
 @Observable final class DisassemblyViewModel: DisassemblyViewModelProtocol {
-    
+
     // MARK: - Services
 
     // MARK: - States
@@ -27,5 +27,5 @@ protocol DisassemblyViewModelProtocol: AnyObject, Observable {
     // MARK: - Initializer
 
     // MARK: - Methods
-    
+
 }

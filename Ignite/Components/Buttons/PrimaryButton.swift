@@ -7,12 +7,12 @@
 import SwiftUI
 
 struct PrimaryButton: View {
-   
+
     // MARK: - Properties
-   
+
     private let title: LocalizedStringResource
     private let action: () -> Void
-   
+
     // MARK: - Initializer
 
     init(_ title: LocalizedStringResource, action: @escaping () -> Void) {

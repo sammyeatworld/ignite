@@ -7,9 +7,9 @@
 import Foundation
 
 public enum DarwinKitError: Int32, Error {
-    
+
     // MARK: - Kernel Return
-    
+
     /// KERN_INVALID_ADDRESS
     case invalidAddress = 1
     /// KERN_PROTECTION_FAILURE
@@ -124,11 +124,11 @@ public enum DarwinKitError: Int32, Error {
     case notFound = 56
     /// Unknown
     case unknown
-    
+
 }
 
 extension DarwinKitError: CustomStringConvertible {
-    
+
     public var description: String {
         switch self {
         case .invalidAddress:
@@ -249,4 +249,3 @@ extension DarwinKitError: CustomStringConvertible {
     }
 
 }
-

@@ -10,14 +10,14 @@ import Foundation
 // MARK: - Protocol
 
 protocol GraphViewModelProtocol: AnyObject, Observable {
-    
+
 }
 
 // MARK: - Implementation
 
 @MainActor
 @Observable final class GraphViewModel: GraphViewModelProtocol {
-    
+
     // MARK: - Services
 
     // MARK: - States

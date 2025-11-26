@@ -10,7 +10,7 @@ import Defaults
 struct SettingsLocationsView: View {
 
     // MARK: - Properties
-    
+
     @Default(.Settings.Locations.dumps)
     private var dumps
     @Default(.Settings.Locations.plugins)
@@ -29,7 +29,7 @@ struct SettingsLocationsView: View {
                     SettingsLocationPicker("Dumps", location: $dumps)
                 }
             }
-           
+
             Section {
                 SettingsInfoRow("Plugins", infoTitle: plugins.type.title) {
                     SettingsPathView(plugins.url)
@@ -37,7 +37,7 @@ struct SettingsLocationsView: View {
                     SettingsLocationPicker("Plugins", location: $plugins)
                 }
             }
-            
+
             Section {
                 SettingsInfoRow("Logs", infoTitle: logs.type.title) {
                     SettingsPathView(logs.url)

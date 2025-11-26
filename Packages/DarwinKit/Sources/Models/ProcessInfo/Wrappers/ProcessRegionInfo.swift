@@ -7,13 +7,13 @@
 import Foundation
 
 public struct ProcessRegionInfo: LayoutWrapper {
-    
+
     public typealias Layout = proc_regioninfo
-    
+
     public var layout: Layout
-    
+
     public init(layout: Layout) {
         self.layout = layout
     }
-    
+
 }

@@ -34,7 +34,7 @@ final class SearchCommandExecutor: @MainActor CommandExecutorItem {
             print("To be implemented")
         case .searchDirection:
             print("To be implemented")
-            
+
         }
     }
 

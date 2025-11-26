@@ -11,16 +11,16 @@ let package = Package(
             name: "DisassemblyKit",
             type: .dynamic,
             targets: ["DisassemblyKit"]
-        ),
+        )
     ],
     dependencies: [
-        .package(path: "../FoundationKit"),
+        .package(path: "../FoundationKit")
     ],
     targets: [
         .target(
             name: "DisassemblyKit",
             dependencies: [
-                .product(name: "FoundationKit", package: "FoundationKit"),
+                .product(name: "FoundationKit", package: "FoundationKit")
             ],
             swiftSettings: [
                 .strictMemorySafety(),
@@ -30,6 +30,6 @@ let package = Package(
         .testTarget(
             name: "DisassemblyKitTests",
             dependencies: ["DisassemblyKit"]
-        ),
+        )
     ]
 )

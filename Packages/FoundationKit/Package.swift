@@ -11,7 +11,7 @@ let package = Package(
             name: "FoundationKit",
             type: .dynamic,
             targets: ["FoundationKit"]
-        ),
+        )
     ],
     targets: [
         .target(
@@ -24,6 +24,6 @@ let package = Package(
         .testTarget(
             name: "FoundationKitTests",
             dependencies: ["FoundationKit"]
-        ),
+        )
     ]
 )

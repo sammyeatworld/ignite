@@ -7,13 +7,13 @@
 import Foundation
 
 public struct ProcessWorkqueueInfo: LayoutWrapper {
-    
+
     public typealias Layout = proc_workqueueinfo
-    
+
     public var layout: Layout
-    
+
     public init(layout: Layout) {
         self.layout = layout
     }
-    
+
 }

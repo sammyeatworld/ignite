@@ -11,7 +11,7 @@ import DisassemblyKit
 // MARK: - Protocol
 
 protocol DisassemblyServiceProtocol: AnyObject {
-  
+
     // MARK: - Properties
 
     // MARK: - Methods
@@ -21,7 +21,7 @@ protocol DisassemblyServiceProtocol: AnyObject {
 // MARK: - Implementation
 
 final actor DisassemblyService: DisassemblyServiceProtocol {
-   
+
     // MARK: - Services
 
     // MARK: - Properties
@@ -45,10 +45,10 @@ private extension DisassemblyService {
 // MARK: - Factory
 
 extension Container {
-    
+
     var disassemblyService: Factory<DisassemblyServiceProtocol> {
         self { @MainActor in DisassemblyService() }
             .cached
     }
-    
+
 }

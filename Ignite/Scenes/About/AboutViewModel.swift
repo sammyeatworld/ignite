@@ -16,11 +16,11 @@ protocol AboutViewModelProtocol: AnyObject, Observable {
 
 @MainActor
 @Observable final class AboutViewModel: AboutViewModelProtocol {
-    
+
     // MARK: - Services
-    
+
     // MARK: - Properties
-    
+
     // MARK: - Initializer
 
 }
@@ -34,5 +34,5 @@ extension AboutViewModel {
 // MARK: - Private Methods
 
 private extension AboutViewModel {
-    
+
 }

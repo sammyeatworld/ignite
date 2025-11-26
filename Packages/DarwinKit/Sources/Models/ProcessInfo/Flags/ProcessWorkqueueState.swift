@@ -7,15 +7,15 @@
 import Foundation
 
 public struct ProcessWorkqueueState: OptionSet, Sendable {
-    
+
     public typealias RawValue = UInt32
-    
+
     public var rawValue: UInt32
-    
+
     public init(rawValue: UInt32) {
         self.rawValue = rawValue
     }
-    
+
     /// WQ_EXCEEDED_CONSTRAINED_THREAD_LIMIT
     public static let exceededConstrainedThreadLimit = ProcessWorkqueueState(rawValue: 0x1)
     /// WQ_EXCEEDED_TOTAL_THREAD_LIMIT
@@ -26,5 +26,5 @@ public struct ProcessWorkqueueState: OptionSet, Sendable {
     public static let exceededCooperativeThreadLimit = ProcessWorkqueueState(rawValue: 0x8)
     /// WQ_EXCEEDED_ACTIVE_CONSTRAINED_THREAD_LIMIT
     public static let exceededActiveConstrainedThreadLimit = ProcessWorkqueueState(rawValue: 0x10)
-    
+
 }

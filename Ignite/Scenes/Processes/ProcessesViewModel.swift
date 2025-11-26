@@ -11,11 +11,11 @@ import FactoryKit
 
 @MainActor
 protocol ProcessesViewModelProtocol: AnyObject, Observable {
-    
+
     // MARK: - Properties
 
     // MARK: - Methods
-    
+
     func fetchProcesses() async
 
 }
@@ -24,15 +24,15 @@ protocol ProcessesViewModelProtocol: AnyObject, Observable {
 
 @MainActor
 @Observable final class ProcessesViewModel: ProcessesViewModelProtocol {
-    
+
     // MARK: - Services
-    
+
     @ObservationIgnored
     @Injected(\.processService)
     private var processService
-    
+
     // MARK: - Properties
-    
+
     // MARK: - Initializer
 
 }
@@ -42,13 +42,13 @@ protocol ProcessesViewModelProtocol: AnyObject, Observable {
 extension ProcessesViewModel {
 
     func fetchProcesses() async {
-        let _ = await processService.fetchProcesses()
+        _ = await processService.fetchProcesses()
     }
-   
+
 }
 
 // MARK: - Private Methods
 
 private extension ProcessesViewModel {
-    
+
 }

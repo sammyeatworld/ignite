@@ -10,7 +10,7 @@ import FactoryKit
 // MARK: - Protocol
 
 protocol NetworkServiceProtocol: AnyObject {
-  
+
     // MARK: - Properties
 
     // MARK: - Methods
@@ -20,7 +20,7 @@ protocol NetworkServiceProtocol: AnyObject {
 // MARK: - Implementation
 
 final class NetworkService: NetworkServiceProtocol {
-   
+
     // MARK: - Services
 
     // MARK: - Properties
@@ -38,16 +38,16 @@ extension NetworkService {
 // MARK: - Private Methods
 
 private extension NetworkService {
-    
+
 }
 
 // MARK: - Factory
 
 extension Container {
-    
+
     var networkService: Factory<NetworkServiceProtocol> {
         self { NetworkService() }
             .singleton
     }
-    
+
 }

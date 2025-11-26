@@ -9,14 +9,14 @@ import Foundation
 // MARK: - Protocol
 
 protocol MemoryMapViewModelProtocol: AnyObject, Observable {
-    
+
 }
 
 // MARK: - Implementation
 
 @MainActor
 @Observable final class MemoryMapViewModel: MemoryMapViewModelProtocol {
-    
+
     // MARK: - Services
 
     // MARK: - States
@@ -26,5 +26,5 @@ protocol MemoryMapViewModelProtocol: AnyObject, Observable {
     // MARK: - Initializer
 
     // MARK: - Methods
-    
+
 }

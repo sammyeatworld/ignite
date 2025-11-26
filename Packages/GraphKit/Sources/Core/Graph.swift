@@ -7,15 +7,15 @@
 import Foundation
 
 public final class Graph {
-    
+
     // MARK: - Properties
-    
+
     private var configuration: GraphConfiguration
-    
+
     // MARK: - Initializer
-    
+
     public init(configuration: GraphConfiguration) {
         self.configuration = configuration
     }
-    
+
 }

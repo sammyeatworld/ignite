@@ -10,7 +10,7 @@ import FactoryKit
 
 @MainActor
 final class JumpCommandExecutor: @MainActor CommandExecutorItem {
-   
+
     @Environment(\.openWindow)
     private var openWindow
 

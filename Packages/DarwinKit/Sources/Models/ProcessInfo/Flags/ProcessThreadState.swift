@@ -7,7 +7,7 @@
 import Foundation
 
 public enum ProcessThreadState: UInt32, Sendable {
-    
+
     /// TH_STATE_RUNNING
     case running = 1
     /// TH_STATE_STOPPED
@@ -18,5 +18,5 @@ public enum ProcessThreadState: UInt32, Sendable {
     case uninterruptible = 4
     /// TH_STATE_HALTED
     case halted = 5
-    
+
 }

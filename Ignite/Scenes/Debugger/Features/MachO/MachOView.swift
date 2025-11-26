@@ -7,26 +7,26 @@
 import SwiftUI
 
 struct MachOView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var viewModel: MachOViewModelProtocol
-    
+
     // MARK: - Initializer
-    
+
     init(viewModel: some MachOViewModelProtocol) {
         self.viewModel = viewModel
     }
-    
+
     // MARK: - View
 
     var body: some View {
-        VStack{
+        VStack {
             Text(.machO)
         }
     }
-    
+
 }
 
 // MARK: - Preview

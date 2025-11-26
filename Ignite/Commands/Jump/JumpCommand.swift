@@ -134,10 +134,9 @@ enum JumpCommand: @MainActor CommandItem {
 }
 
 extension JumpCommand {
-    
+
     var id: Self {
         self
     }
-    
-}
 
+}

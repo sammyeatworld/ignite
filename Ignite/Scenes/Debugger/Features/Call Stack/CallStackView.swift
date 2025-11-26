@@ -7,14 +7,14 @@
 import SwiftUI
 
 struct CallStackView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var viewModel: CallStackViewModelProtocol
-    
+
     // MARK: - Initializer
-    
+
     init(viewModel: some CallStackViewModelProtocol) {
         self.viewModel = viewModel
     }

@@ -133,7 +133,6 @@
 		A58CF0A72E8F21A300106697 /* Exceptions for "Meta" folder in "Ignite" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				.gitkeep,
 				swiftlint.yml,
 			);
 			target = A58CE83E2E8F1C6E00106697 /* Ignite */;

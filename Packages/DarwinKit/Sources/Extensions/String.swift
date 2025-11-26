@@ -7,7 +7,7 @@
 import Foundation
 
 extension String {
-    
+
     /// Unsafely interprets the memory of `value` as a null-terminated C string.
     /// - Warning: Only use this if you *know* `value`'s memory represents
     ///   a valid, null-terminated UTF-8 C string.
@@ -20,5 +20,5 @@ extension String {
             }
         )
     }
-    
+
 }

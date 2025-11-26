@@ -14,7 +14,7 @@ struct SettingsAppearanceView: View {
 
     var body: some View {
         Form {
-            
+
         }
         .navigationTitle(.appearance)
     }

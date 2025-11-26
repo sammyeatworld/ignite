@@ -7,5 +7,5 @@
 import Foundation
 
 public enum SymbolKitError: Error {
-    
+
 }

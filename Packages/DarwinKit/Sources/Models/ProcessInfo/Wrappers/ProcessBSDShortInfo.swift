@@ -7,13 +7,13 @@
 import Foundation
 
 public struct ProcessBSDShortInfo: LayoutWrapper {
-    
+
     public typealias Layout = proc_bsdshortinfo
-    
+
     public var layout: Layout
-    
+
     public init(layout: Layout) {
         self.layout = layout
     }
-    
+
 }

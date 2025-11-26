@@ -7,11 +7,11 @@
 import Foundation
 
 public struct DisassemblyConfiguration {
-    
+
     // MARK: - Initializer
-    
+
     public init() {
-        
+
     }
-    
+
 }

@@ -7,13 +7,13 @@
 import Foundation
 
 public struct ProcessExitReasonBasicInfo: LayoutWrapper {
-    
+
     public typealias Layout = proc_exitreasonbasicinfo
-    
+
     public var layout: Layout
-    
+
     public init(layout: Layout) {
         self.layout = layout
     }
-    
+
 }

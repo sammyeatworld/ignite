@@ -11,7 +11,7 @@ let package = Package(
             name: "DebugKit",
             type: .dynamic,
             targets: ["DebugKit"]
-        ),
+        )
     ],
     dependencies: [
         .package(path: "../FoundationKit"),
@@ -32,6 +32,6 @@ let package = Package(
         .testTarget(
             name: "DebugKitTests",
             dependencies: ["DebugKit"]
-        ),
+        )
     ]
 )

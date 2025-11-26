@@ -52,5 +52,5 @@ struct DebugCommands: Commands {
             .keyboardShortcut(command.shortcut)
         }
     }
-    
+
 }

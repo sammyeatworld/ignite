@@ -7,11 +7,11 @@
 import Foundation
 
 public struct AnalysisConfiguration {
-    
+
     // MARK: - Initializer
-    
+
     public init() {
-        
+
     }
-    
+
 }

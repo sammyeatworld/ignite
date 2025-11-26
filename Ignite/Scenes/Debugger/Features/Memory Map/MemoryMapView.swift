@@ -7,14 +7,14 @@
 import SwiftUI
 
 struct MemoryMapView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var viewModel: MemoryMapViewModelProtocol
-    
+
     // MARK: - Initializer
-    
+
     init(viewModel: some MemoryMapViewModelProtocol) {
         self.viewModel = viewModel
     }

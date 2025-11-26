@@ -7,14 +7,14 @@
 import SwiftUI
 
 struct DebuggerView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var viewModel: DebuggerViewModelProtocol
 
     // MARK: - Initializer
-    
+
     init(viewModel: some DebuggerViewModelProtocol) {
         self.viewModel = viewModel
     }
@@ -33,7 +33,7 @@ struct DebuggerView: View {
             .tabViewStyle(.grouped)
         }
     }
-    
+
 }
 
 // MARK: - Preview

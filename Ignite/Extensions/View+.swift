@@ -8,7 +8,7 @@ import FoundationKit
 import SwiftUI
 
 extension View {
-    
+
     /// Performs an action when the view appears for the first time.
     ///
     /// - Parameter action: A closure executed once when the view first appears.
@@ -16,7 +16,7 @@ extension View {
     func onFirstAppear(perform action: (VoidClosure)? = nil) -> some View {
         modifier(ViewFirstAppearModifier(perform: action))
     }
-    
+
     /// Performs an async action when the view appears for the first time.
     ///
     /// - Parameter action: An asynchronous closure executed once when the view first appears.
@@ -24,11 +24,11 @@ extension View {
     func onFirstAppearTask(perform action: (@Sendable @escaping () async -> Void)) -> some View {
         modifier(ViewFirstAppearTaskModifier(perform: action))
     }
-    
+
 }
 
 extension View {
-    
+
     /// Applies a redacted effect to the view when the given condition is `true`.
     ///
     /// This method redacts the view using `.placeholder`, removes color saturation,
@@ -42,11 +42,11 @@ extension View {
         ? AnyView(redacted(reason: .placeholder).saturation(.zero).disabled(true))
         : AnyView(self)
     }
-    
+
 }
 
 extension View {
-    
+
     /// Prints the given values to the console and returns an `EmptyView`.
     ///
     /// Useful for debugging in SwiftUI view bodies.
@@ -56,5 +56,5 @@ extension View {
         for value in vars { print(value) }
         return EmptyView()
     }
-    
+
 }

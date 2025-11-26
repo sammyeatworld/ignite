@@ -8,9 +8,9 @@ import SwiftUI
 import Defaults
 
 struct IgniteView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var isShowingProcesses = false
     @Default(.Settings.Updates.automaticallyCheckForUpdates)
@@ -42,11 +42,11 @@ struct IgniteView: View {
                 .buttonStyle(.borderedProminent)
 
                 PrimaryButton(.openExecutable) {
-                    
+
                 }
 
                 PrimaryButton(.settings) {
-                    
+
                 }
             }
             Toggle(

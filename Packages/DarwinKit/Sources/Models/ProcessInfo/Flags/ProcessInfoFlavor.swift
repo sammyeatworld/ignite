@@ -7,7 +7,7 @@
 import Foundation
 
 public enum ProcessInfoFlavor: UInt32 {
-    
+
     /// PROC_PIDLISTFDS
     case listFds = 1
     /// PROC_PIDTASKALLINFO
@@ -40,5 +40,5 @@ public enum ProcessInfoFlavor: UInt32 {
     case threadID64Info = 15
     /// PROC_PID_RUSAGE
     case rUsage = 16
-    
+
 }

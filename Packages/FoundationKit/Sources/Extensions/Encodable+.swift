@@ -25,7 +25,7 @@ public extension Encodable {
 }
 
 public extension Encodable {
-    
+
     /// Prints the current object as a pretty-printed JSON string with sorted keys.
     ///
     /// This function encodes the object to JSON using `JSONEncoder`, applying
@@ -41,8 +41,8 @@ public extension Encodable {
             return
         }
         let prettyJSONString = String(decoding: encodedData, as: UTF8.self)
-        
+
         print(prettyJSONString)
     }
-    
+
 }

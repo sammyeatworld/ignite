@@ -17,7 +17,7 @@ struct IgniteCommands: Commands {
             } label: {
                 Label(.aboutIgnite, systemImage: SF.about.rawValue)
             }
-            
+
         }
         CommandGroup(replacing: .appSettings) {
             Button {

@@ -7,15 +7,15 @@
 import Foundation
 
 public final class Disassembler {
-    
+
     // MARK: - Properties
-    
+
     private var configuration: DisassemblyConfiguration
-    
+
     // MARK: - Initializer
-    
+
     public init(configuration: DisassemblyConfiguration) {
         self.configuration = configuration
     }
-    
+
 }

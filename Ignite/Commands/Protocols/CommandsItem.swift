@@ -14,7 +14,7 @@ protocol CommandsItem: Commands {
     associatedtype CommandExecutorType: CommandExecutorItem
     associatedtype CommandGroupType: CommandGroupItem
     associatedtype CommandViewType: View
-   
+
     // MARK: - Properties
 
     var executor: CommandExecutorType { get }

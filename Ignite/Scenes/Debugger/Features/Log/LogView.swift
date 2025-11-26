@@ -12,7 +12,7 @@ struct LogView: View {
 
     @State
     private var viewModel: LogViewModelProtocol
-    
+
     // MARK: - Initializer
 
     init(viewModel: some LogViewModelProtocol) {

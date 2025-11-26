@@ -7,20 +7,20 @@
 import SwiftUI
 
 struct AboutView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var viewModel: AboutViewModel
-    
+
     // MARK: - Initializer
-    
+
     init(viewModel: AboutViewModel = AboutViewModel()) {
         self.viewModel = viewModel
     }
-    
+
     // MARK: - View
-    
+
     var body: some View {
         VStack(alignment: .trailing) {
             HStack(alignment: .center, spacing: 32.0) {
@@ -34,7 +34,7 @@ struct AboutView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom, 32.0)
                     Text("""
-                        Copyright © 2025 Samuel Majtan. All rights reserved. 
+                        Copyright © 2025 Samuel Majtan. All rights reserved.
                         Licensed under the GNU GPLv3 license.
                         """)
                     .font(.subheadline)

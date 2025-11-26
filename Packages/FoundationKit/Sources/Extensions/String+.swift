@@ -16,7 +16,7 @@ public extension String {
             .lowercased()
             .folding(options: .diacriticInsensitive, locale: nil)
     }
-    
+
     /// Truncates the string to a specified maximum length, appending a trailing string if needed.
     ///
     /// - Parameters:

@@ -11,7 +11,7 @@ enum UpdateBranch: String, CaseIterable, Displayable, Storable {
 
     case main
     case develop
-    
+
     var title: String {
         switch self {
         case .main:
@@ -20,7 +20,7 @@ enum UpdateBranch: String, CaseIterable, Displayable, Storable {
             LocalizedStringResource.develop.key
         }
     }
-    
+
 }
 
 extension UpdateBranch: Identifiable {

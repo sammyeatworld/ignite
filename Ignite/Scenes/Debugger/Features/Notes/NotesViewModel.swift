@@ -8,7 +8,7 @@ import FactoryKit
 import Foundation
 
 protocol NotesViewModelProtocol: AnyObject, Observable {
-    
+
 }
 
 @MainActor
@@ -23,5 +23,5 @@ protocol NotesViewModelProtocol: AnyObject, Observable {
     // MARK: - Initializer
 
     // MARK: - Methods
-    
+
 }

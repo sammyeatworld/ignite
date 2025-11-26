@@ -7,7 +7,7 @@
 import Foundation
 
 public enum ProcessShareMode: UInt32, Sendable {
-    
+
     /// SM_COW
     case copyOnWrite = 1
     /// SM_PRIVATE
@@ -24,5 +24,5 @@ public enum ProcessShareMode: UInt32, Sendable {
     case sharedAliased = 7
     /// SM_LARGE_PAGE
     case largePage = 8
-    
+
 }

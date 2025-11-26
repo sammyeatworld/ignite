@@ -145,7 +145,7 @@ extension View {
     func messageAlert(_ message: Binding<String?>, action: VoidClosure? = nil) -> some View {
         modifier(MessageAlertModifier(messageAlert: message, messageAction: action))
     }
-    
+
     func warningAlert(
         _ warning: Binding<String?>,
         destructiveActionText: String,

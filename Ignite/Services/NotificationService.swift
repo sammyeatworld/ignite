@@ -10,7 +10,7 @@ import FactoryKit
 // MARK: - Protocol
 
 protocol NotificationServiceProtocol: AnyObject {
-  
+
     // MARK: - Properties
 
     // MARK: - Methods
@@ -20,7 +20,7 @@ protocol NotificationServiceProtocol: AnyObject {
 // MARK: - Implementation
 
 final class NotificationService: NotificationServiceProtocol {
-   
+
     // MARK: - Services
 
     // MARK: - Properties
@@ -38,16 +38,16 @@ extension NotificationService {
 // MARK: - Private Methods
 
 private extension NotificationService {
-    
+
 }
 
 // MARK: - Factory
 
 extension Container {
-    
+
     var notificationService: Factory<NotificationServiceProtocol> {
         self { NotificationService() }
             .singleton
     }
-    
+
 }

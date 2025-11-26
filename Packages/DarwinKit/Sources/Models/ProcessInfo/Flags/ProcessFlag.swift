@@ -7,15 +7,15 @@
 import Foundation
 
 public struct ProcessFlag: OptionSet, Sendable {
-    
+
     public typealias RawValue = UInt32
-    
+
     public var rawValue: UInt32
-    
+
     public init(rawValue: UInt32) {
         self.rawValue = rawValue
     }
-    
+
     /// PROC_FLAG_SYSTEM
     public static let system = ProcessFlag(rawValue: 0x1)
     /// PROC_FLAG_TRACED

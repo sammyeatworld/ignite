@@ -7,14 +7,14 @@
 import SwiftUI
 
 struct BreakpointsView: View {
-    
+
     // MARK: - Properties
-    
+
     @State
     private var viewModel: BreakpointsViewModelProtocol
-    
+
     // MARK: - Initializer
-    
+
     init(viewModel: some BreakpointsViewModelProtocol) {
         self.viewModel = viewModel
     }

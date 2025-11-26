@@ -6,31 +6,31 @@
 
 import SwiftUI
 
-struct SettingsInfoSheet<Content: View>: View{
-    
+struct SettingsInfoSheet<Content: View>: View {
+
     // MARK: - Properties
-    
+
     @Binding
     var showingInfo: Bool
     private let content: Content
-    
+
     // MARK: - Initializer
-    
+
     init(isPresented showingInfo: Binding<Bool>, @ViewBuilder content: () -> Content) {
         self._showingInfo = showingInfo
         self.content = content()
     }
-    
+
     // MARK: - View
-    
+
     var body: some View {
         VStack {
             Form {
                 content
             }
-            
+
             Divider()
-            
+
             HStack(alignment: .bottom) {
                 Spacer()
                 Button("Done") {
@@ -41,7 +41,7 @@ struct SettingsInfoSheet<Content: View>: View{
             }
         }
     }
-    
+
 }
 
 // MARK: - Preview
