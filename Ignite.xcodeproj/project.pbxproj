@@ -12,6 +12,10 @@
 		A54386F12E9ABD62009B669F /* MachOKit in Frameworks */ = {isa = PBXBuildFile; productRef = A54386F02E9ABD62009B669F /* MachOKit */; };
 		A58CF0FF2E8F30EF00106697 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = A58CF0FE2E8F30EF00106697 /* FactoryKit */; };
 		A58CF1012E8F30EF00106697 /* FactoryTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A58CF1002E8F30EF00106697 /* FactoryTesting */; };
+		A5A251A72ED3AE1B003BD402 /* DemangleKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5A251A62ED3AE1B003BD402 /* DemangleKit */; };
+		A5A251A82ED3AE1B003BD402 /* DemangleKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5A251A62ED3AE1B003BD402 /* DemangleKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A5A251AB2ED3AF2E003BD402 /* SymbolKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5A251AA2ED3AF2E003BD402 /* SymbolKit */; };
+		A5A251AC2ED3AF2E003BD402 /* SymbolKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5A251AA2ED3AF2E003BD402 /* SymbolKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A5BB55392E9698C400DF8FC4 /* AnalysisKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55382E9698C400DF8FC4 /* AnalysisKit */; };
 		A5BB553A2E9698C400DF8FC4 /* AnalysisKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A5BB55382E9698C400DF8FC4 /* AnalysisKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A5BB553C2E9698C700DF8FC4 /* DarwinKit in Frameworks */ = {isa = PBXBuildFile; productRef = A5BB553B2E9698C700DF8FC4 /* DarwinKit */; };
@@ -62,7 +66,9 @@
 				A5BB553D2E9698C700DF8FC4 /* DarwinKit in Embed Frameworks */,
 				A5BB553A2E9698C400DF8FC4 /* AnalysisKit in Embed Frameworks */,
 				A5BB554C2E9698D800DF8FC4 /* GraphKit in Embed Frameworks */,
+				A5A251A82ED3AE1B003BD402 /* DemangleKit in Embed Frameworks */,
 				A5BB55582E9698E900DF8FC4 /* SyntaxKit in Embed Frameworks */,
+				A5A251AC2ED3AF2E003BD402 /* SymbolKit in Embed Frameworks */,
 				A5BB55492E9698D300DF8FC4 /* FoundationKit in Embed Frameworks */,
 				A5BB55432E9698CD00DF8FC4 /* DebugKit in Embed Frameworks */,
 			);
@@ -85,10 +91,12 @@
 				DarwinKit,
 				DataKit,
 				DebugKit,
+				DemangleKit,
 				DisassemblyKit,
 				FoundationKit,
 				GraphKit,
 				PluginKit,
+				SymbolKit,
 				SyntaxKit,
 			);
 			target = A58CE83E2E8F1C6E00106697 /* Ignite */;
@@ -126,6 +134,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				.gitkeep,
+				swiftlint.yml,
 			);
 			target = A58CE83E2E8F1C6E00106697 /* Ignite */;
 		};
@@ -229,6 +238,7 @@
 			files = (
 				A5BB55572E9698E900DF8FC4 /* SyntaxKit in Frameworks */,
 				A5BB55512E9698E000DF8FC4 /* PluginKit in Frameworks */,
+				A5A251AB2ED3AF2E003BD402 /* SymbolKit in Frameworks */,
 				A54386F12E9ABD62009B669F /* MachOKit in Frameworks */,
 				A5BB554B2E9698D800DF8FC4 /* GraphKit in Frameworks */,
 				A5BB55422E9698CD00DF8FC4 /* DebugKit in Frameworks */,
@@ -237,6 +247,7 @@
 				A51EDFBD2E900D4200F4BA87 /* Defaults in Frameworks */,
 				A5BB553F2E9698CA00DF8FC4 /* DataKit in Frameworks */,
 				A58CF0FF2E8F30EF00106697 /* FactoryKit in Frameworks */,
+				A5A251A72ED3AE1B003BD402 /* DemangleKit in Frameworks */,
 				A5BB55452E9698CF00DF8FC4 /* DisassemblyKit in Frameworks */,
 				A5BB55482E9698D300DF8FC4 /* FoundationKit in Frameworks */,
 				A5BB55392E9698C400DF8FC4 /* AnalysisKit in Frameworks */,
@@ -333,6 +344,8 @@
 				A5BB55502E9698E000DF8FC4 /* PluginKit */,
 				A5BB55562E9698E900DF8FC4 /* SyntaxKit */,
 				A54386F02E9ABD62009B669F /* MachOKit */,
+				A5A251A62ED3AE1B003BD402 /* DemangleKit */,
+				A5A251AA2ED3AF2E003BD402 /* SymbolKit */,
 			);
 			productName = Ignite;
 			productReference = A58CE83F2E8F1C6E00106697 /* Ignite Development.app */;
@@ -1532,6 +1545,14 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A58CF0FD2E8F30EF00106697 /* XCRemoteSwiftPackageReference "Factory" */;
 			productName = FactoryTesting;
+		};
+		A5A251A62ED3AE1B003BD402 /* DemangleKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DemangleKit;
+		};
+		A5A251AA2ED3AF2E003BD402 /* SymbolKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SymbolKit;
 		};
 		A5BB55382E9698C400DF8FC4 /* AnalysisKit */ = {
 			isa = XCSwiftPackageProductDependency;
