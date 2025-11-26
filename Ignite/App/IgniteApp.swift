@@ -23,9 +23,16 @@ struct IgniteApp: App {
             DebugCommands()
         }
         .windowResizability(.contentSize)
+        
+        Window("Processes", id: "processes") {
+            ProcessesView()
+                .windowMinimizeBehavior(.disabled)
+                .windowResizeBehavior(.disabled)
+        }
+        .windowResizability(.contentSize)
 
         Window("About Ignite", id: "about") {
-            AboutView(viewModel: AboutViewModel())
+            AboutView()
                 .windowMinimizeBehavior(.disabled)
                 .windowResizeBehavior(.disabled)
         }

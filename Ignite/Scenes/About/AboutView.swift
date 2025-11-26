@@ -15,7 +15,7 @@ struct AboutView: View {
     
     // MARK: - Initializer
     
-    init(viewModel: AboutViewModel) {
+    init(viewModel: AboutViewModel = AboutViewModel()) {
         self.viewModel = viewModel
     }
     
