@@ -10,22 +10,22 @@ struct SettingsPathView: View {
     
     // MARK: - Properties
     
-    private let url: URL
+    private let locationURL: URL
    
     // MARK: - Initializer
 
-    init(_ url: URL) {
-        self.url = url
+    init(_ locationURL: URL) {
+        self.locationURL = locationURL
     }
 
     // MARK: - View
 
     var body: some View {
         HStack(alignment: .center) {
-            Text(url.path())
+            Text(locationURL.path())
                 .foregroundStyle(.secondary)
 
-            RevealInFinderButton(url)
+            RevealInFinderButton(locationURL)
         }
     }
 

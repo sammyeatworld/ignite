@@ -10,19 +10,19 @@ struct RevealInFinderButton: View {
 
     // MARK: - Properties
 
-    private let url: URL
+    private let locationURL: URL
 
     // MARK: - Initializer
 
-    init(_ location: URL) {
-        self.url = location
+    init(_ locationURL: URL) {
+        self.locationURL = locationURL
     }
     
     // MARK: - View
     
     var body: some View {
         Button {
-            NSWorkspace.shared.activateFileViewerSelecting([url])
+            NSWorkspace.shared.activateFileViewerSelecting([locationURL])
         } label: {
             Image(systemName: SF.finder.rawValue)
                 .foregroundStyle(.blue)

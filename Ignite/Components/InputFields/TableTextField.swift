@@ -28,8 +28,9 @@ struct TableTextField: View {
 
     var body: some View {
         TextField("", text: $text)
-            .textFieldStyle(.plain)
             .focused($isFocused)
+            .frame(maxWidth: .infinity)
+            .textFieldStyle(.plain)
             .onTapGesture {
                 isEditing = true
                 isFocused = true
@@ -38,7 +39,6 @@ struct TableTextField: View {
                 isEditing = false
                 isFocused = false
             }
-            .frame(maxWidth: .infinity)
     }
 
 }
