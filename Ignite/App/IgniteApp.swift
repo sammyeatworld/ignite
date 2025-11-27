@@ -13,7 +13,7 @@ struct IgniteApp: App {
 
     var body: some Scene {
         WindowGroup {
-            IgniteView()
+            RootView()
                 .windowResizeBehavior(.disabled)
         }
         .commands {

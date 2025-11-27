@@ -8,7 +8,7 @@ import Foundation
 import SwiftUI
 import Defaults
 
-enum DebugCommand: @MainActor CommandItem {
+enum DebugCommand: @MainActor CommandRepresentable {
 
     case pauseExecution
     case runToCursor
@@ -145,7 +145,7 @@ enum DebugCommand: @MainActor CommandItem {
         }
     }
 
-    var group: DebugCommandGroup {
+    var category: DebugCommandCategory {
         switch self {
         case .pauseExecution,
                 .runToCursor,

@@ -35,8 +35,8 @@ struct SearchCommands: Commands {
     // MARK: - Methods
 
     @ViewBuilder
-    private func commandView(for group: SearchCommandGroup) -> some View {
-        ForEach(SearchCommand.allCases.filter { $0.group == group }) { command in
+    private func commandView(for category: SearchCommandCategory) -> some View {
+        ForEach(SearchCommand.allCases.filter { $0.category == category }) { command in
             Button {
                 Task { await executor.execute(command) }
             } label: {

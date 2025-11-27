@@ -35,8 +35,8 @@ struct JumpCommands: Commands {
     // MARK: - Methods
 
     @ViewBuilder
-    private func commandView(for group: JumpCommandGroup) -> some View {
-        ForEach(JumpCommand.allCases.filter { $0.group == group }) { command in
+    private func commandView(for category: JumpCommandCategory) -> some View {
+        ForEach(JumpCommand.allCases.filter { $0.category == category }) { command in
             Button {
                 Task { await executor.execute(command) }
             } label: {

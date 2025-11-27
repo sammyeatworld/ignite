@@ -7,7 +7,7 @@
 import SwiftUI
 import Defaults
 
-struct IgniteView: View {
+struct RootView: View {
 
     // MARK: - Properties
 
@@ -64,5 +64,5 @@ struct IgniteView: View {
 // MARK: - Preview
 
 #Preview {
-    IgniteView()
+    RootView()
 }

@@ -7,14 +7,14 @@
 import Foundation
 
 @MainActor
-protocol CommandExecutorItem: AnyObject {
+protocol CommandExecutor: AnyObject {
 
     // MARK: - Associated Types
 
-    associatedtype CommandItemType: CommandItem
+    associatedtype CommandRepresentableType: CommandRepresentable
 
     // MARK: - Methods
 
-    func execute(_ command: CommandItemType) async
+    func execute(_ command: CommandRepresentableType) async
 
 }

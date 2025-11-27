@@ -6,4 +6,4 @@
 
 import Foundation
 
-protocol CommandGroupItem: CaseIterable, Identifiable { }
+protocol CommandCategory: CaseIterable, Identifiable { }

@@ -9,7 +9,7 @@ import SwiftUI
 import FactoryKit
 
 @MainActor
-final class SearchCommandExecutor: @MainActor CommandExecutorItem {
+final class SearchCommandExecutor: @MainActor CommandExecutor {
 
     @Environment(\.openWindow)
     private var openWindow

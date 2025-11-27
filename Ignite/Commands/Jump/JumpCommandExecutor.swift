@@ -9,7 +9,7 @@ import SwiftUI
 import FactoryKit
 
 @MainActor
-final class JumpCommandExecutor: @MainActor CommandExecutorItem {
+final class JumpCommandExecutor: @MainActor CommandExecutor {
 
     @Environment(\.openWindow)
     private var openWindow

@@ -7,12 +7,12 @@
 import Foundation
 import SwiftUI
 
-protocol CommandsItem: Commands {
+protocol CommandsRepresentable: Commands {
 
     // MARK: - Associated Types
 
-    associatedtype CommandExecutorType: CommandExecutorItem
-    associatedtype CommandGroupType: CommandGroupItem
+    associatedtype CommandExecutorType: CommandExecutor
+    associatedtype CommandCategoryType: CommandCategory
     associatedtype CommandViewType: View
 
     // MARK: - Properties
@@ -21,6 +21,6 @@ protocol CommandsItem: Commands {
 
     // MARK: - Methods
 
-    func commandView(for group: CommandGroupType) -> CommandViewType
+    func commandView(for category: CommandCategoryType) -> CommandViewType
 
 }

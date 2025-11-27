@@ -8,7 +8,7 @@ import Foundation
 import SwiftUI
 import Defaults
 
-enum JumpCommand: @MainActor CommandItem {
+enum JumpCommand: @MainActor CommandRepresentable {
 
     case jumpToPreviousPosition
     case jumpToNextPosition
@@ -110,7 +110,7 @@ enum JumpCommand: @MainActor CommandItem {
         }
     }
 
-    var group: JumpCommandGroup {
+    var category: JumpCommandCategory {
         switch self {
         case .jumpToPreviousPosition,
              .jumpToNextPosition,

@@ -6,7 +6,7 @@
 
 import Foundation
 
-enum DebugCommandGroup: @MainActor CommandGroupItem {
+enum DebugCommandCategory: @MainActor CommandCategory {
 
     case execution
     case stepping
@@ -16,7 +16,7 @@ enum DebugCommandGroup: @MainActor CommandGroupItem {
 
 }
 
-extension DebugCommandGroup {
+extension DebugCommandCategory {
 
     var id: Self {
         self

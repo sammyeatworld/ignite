@@ -6,15 +6,15 @@
 
 import Foundation
 
-enum SearchCommandGroup: @MainActor CommandGroupItem {
+enum JumpCommandCategory: @MainActor CommandCategory {
 
-    case searchType
-    case contentSearch
-    case options
+    case navigation
+    case targets
+    case crossReferences
 
 }
 
-extension SearchCommandGroup {
+extension JumpCommandCategory {
 
     var id: Self {
         self

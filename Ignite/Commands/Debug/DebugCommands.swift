@@ -38,8 +38,8 @@ struct DebugCommands: Commands {
     // MARK: - Methods
 
     @ViewBuilder
-    private func commandView(for group: DebugCommandGroup) -> some View {
-        ForEach(DebugCommand.allCases.filter { $0.group == group }) { command in
+    private func commandView(for category: DebugCommandCategory) -> some View {
+        ForEach(DebugCommand.allCases.filter { $0.category == category }) { command in
             Button {
                 Task { await executor.execute(command) }
             } label: {

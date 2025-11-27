@@ -7,7 +7,7 @@
 import Foundation
 import SwiftUI
 
-protocol CommandItem: CaseIterable, Identifiable, Displayable, Storable {
+protocol CommandRepresentable: CaseIterable, Identifiable, Displayable, Storable {
 
     // MARK: - Properties
 

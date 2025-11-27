@@ -8,7 +8,7 @@ import Foundation
 import SwiftUI
 import Defaults
 
-enum SearchCommand: @MainActor CommandItem {
+enum SearchCommand: @MainActor CommandRepresentable {
 
     case nextCode
     case nextData
@@ -83,7 +83,7 @@ enum SearchCommand: @MainActor CommandItem {
         }
     }
 
-    var group: SearchCommandGroup {
+    var category: SearchCommandCategory {
         switch self {
         case .nextCode,
              .nextData:

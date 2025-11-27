@@ -9,7 +9,7 @@ import SwiftUI
 import FactoryKit
 
 @MainActor
-final class DebugCommandExecutor: @MainActor CommandExecutorItem {
+final class DebugCommandExecutor: @MainActor CommandExecutor {
 
     @Environment(\.openWindow)
     private var openWindow
