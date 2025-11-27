@@ -15,8 +15,8 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
     private let title: String
     private let infoTitle: String?
     private let image: String?
-    private let footer: FooterContent
-    private let sheet: SheetContent
+    private let footer: () -> FooterContent
+    private let sheet: () -> SheetContent
 
     // MARK: - Initializer
 
@@ -24,14 +24,14 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
         _ title: String,
         infoTitle: String? = nil,
         image: String? = nil,
-        @ViewBuilder footer: () -> FooterContent,
-        @ViewBuilder sheet: () -> SheetContent
+        @ViewBuilder footer: @escaping () -> FooterContent,
+        @ViewBuilder sheet: @escaping () -> SheetContent
     ) {
         self.title = title
         self.infoTitle = infoTitle
         self.image = image
-        self.footer = footer()
-        self.sheet = sheet()
+        self.footer = footer
+        self.sheet = sheet
     }
 
     // MARK: - View
@@ -44,7 +44,7 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
 
-                footer
+                footer()
             }
 
             Spacer()
@@ -53,7 +53,7 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
         }
         .sheet(isPresented: $showingInfo) {
             SettingsInfoSheet(isPresented: $showingInfo) {
-                sheet
+                sheet()
             }
         }
     }

@@ -12,13 +12,13 @@ struct SettingsInfoSheet<Content: View>: View {
 
     @Binding
     var showingInfo: Bool
-    private let content: Content
+    private let content: () -> Content
 
     // MARK: - Initializer
 
-    init(isPresented showingInfo: Binding<Bool>, @ViewBuilder content: () -> Content) {
+    init(isPresented showingInfo: Binding<Bool>, @ViewBuilder content: @escaping () -> Content) {
         self._showingInfo = showingInfo
-        self.content = content()
+        self.content = content
     }
 
     // MARK: - View
@@ -26,7 +26,7 @@ struct SettingsInfoSheet<Content: View>: View {
     var body: some View {
         VStack {
             Form {
-                content
+                content()
             }
 
             Divider()
