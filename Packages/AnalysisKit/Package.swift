@@ -15,14 +15,12 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../FoundationKit"),
-        .package(path: "../DarwinKit")
     ],
     targets: [
         .target(
             name: "AnalysisKit",
             dependencies: [
                 .product(name: "FoundationKit", package: "FoundationKit"),
-                .product(name: "DarwinKit", package: "DarwinKit")
             ],
             swiftSettings: [
                 .strictMemorySafety(),
