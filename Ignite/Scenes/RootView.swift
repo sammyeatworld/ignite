@@ -16,16 +16,6 @@ struct RootView: View {
     @Default(.Settings.Updates.automaticallyCheckForUpdates)
     private var automaticallyCheckForUpdates: Bool
 
-    // MARK: - Constants
-
-    private enum C {
-
-        static let buttonWidth = 180.0
-        static let sheetWidth = 200.0
-        static let sheetHeight = 344.0
-
-    }
-
     // MARK: - Initializer
 
     init() { }

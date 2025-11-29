@@ -158,7 +158,6 @@
 				Scenes/Settings/Features/Experimental/Components/.gitkeep,
 				Scenes/Settings/Features/Experimental/Models/.gitkeep,
 				Scenes/Settings/Features/General/Components/.gitkeep,
-				Scenes/Settings/Features/General/Models/.gitkeep,
 				Scenes/Settings/Features/Locations/Components/.gitkeep,
 				Scenes/Settings/Features/Plugins/Components/.gitkeep,
 				Scenes/Settings/Features/Shortcuts/Components/.gitkeep,
