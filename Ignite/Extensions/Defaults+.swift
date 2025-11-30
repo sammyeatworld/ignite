@@ -67,9 +67,9 @@ extension Defaults.Keys {
 
         enum Locations {
 
-            static let dumps = Key<Location>("dumpsLocation", default: .init(url: .applicationSupportDirectory))
-            static let plugins = Key<Location>("pluginsLocation", default: .init(url: .applicationSupportDirectory))
-            static let logs = Key<Location>("logsLocation", default: .init(url: .applicationSupportDirectory))
+            static let dumps = Key<Location>("dumpsLocation", default: .init(.applicationSupportDirectory))
+            static let plugins = Key<Location>("pluginsLocation", default: .init(.applicationSupportDirectory))
+            static let logs = Key<Location>("logsLocation", default: .init(.applicationSupportDirectory))
 
         }
 

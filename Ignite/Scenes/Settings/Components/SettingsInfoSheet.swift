@@ -24,7 +24,7 @@ struct SettingsInfoSheet<Content: View>: View {
     // MARK: - View
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             Form {
                 content()
             }
@@ -36,9 +36,10 @@ struct SettingsInfoSheet<Content: View>: View {
                 Button("Done") {
                     showingInfo.toggle()
                 }
-                .padding(.trailing, 20)
-                .padding(.bottom, 8)
+                .buttonStyle(.borderedProminent)
             }
+            .padding(.trailing, 20)
+            .padding(.vertical)
         }
     }
 

@@ -29,7 +29,7 @@ struct SettingsLocationPicker: View {
     // MARK: - View
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 12) {
             Picker(title, selection: $location.type) {
                 ForEach(LocationType.allCases) { type in
                     Text(type.title).tag(type)
@@ -67,5 +67,5 @@ struct SettingsLocationPicker: View {
 // MARK: - Preview
 
 #Preview {
-    SettingsLocationPicker("Title", location: .constant(.init(url: .homeDirectory)))
+    SettingsLocationPicker("Title", location: .constant(.init(.homeDirectory)))
 }

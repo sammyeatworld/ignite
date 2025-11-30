@@ -40,10 +40,10 @@ struct SettingsInfoRow<FooterContent: View, SheetContent: View>: View {
         HStack(alignment: .top) {
             if let image {
                 Image(systemName: image)
+                    .frame(width: 32, height: 32)
             }
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
-
                 footer()
             }
 

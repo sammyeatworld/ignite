@@ -66,6 +66,6 @@ enum SF: String {
 
     case info = "info.circle.fill"
     case folder = "folder.circle"
-    case finder = "finder"
+    case finder = "arrow.forward.folder"
 
 }

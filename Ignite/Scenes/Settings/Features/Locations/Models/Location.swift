@@ -9,12 +9,12 @@ import Defaults
 
 struct Location: Hashable, @MainActor Storable {
 
-    var type: LocationType
     var url: URL
+    var type: LocationType
 
-    init(_ type: LocationType = .default, url: URL) {
-        self.type = type
+    init(_ url: URL, _ type: LocationType = .default) {
         self.url = url
+        self.type = type
     }
 
 }

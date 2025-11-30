@@ -33,8 +33,8 @@ struct SettingsInfoButton: View {
             } label: {
                 Image(systemName: SF.info.rawValue)
             }
+            .buttonStyle(.plain)
         }
-        .buttonStyle(.plain)
         .foregroundStyle(.secondary)
     }
 
