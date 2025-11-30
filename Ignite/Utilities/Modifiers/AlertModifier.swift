@@ -13,15 +13,15 @@ import SwiftUI
 /// and it automatically clears the error when the alert is dismissed.
 ///
 /// - Parameters:
-///   - errorAlert: A binding to an optional `AppError` that triggers the alert.
+///   - errorAlert: A binding to an optional `Error` that triggers the alert.
 ///   - cancelAction: An optional closure to perform when the cancel button is tapped.
 /// - Returns: A modified view that shows an alert when an error is set.
-struct ErrorAlertModifier: ViewModifier {
+struct ErrorAlertModifier<T>: ViewModifier where T: Error {
 
     // MARK: - Properties
 
     @Binding
-    var errorAlert: AppError?
+    var errorAlert: T?
     let cancelAction: VoidClosure?
 
     // MARK: - View
@@ -138,7 +138,7 @@ struct WarningAlertModifier: ViewModifier {
 
 extension View {
 
-    func errorAlert(_ error: Binding<AppError?>, cancelAction: VoidClosure? = nil) -> some View {
+    func errorAlert<T>(_ error: Binding<T?>, cancelAction: VoidClosure? = nil) -> some View where T: Error {
         modifier(ErrorAlertModifier(errorAlert: error, cancelAction: cancelAction))
     }
 
