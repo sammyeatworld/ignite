@@ -6,21 +6,21 @@
 
 import Foundation
 
-public enum FetchState<Success>: Equatable, Sendable where Success: Equatable & Sendable {
+enum FetchState<Success>: Equatable, Sendable where Success: Equatable & Sendable {
 
     case idle
     case loading
     case failure(AppError)
     case success(Success)
 
-    public var isLoading: Bool {
+    var isLoading: Bool {
         if case .loading = self {
             return true
         }
         return false
     }
 
-    public var isLoadingOrIdle: Bool {
+    var isLoadingOrIdle: Bool {
         if case .loading = self {
             return true
         } else if case .idle = self {
@@ -29,32 +29,32 @@ public enum FetchState<Success>: Equatable, Sendable where Success: Equatable & 
         return false
     }
 
-    public var isIdle: Bool {
+    var isIdle: Bool {
         if case .idle = self {
             return true
         }
         return false
     }
 
-    public var isFailure: Bool {
+    var isFailure: Bool {
         if case .failure = self {
             return true
         }
         return false
     }
 
-    public var isSuccess: Bool {
+    var isSuccess: Bool {
         if case .success = self {
             return true
         }
         return false
     }
 
-    public var isFinished: Bool {
+    var isFinished: Bool {
         isSuccess || isFailure
     }
 
-    public func unwrapSuccess() throws -> Success {
+    func unwrapSuccess() throws -> Success {
         if case let .success(value) = self {
             return value
         } else {
@@ -62,7 +62,7 @@ public enum FetchState<Success>: Equatable, Sendable where Success: Equatable & 
         }
     }
 
-    public func unwrapFailure() throws -> AppError {
+    func unwrapFailure() throws -> AppError {
         if case let .failure(error) = self {
             return error
         } else {
@@ -70,7 +70,7 @@ public enum FetchState<Success>: Equatable, Sendable where Success: Equatable & 
         }
     }
 
-    public var successValue: Success? {
+    var successValue: Success? {
         if case .success(let successValue) = self {
             return successValue
         }
@@ -79,7 +79,7 @@ public enum FetchState<Success>: Equatable, Sendable where Success: Equatable & 
 
 }
 
-public extension Result where Success: Equatable & Sendable, Failure == AppError {
+extension Result where Success: Equatable & Sendable, Failure == AppError {
 
     func asFetchState() -> FetchState<Success> {
         switch self {

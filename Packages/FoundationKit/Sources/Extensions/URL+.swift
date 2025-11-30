@@ -8,9 +8,9 @@ import Foundation
 
 public extension URL {
 
-    init(_ staticString: StaticString) throws {
+    init(_ staticString: StaticString) throws(URLError) {
         guard let url = Self(string: "\(staticString)") else {
-            throw NetworkError.invalidURL
+            throw URLError(.badURL)
         }
         self = url
     }
